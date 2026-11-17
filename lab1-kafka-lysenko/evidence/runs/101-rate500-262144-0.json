@@ -1,0 +1,68 @@
+{
+  "config": {
+    "bootstrap": "127.0.0.1:9092",
+    "topic": "h3b-lysenko-1117182332-101",
+    "partitions": 3,
+    "records": 5000,
+    "warmup_records": 1000,
+    "throughput": 500,
+    "batch_size": 262144,
+    "linger_ms": 0,
+    "compression": "none",
+    "strategy": "device",
+    "payload_file": "C:\\Users\\Luka\\Documents\\ChatGPT\\\u041f\u0440\u043e\u0435\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0441\u0438\u0441\u0442\u0435\u043c \u0437 \u0440\u043e\u0437\u043f\u043e\u0434\u0456\u043b\u0435\u043d\u0438\u043c\u0438 \u0431\u0430\u0437\u0430\u043c\u0438 \u0434\u0430\u043d\u043d\u0438\u0445\\lab1-kafka-lysenko\\data\\hydro-1000.jsonl",
+    "output_file": "C:\\Users\\Luka\\Documents\\ChatGPT\\\u041f\u0440\u043e\u0435\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0441\u0438\u0441\u0442\u0435\u043c \u0437 \u0440\u043e\u0437\u043f\u043e\u0434\u0456\u043b\u0435\u043d\u0438\u043c\u0438 \u0431\u0430\u0437\u0430\u043c\u0438 \u0434\u0430\u043d\u043d\u0438\u0445\\lab1-kafka-lysenko\\evidence\\runs\\101-rate500-262144-0.json",
+    "log_root": "C:\\Users\\Luka\\Documents\\ChatGPT\\\u041f\u0440\u043e\u0435\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0441\u0438\u0441\u0442\u0435\u043c \u0437 \u0440\u043e\u0437\u043f\u043e\u0434\u0456\u043b\u0435\u043d\u0438\u043c\u0438 \u0431\u0430\u0437\u0430\u043c\u0438 \u0434\u0430\u043d\u043d\u0438\u0445\\lab1-kafka-lysenko\\data\\kafka-logs",
+    "label": "rate500-262144-0",
+    "family": "rate500"
+  },
+  "records": 5000,
+  "received": 5000,
+  "errors": 0,
+  "payload_bytes": 1571865,
+  "broker_log_bytes": 1871183,
+  "mean_payload_bytes": 314.373,
+  "producer_seconds": 10.0135528,
+  "end_to_end_seconds": 10.1367204,
+  "records_per_sec": 499.32327714894564,
+  "ack_latency": {
+    "avg_ms": 0.98947976,
+    "p50_ms": 0.8574,
+    "p95_ms": 1.8432,
+    "p99_ms": 2.5486,
+    "max_ms": 6.3558
+  },
+  "e2e_latency": {
+    "avg_ms": 1.85723288,
+    "p50_ms": 1.5533,
+    "p95_ms": 3.7917,
+    "p99_ms": 5.2367,
+    "max_ms": 11.2246
+  },
+  "jvm_cpu_ms": 3312.5,
+  "cpu_percent_one_core": 32.67822204112486,
+  "producer_outgoing_bytes": 1939025.0,
+  "compression_rate_avg": 1.0,
+  "batch_size_avg": 1076.9209756097562,
+  "records_per_request_avg": 8.241758241758241,
+  "bufferpool_wait_ratio": 0.0,
+  "partition_counts": [
+    2000,
+    1670,
+    1330
+  ],
+  "resources_trial_including_warmup": {
+    "zookeeper": {
+      "cpu_s": 0.0,
+      "read_bytes": 0,
+      "write_bytes": 0,
+      "peak_rss_bytes": 98889728
+    },
+    "kafka": {
+      "cpu_s": 0.5625,
+      "read_bytes": 626028,
+      "write_bytes": 2234154,
+      "peak_rss_bytes": 467124224
+    }
+  }
+}

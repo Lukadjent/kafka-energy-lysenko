@@ -1,0 +1,19 @@
+syntax = "proto3";
+package ua.lysenko;
+message Location { double lat = 1; double lon = 2; }
+message HydroTelemetry {
+  string device_id = 1;
+  string timestamp = 2;
+  double power_output = 3;
+  double efficiency = 4;
+  double temperature = 5;
+  double voltage = 6;
+  double current = 7;
+  string status = 8;
+  Location location = 9;
+  int64 maintenance_hours = 10;
+  double water_flow = 11;
+  double water_level = 12;
+  string turbine_type = 13;
+}
+

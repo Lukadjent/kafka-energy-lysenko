@@ -1,0 +1,741 @@
+[
+  {
+    "label": "part-12-r1",
+    "family": "partition",
+    "partitions": 12,
+    "strategy": "turbine",
+    "repeat": 1
+  },
+  {
+    "label": "batch-262144-0-r1",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 0,
+    "repeat": 1
+  },
+  {
+    "label": "linger-extra-100",
+    "family": "linger-extra",
+    "linger_ms": 100
+  },
+  {
+    "label": "strategy-device-r2",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "device",
+    "repeat": 2
+  },
+  {
+    "label": "strategy-time-r1",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "time",
+    "repeat": 1
+  },
+  {
+    "label": "codec-gzip-r2",
+    "family": "compression",
+    "compression": "gzip",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 2
+  },
+  {
+    "label": "batch-16384-10-r2",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 10,
+    "repeat": 2
+  },
+  {
+    "label": "inflight-1",
+    "family": "inflight",
+    "max_in_flight": 1
+  },
+  {
+    "label": "codec-none-r0",
+    "family": "compression",
+    "compression": "none",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 0
+  },
+  {
+    "label": "batch-262144-50-r0",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "repeat": 0
+  },
+  {
+    "label": "rate500-65536-0",
+    "family": "rate500",
+    "batch_size": 65536,
+    "linger_ms": 0,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "codec-zstd-r0",
+    "family": "compression",
+    "compression": "zstd",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 0
+  },
+  {
+    "label": "analytics-1048576-100-r0",
+    "family": "analytics",
+    "batch_size": 1048576,
+    "linger_ms": 100,
+    "compression": "zstd",
+    "repeat": 0
+  },
+  {
+    "label": "part-3-r0",
+    "family": "partition",
+    "partitions": 3,
+    "strategy": "turbine",
+    "repeat": 0
+  },
+  {
+    "label": "inflight-10",
+    "family": "inflight",
+    "max_in_flight": 10
+  },
+  {
+    "label": "strategy-balanced-r1",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "balanced",
+    "repeat": 1
+  },
+  {
+    "label": "batch-262144-50-r2",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "repeat": 2
+  },
+  {
+    "label": "batch-16384-0-r0",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 0,
+    "repeat": 0
+  },
+  {
+    "label": "codec-zstd-r1",
+    "family": "compression",
+    "compression": "zstd",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 1
+  },
+  {
+    "label": "batch-65536-10-r2",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 10,
+    "repeat": 2
+  },
+  {
+    "label": "batch-262144-10-r0",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 10,
+    "repeat": 0
+  },
+  {
+    "label": "batch-262144-0-r2",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 0,
+    "repeat": 2
+  },
+  {
+    "label": "batch-65536-10-r1",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 10,
+    "repeat": 1
+  },
+  {
+    "label": "batch-16384-0-r2",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 0,
+    "repeat": 2
+  },
+  {
+    "label": "batch-16384-10-r1",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 10,
+    "repeat": 1
+  },
+  {
+    "label": "codec-snappy-r0",
+    "family": "compression",
+    "compression": "snappy",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 0
+  },
+  {
+    "label": "part-8-r1",
+    "family": "partition",
+    "partitions": 8,
+    "strategy": "turbine",
+    "repeat": 1
+  },
+  {
+    "label": "batch-16384-50-r0",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 50,
+    "repeat": 0
+  },
+  {
+    "label": "part-3-r1",
+    "family": "partition",
+    "partitions": 3,
+    "strategy": "turbine",
+    "repeat": 1
+  },
+  {
+    "label": "batch-16384-50-r1",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 50,
+    "repeat": 1
+  },
+  {
+    "label": "part-4-r2",
+    "family": "partition",
+    "partitions": 4,
+    "strategy": "turbine",
+    "repeat": 2
+  },
+  {
+    "label": "part-6-r0",
+    "family": "partition",
+    "partitions": 6,
+    "strategy": "turbine",
+    "repeat": 0
+  },
+  {
+    "label": "rate500-65536-10",
+    "family": "rate500",
+    "batch_size": 65536,
+    "linger_ms": 10,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "part-8-r2",
+    "family": "partition",
+    "partitions": 8,
+    "strategy": "turbine",
+    "repeat": 2
+  },
+  {
+    "label": "batch-262144-50-r1",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "repeat": 1
+  },
+  {
+    "label": "strategy-region-r0",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "region",
+    "repeat": 0
+  },
+  {
+    "label": "part-2-r2",
+    "family": "partition",
+    "partitions": 2,
+    "strategy": "turbine",
+    "repeat": 2
+  },
+  {
+    "label": "strategy-device-r0",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "device",
+    "repeat": 0
+  },
+  {
+    "label": "analytics-1048576-300-r2",
+    "family": "analytics",
+    "batch_size": 1048576,
+    "linger_ms": 300,
+    "compression": "zstd",
+    "repeat": 2
+  },
+  {
+    "label": "strategy-region-r2",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "region",
+    "repeat": 2
+  },
+  {
+    "label": "analytics-1048576-100-r2",
+    "family": "analytics",
+    "batch_size": 1048576,
+    "linger_ms": 100,
+    "compression": "zstd",
+    "repeat": 2
+  },
+  {
+    "label": "strategy-time-r0",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "time",
+    "repeat": 0
+  },
+  {
+    "label": "strategy-device-r1",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "device",
+    "repeat": 1
+  },
+  {
+    "label": "batch-65536-10-r0",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 10,
+    "repeat": 0
+  },
+  {
+    "label": "strategy-balanced-r2",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "balanced",
+    "repeat": 2
+  },
+  {
+    "label": "batch-65536-0-r2",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 0,
+    "repeat": 2
+  },
+  {
+    "label": "rate500-262144-10",
+    "family": "rate500",
+    "batch_size": 262144,
+    "linger_ms": 10,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "codec-zstd-r2",
+    "family": "compression",
+    "compression": "zstd",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 2
+  },
+  {
+    "label": "part-12-r0",
+    "family": "partition",
+    "partitions": 12,
+    "strategy": "turbine",
+    "repeat": 0
+  },
+  {
+    "label": "codec-snappy-r1",
+    "family": "compression",
+    "compression": "snappy",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 1
+  },
+  {
+    "label": "part-6-r2",
+    "family": "partition",
+    "partitions": 6,
+    "strategy": "turbine",
+    "repeat": 2
+  },
+  {
+    "label": "batch-16384-50-r2",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 50,
+    "repeat": 2
+  },
+  {
+    "label": "codec-lz4-r2",
+    "family": "compression",
+    "compression": "lz4",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 2
+  },
+  {
+    "label": "codec-gzip-r0",
+    "family": "compression",
+    "compression": "gzip",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 0
+  },
+  {
+    "label": "strategy-balanced-r0",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "balanced",
+    "repeat": 0
+  },
+  {
+    "label": "buffer-33554432",
+    "family": "buffer",
+    "buffer_memory": 33554432
+  },
+  {
+    "label": "codec-snappy-r2",
+    "family": "compression",
+    "compression": "snappy",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 2
+  },
+  {
+    "label": "analytics-524288-100-r0",
+    "family": "analytics",
+    "batch_size": 524288,
+    "linger_ms": 100,
+    "compression": "zstd",
+    "repeat": 0
+  },
+  {
+    "label": "part-6-r1",
+    "family": "partition",
+    "partitions": 6,
+    "strategy": "turbine",
+    "repeat": 1
+  },
+  {
+    "label": "part-2-r0",
+    "family": "partition",
+    "partitions": 2,
+    "strategy": "turbine",
+    "repeat": 0
+  },
+  {
+    "label": "codec-none-r2",
+    "family": "compression",
+    "compression": "none",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 2
+  },
+  {
+    "label": "part-2-r1",
+    "family": "partition",
+    "partitions": 2,
+    "strategy": "turbine",
+    "repeat": 1
+  },
+  {
+    "label": "batch-262144-10-r1",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 10,
+    "repeat": 1
+  },
+  {
+    "label": "batch-65536-50-r0",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 50,
+    "repeat": 0
+  },
+  {
+    "label": "codec-gzip-r1",
+    "family": "compression",
+    "compression": "gzip",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 1
+  },
+  {
+    "label": "strategy-region-r1",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "region",
+    "repeat": 1
+  },
+  {
+    "label": "codec-lz4-r1",
+    "family": "compression",
+    "compression": "lz4",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 1
+  },
+  {
+    "label": "part-4-r0",
+    "family": "partition",
+    "partitions": 4,
+    "strategy": "turbine",
+    "repeat": 0
+  },
+  {
+    "label": "part-3-r2",
+    "family": "partition",
+    "partitions": 3,
+    "strategy": "turbine",
+    "repeat": 2
+  },
+  {
+    "label": "inflight-5",
+    "family": "inflight",
+    "max_in_flight": 5
+  },
+  {
+    "label": "codec-lz4-r0",
+    "family": "compression",
+    "compression": "lz4",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 0
+  },
+  {
+    "label": "rate500-65536-50",
+    "family": "rate500",
+    "batch_size": 65536,
+    "linger_ms": 50,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "batch-65536-50-r2",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 50,
+    "repeat": 2
+  },
+  {
+    "label": "buffer-8388608",
+    "family": "buffer",
+    "buffer_memory": 8388608
+  },
+  {
+    "label": "part-8-r0",
+    "family": "partition",
+    "partitions": 8,
+    "strategy": "turbine",
+    "repeat": 0
+  },
+  {
+    "label": "retention-90d",
+    "family": "retention",
+    "retention_ms": 7776000000,
+    "compression": "zstd",
+    "records": 20000
+  },
+  {
+    "label": "batch-65536-0-r1",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 0,
+    "repeat": 1
+  },
+  {
+    "label": "buffer-67108864",
+    "family": "buffer",
+    "buffer_memory": 67108864
+  },
+  {
+    "label": "rate500-262144-50",
+    "family": "rate500",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "batch-16384-0-r1",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 0,
+    "repeat": 1
+  },
+  {
+    "label": "strategy-time-r2",
+    "family": "strategy",
+    "partitions": 4,
+    "strategy": "time",
+    "repeat": 2
+  },
+  {
+    "label": "analytics-1048576-300-r1",
+    "family": "analytics",
+    "batch_size": 1048576,
+    "linger_ms": 300,
+    "compression": "zstd",
+    "repeat": 1
+  },
+  {
+    "label": "part-4-r1",
+    "family": "partition",
+    "partitions": 4,
+    "strategy": "turbine",
+    "repeat": 1
+  },
+  {
+    "label": "batch-16384-10-r0",
+    "family": "batch",
+    "batch_size": 16384,
+    "linger_ms": 10,
+    "repeat": 0
+  },
+  {
+    "label": "retention-30d",
+    "family": "retention",
+    "retention_ms": 2592000000,
+    "compression": "zstd",
+    "records": 20000
+  },
+  {
+    "label": "rate500-16384-0",
+    "family": "rate500",
+    "batch_size": 16384,
+    "linger_ms": 0,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "part-12-r2",
+    "family": "partition",
+    "partitions": 12,
+    "strategy": "turbine",
+    "repeat": 2
+  },
+  {
+    "label": "batch-65536-0-r0",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 0,
+    "repeat": 0
+  },
+  {
+    "label": "batch-65536-50-r1",
+    "family": "batch",
+    "batch_size": 65536,
+    "linger_ms": 50,
+    "repeat": 1
+  },
+  {
+    "label": "linger-extra-5",
+    "family": "linger-extra",
+    "linger_ms": 5
+  },
+  {
+    "label": "analytics-524288-100-r1",
+    "family": "analytics",
+    "batch_size": 524288,
+    "linger_ms": 100,
+    "compression": "zstd",
+    "repeat": 1
+  },
+  {
+    "label": "rate500-16384-10",
+    "family": "rate500",
+    "batch_size": 16384,
+    "linger_ms": 10,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "batch-262144-0-r0",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 0,
+    "repeat": 0
+  },
+  {
+    "label": "analytics-1048576-100-r1",
+    "family": "analytics",
+    "batch_size": 1048576,
+    "linger_ms": 100,
+    "compression": "zstd",
+    "repeat": 1
+  },
+  {
+    "label": "rate500-16384-50",
+    "family": "rate500",
+    "batch_size": 16384,
+    "linger_ms": 50,
+    "records": 5000,
+    "throughput": 500
+  },
+  {
+    "label": "analytics-524288-100-r2",
+    "family": "analytics",
+    "batch_size": 524288,
+    "linger_ms": 100,
+    "compression": "zstd",
+    "repeat": 2
+  },
+  {
+    "label": "batch-262144-10-r2",
+    "family": "batch",
+    "batch_size": 262144,
+    "linger_ms": 10,
+    "repeat": 2
+  },
+  {
+    "label": "retention-7d",
+    "family": "retention",
+    "retention_ms": 604800000,
+    "compression": "zstd",
+    "records": 20000
+  },
+  {
+    "label": "analytics-1048576-300-r0",
+    "family": "analytics",
+    "batch_size": 1048576,
+    "linger_ms": 300,
+    "compression": "zstd",
+    "repeat": 0
+  },
+  {
+    "label": "codec-none-r1",
+    "family": "compression",
+    "compression": "none",
+    "batch_size": 262144,
+    "linger_ms": 50,
+    "records": 20000,
+    "repeat": 1
+  },
+  {
+    "label": "rate500-262144-0",
+    "family": "rate500",
+    "batch_size": 262144,
+    "linger_ms": 0,
+    "records": 5000,
+    "throughput": 500
+  }
+]

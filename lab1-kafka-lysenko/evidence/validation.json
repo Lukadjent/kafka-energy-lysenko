@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "variant_13_maps_to_3B": true,
+    "1000_records_15_devices_valid_ranges": true,
+    "all_27_batch_repetitions": true,
+    "all_9_rate500_combinations": true,
+    "five_codecs_three_repetitions": true,
+    "variant_and_general_partition_counts": true,
+    "four_partition_strategies": true,
+    "all_104_trials_complete_no_message_loss": true,
+    "latency_and_resource_metrics_finite": true,
+    "analytics_batches_up_to_1MiB": true,
+    "natural_rate_and_microbatch_measured": true,
+    "retention_7_30_90_days_configured": true,
+    "exact_million_and_hundred_thousand_loads": true,
+    "three_serialization_round_trips_and_registry_kafka": true,
+    "warehouse_302400_rows_and_four_windows": true
+  },
+  "passed": 15,
+  "total": 15
+}

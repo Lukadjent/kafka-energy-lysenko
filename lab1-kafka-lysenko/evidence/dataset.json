@@ -1,0 +1,12 @@
+{
+  "records": 1000,
+  "devices": 15,
+  "event_interval_seconds": 30,
+  "seed": 610013,
+  "bytes_min": 307,
+  "bytes_max": 317,
+  "bytes_mean": 314.373,
+  "history_records": 302400,
+  "history_hours": 168,
+  "data_kind": "synthetic"
+}

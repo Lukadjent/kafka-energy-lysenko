@@ -1,0 +1,3 @@
+java EnergyBenchmark 098-retention-7d.config.json
+MEASUREMENT_START h3b-lysenko-1117182332-098
+MEASUREMENT_DONE C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\evidence\runs\098-retention-7d.json

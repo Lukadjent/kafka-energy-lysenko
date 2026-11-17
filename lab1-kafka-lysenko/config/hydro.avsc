@@ -1,0 +1,72 @@
+{
+  "type": "record",
+  "name": "HydroTelemetry",
+  "namespace": "ua.lysenko.lab1",
+  "fields": [
+    {
+      "name": "device_id",
+      "type": "string"
+    },
+    {
+      "name": "timestamp",
+      "type": "string"
+    },
+    {
+      "name": "power_output",
+      "type": "double"
+    },
+    {
+      "name": "efficiency",
+      "type": "double"
+    },
+    {
+      "name": "temperature",
+      "type": "double"
+    },
+    {
+      "name": "voltage",
+      "type": "double"
+    },
+    {
+      "name": "current",
+      "type": "double"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "location",
+      "type": {
+        "type": "record",
+        "name": "Location",
+        "fields": [
+          {
+            "name": "lat",
+            "type": "double"
+          },
+          {
+            "name": "lon",
+            "type": "double"
+          }
+        ]
+      }
+    },
+    {
+      "name": "maintenance_hours",
+      "type": "long"
+    },
+    {
+      "name": "water_flow",
+      "type": "double"
+    },
+    {
+      "name": "water_level",
+      "type": "double"
+    },
+    {
+      "name": "turbine_type",
+      "type": "string"
+    }
+  ]
+}

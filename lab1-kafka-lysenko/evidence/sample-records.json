@@ -1,0 +1,56 @@
+[
+  {
+    "device_id": "HYDRO_DN_001",
+    "timestamp": "2026-11-10T00:00:00.000Z",
+    "power_output": 44.0,
+    "efficiency": 90.0,
+    "temperature": 12.0,
+    "voltage": 15208.24,
+    "current": 1758.29,
+    "status": "standby",
+    "location": {
+      "lat": 47.55,
+      "lon": 33.1
+    },
+    "maintenance_hours": 6000,
+    "water_flow": 1403.88,
+    "water_level": 16.794,
+    "turbine_type": "kaplan"
+  },
+  {
+    "device_id": "HYDRO_DN_002",
+    "timestamp": "2026-11-10T00:00:00.000Z",
+    "power_output": 52.58,
+    "efficiency": 90.07,
+    "temperature": 12.17,
+    "voltage": 15227.79,
+    "current": 2098.32,
+    "status": "generating",
+    "location": {
+      "lat": 47.645,
+      "lon": 33.29
+    },
+    "maintenance_hours": 5750,
+    "water_flow": 1488.46,
+    "water_level": 16.958,
+    "turbine_type": "francis"
+  },
+  {
+    "device_id": "HYDRO_DN_003",
+    "timestamp": "2026-11-10T00:00:00.000Z",
+    "power_output": 61.32,
+    "efficiency": 90.15,
+    "temperature": 12.33,
+    "voltage": 15265.87,
+    "current": 2441.26,
+    "status": "generating",
+    "location": {
+      "lat": 47.74,
+      "lon": 33.48
+    },
+    "maintenance_hours": 5500,
+    "water_flow": 1561.86,
+    "water_level": 17.068,
+    "turbine_type": "pelton"
+  }
+]

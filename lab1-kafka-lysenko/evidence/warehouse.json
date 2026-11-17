@@ -1,0 +1,45 @@
+{
+  "engine": "SQLite",
+  "historical_days": 7,
+  "input_records": 302400,
+  "database_bytes": 39735296,
+  "total_seconds": 8.729202700000315,
+  "windows": [
+    {
+      "window_seconds": 30,
+      "input_records": 302400,
+      "aggregate_rows": 302400,
+      "row_reduction_pct": 0.0,
+      "query_seconds": 0.8298052999998617,
+      "modeled_mean_wait_seconds": 30.0,
+      "modeled_max_wait_seconds": 30
+    },
+    {
+      "window_seconds": 300,
+      "input_records": 302400,
+      "aggregate_rows": 30240,
+      "row_reduction_pct": 90.0,
+      "query_seconds": 0.4432419000004302,
+      "modeled_mean_wait_seconds": 165.0,
+      "modeled_max_wait_seconds": 300
+    },
+    {
+      "window_seconds": 900,
+      "input_records": 302400,
+      "aggregate_rows": 10080,
+      "row_reduction_pct": 96.66666666666667,
+      "query_seconds": 0.30334360000051674,
+      "modeled_mean_wait_seconds": 465.0,
+      "modeled_max_wait_seconds": 900
+    },
+    {
+      "window_seconds": 3600,
+      "input_records": 302400,
+      "aggregate_rows": 2520,
+      "row_reduction_pct": 99.16666666666667,
+      "query_seconds": 0.2992981999996118,
+      "modeled_mean_wait_seconds": 1815.0,
+      "modeled_max_wait_seconds": 3600
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+$ python lab.py producer-perf --topic hydro-json-cli-lysenko-1794940393 --num-records 5000 --payload-file C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\data\hydro-1000.jsonl --throughput 500 --producer-props bootstrap.servers=127.0.0.1:9092 batch.size=65536 linger.ms=10 compression.type=zstd
+Reading payloads from: C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\data\hydro-1000.jsonl
+Number of messages read: 1000
+2501 records sent, 499.1 records/sec (0.15 MB/sec), 7.2 ms avg latency, 338.0 ms max latency.
+5000 records sent, 499.001996 records/sec (0.15 MB/sec), 6.83 ms avg latency, 338.00 ms max latency, 7 ms 50th, 12 ms 95th, 13 ms 99th, 17 ms 99.9th.

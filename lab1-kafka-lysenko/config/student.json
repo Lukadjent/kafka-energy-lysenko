@@ -1,0 +1,13 @@
+{
+  "student": "Лисенко Лука Сергійович",
+  "group": "ТР-61МП",
+  "surname": "lysenko",
+  "list_number": 13,
+  "variant": 3,
+  "subvariant": "B",
+  "system": "Гідроелектростанції Дніпровського каскаду",
+  "bootstrap_servers": "127.0.0.1:9092",
+  "topic": "hydro-main-lysenko",
+  "consumer_group": "hydro-analytics-lysenko"
+}
+

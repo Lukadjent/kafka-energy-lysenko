@@ -1,0 +1,3 @@
+java EnergyBenchmark 065-codec-gzip-r1.config.json
+MEASUREMENT_START h3b-lysenko-1117182332-065
+MEASUREMENT_DONE C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\evidence\runs\065-codec-gzip-r1.json

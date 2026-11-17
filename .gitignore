@@ -6,4 +6,5 @@ tmp/
 *.pyc
 **/evidence/processed-*.jsonl
 **/evidence/resume-*.jsonl
+output/
 

@@ -1,0 +1,17 @@
+$ python lab.py configs --describe --entity-name h3b-lysenko-1117182332-076
+Dynamic configs for topic h3b-lysenko-1117182332-076 are:
+  retention.ms=7776000000 sensitive=false synonyms={DYNAMIC_TOPIC_CONFIG:retention.ms=7776000000}
+
+$ python lab.py configs --describe --entity-name h3b-lysenko-1117182332-085
+Dynamic configs for topic h3b-lysenko-1117182332-085 are:
+  retention.ms=2592000000 sensitive=false synonyms={DYNAMIC_TOPIC_CONFIG:retention.ms=2592000000}
+
+$ python lab.py configs --describe --entity-name h3b-lysenko-1117182332-098
+Dynamic configs for topic h3b-lysenko-1117182332-098 are:
+  retention.ms=604800000 sensitive=false synonyms={DYNAMIC_TOPIC_CONFIG:retention.ms=604800000}
+
+Topic: hydro-main-lysenko	TopicId: BecK0jxYSJ6dYIOTCT7biQ	PartitionCount: 4	ReplicationFactor: 1	Configs: compression.type=producer,min.insync.replicas=1,cleanup.policy=delete,segment.bytes=1073741824,retention.ms=2592000000,message.timestamp.type=CreateTime,segment.index.bytes=1048576
+	Topic: hydro-main-lysenko	Partition: 0	Leader: 0	Replicas: 0	Isr: 0
+	Topic: hydro-main-lysenko	Partition: 1	Leader: 0	Replicas: 0	Isr: 0
+	Topic: hydro-main-lysenko	Partition: 2	Leader: 0	Replicas: 0	Isr: 0
+	Topic: hydro-main-lysenko	Partition: 3	Leader: 0	Replicas: 0	Isr: 0

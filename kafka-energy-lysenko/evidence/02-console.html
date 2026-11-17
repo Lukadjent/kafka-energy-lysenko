@@ -1,0 +1,20 @@
+<!doctype html><html lang="uk"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Консольні producer і consumer | Kafka Lysenko</title><style>
+*{box-sizing:border-box}body{margin:0;padding:26px 32px;background:#f3f5f8;color:#101828;font-family:Arial,sans-serif}
+header{margin-bottom:22px}h1{font-size:25px;margin:0 0 10px}header p{margin:5px 0;font-size:15px;color:#344054}
+section{background:white;border:1px solid #d0d5dd;border-radius:8px;margin:15px 0;padding:18px 22px}
+h2{font-size:17px;margin:0 0 8px}section p{font-size:13px;color:#475467;margin:5px 0 12px}a{color:#175cd3}
+pre{margin:0;font:14px/1.6 Consolas,'Courier New',monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+</style><header><h1>Консольні producer і consumer</h1><p>Lysenko Luka · ТР-61МП · kafka-energy-lysenko</p><p>Знімок переглядача фактичних логів виконання · Kafka 3.7.1 + ZooKeeper · run 20261117T173810</p></header><section><h2>02-console-producer.txt</h2><p>Повний вивід команди без змін. <a href="02-console-producer.txt">Повний журнал</a></p><pre>PROJECT=kafka-energy-lysenko
+STUDENT=Lysenko Luka GROUP=ТР-61МП
+$ python lab.py console-producer --bootstrap-server 127.0.0.1:9092 --topic power-station-data-lysenko --property parse.key=true --property key.separator=| --producer-property client.id=console-producer-lysenko --producer-property acks=all
+STDIN (sent to actual Kafka console producer):
+lysenko-1|Lysenko 20261117T173810: Київська ТЕС: 1200 МВт
+lysenko-1|Lysenko 20261117T173810: Дніпровська ГЕС: 800 МВт
+lysenko-1|Lysenko 20261117T173810: Сонячна ферма: 150 МВт
+</pre></section><section><h2>03-console-consumer.txt</h2><p>Повний вивід команди без змін. <a href="03-console-consumer.txt">Повний журнал</a></p><pre>PROJECT=kafka-energy-lysenko
+STUDENT=Lysenko Luka GROUP=ТР-61МП
+$ python lab.py console-consumer --bootstrap-server 127.0.0.1:9092 --topic power-station-data-lysenko --partition 0 --offset 9 --max-messages 3 --timeout-ms 15000 --consumer-property client.id=console-consumer-lysenko
+Lysenko 20261117T173810: Київська ТЕС: 1200 МВт
+Lysenko 20261117T173810: Дніпровська ГЕС: 800 МВт
+Lysenko 20261117T173810: Сонячна ферма: 150 МВт
+Processed a total of 3 messages</pre></section></html>

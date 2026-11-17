@@ -1,0 +1,7 @@
+PROJECT=kafka-energy-lysenko
+STUDENT=Lysenko Luka GROUP=ТР-61МП
+$ python lab.py console-consumer --bootstrap-server 127.0.0.1:9092 --topic power-station-data-lysenko --partition 0 --offset 9 --max-messages 3 --timeout-ms 15000 --consumer-property client.id=console-consumer-lysenko
+Lysenko 20261117T173810: Київська ТЕС: 1200 МВт
+Lysenko 20261117T173810: Дніпровська ГЕС: 800 МВт
+Lysenko 20261117T173810: Сонячна ферма: 150 МВт
+Processed a total of 3 messages

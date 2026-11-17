@@ -1,0 +1,44 @@
+$ python scripts/simple_producer_lysenko.py --count 20 --interval 0.02 --run-id 20261117T173810 --demo-alerts
+PROJECT=kafka-energy-lysenko
+PRODUCER=producer-lysenko TOPIC=power-station-data-lysenko RUN=20261117T173810
+SENT #1 Київська ТЕС 1018.68 MW partition=2 offset=10 key=lysenko-kyiv-tpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 1, "station_id": "kyiv-tpp", "station_name": "Київська ТЕС", "station_type": "thermal", "timestamp": "2026-11-17T17:38:17.579+00:00", "power_output_mw": 1018.68, "voltage_kv": 220.2, "frequency_hz": 50.06, "efficiency_percent": 83.9, "kafka_version": "3.7.1"}
+SENT #2 Дніпровська ГЕС 651.35 MW partition=0 offset=13 key=lysenko-dnipro-hpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 2, "station_id": "dnipro-hpp", "station_name": "Дніпровська ГЕС", "station_type": "hydro", "timestamp": "2026-11-17T17:38:18.215+00:00", "power_output_mw": 651.35, "voltage_kv": 220.8, "frequency_hz": 50.0, "efficiency_percent": 84.2, "kafka_version": "3.7.1"}
+SENT #3 Сонячна ферма 0.0 MW partition=1 offset=5 key=lysenko-solar-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 3, "station_id": "solar-farm", "station_name": "Сонячна ферма", "station_type": "solar", "timestamp": "2026-11-17T17:38:18.351+00:00", "power_output_mw": 0.0, "voltage_kv": 219.6, "frequency_hz": 49.97, "efficiency_percent": 83.0, "kafka_version": "3.7.1"}
+SENT #4 Вітряна ферма 124.74 MW partition=2 offset=11 key=lysenko-wind-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 4, "station_id": "wind-farm", "station_name": "Вітряна ферма", "station_type": "wind", "timestamp": "2026-11-17T17:38:18.521+00:00", "power_output_mw": 124.74, "voltage_kv": 221.6, "frequency_hz": 50.04, "efficiency_percent": 85.8, "kafka_version": "3.7.1"}
+SENT #5 Київська ТЕС 981.01 MW partition=2 offset=12 key=lysenko-kyiv-tpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 5, "station_id": "kyiv-tpp", "station_name": "Київська ТЕС", "station_type": "thermal", "timestamp": "2026-11-17T17:38:18.647+00:00", "power_output_mw": 981.01, "voltage_kv": 223.5, "frequency_hz": 50.3, "efficiency_percent": 72.0, "kafka_version": "3.7.1"}
+SENT #6 Дніпровська ГЕС 647.44 MW partition=0 offset=14 key=lysenko-dnipro-hpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 6, "station_id": "dnipro-hpp", "station_name": "Дніпровська ГЕС", "station_type": "hydro", "timestamp": "2026-11-17T17:38:18.770+00:00", "power_output_mw": 647.44, "voltage_kv": 219.2, "frequency_hz": 50.1, "efficiency_percent": 84.0, "kafka_version": "3.7.1"}
+SENT #7 Сонячна ферма 0.0 MW partition=1 offset=6 key=lysenko-solar-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 7, "station_id": "solar-farm", "station_name": "Сонячна ферма", "station_type": "solar", "timestamp": "2026-11-17T17:38:18.895+00:00", "power_output_mw": 0.0, "voltage_kv": 221.9, "frequency_hz": 50.02, "efficiency_percent": 86.6, "kafka_version": "3.7.1"}
+SENT #8 Вітряна ферма 123.24 MW partition=2 offset=13 key=lysenko-wind-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 8, "station_id": "wind-farm", "station_name": "Вітряна ферма", "station_type": "wind", "timestamp": "2026-11-17T17:38:19.023+00:00", "power_output_mw": 123.24, "voltage_kv": 218.7, "frequency_hz": 50.04, "efficiency_percent": 83.6, "kafka_version": "3.7.1"}
+SENT #9 Київська ТЕС 997.85 MW partition=2 offset=14 key=lysenko-kyiv-tpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 9, "station_id": "kyiv-tpp", "station_name": "Київська ТЕС", "station_type": "thermal", "timestamp": "2026-11-17T17:38:19.160+00:00", "power_output_mw": 997.85, "voltage_kv": 218.5, "frequency_hz": 49.91, "efficiency_percent": 84.2, "kafka_version": "3.7.1"}
+SENT #10 Дніпровська ГЕС 602.25 MW partition=0 offset=15 key=lysenko-dnipro-hpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 10, "station_id": "dnipro-hpp", "station_name": "Дніпровська ГЕС", "station_type": "hydro", "timestamp": "2026-11-17T17:38:19.285+00:00", "power_output_mw": 602.25, "voltage_kv": 223.5, "frequency_hz": 50.3, "efficiency_percent": 72.0, "kafka_version": "3.7.1"}
+SENT #11 Сонячна ферма 0.0 MW partition=1 offset=7 key=lysenko-solar-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 11, "station_id": "solar-farm", "station_name": "Сонячна ферма", "station_type": "solar", "timestamp": "2026-11-17T17:38:19.412+00:00", "power_output_mw": 0.0, "voltage_kv": 219.7, "frequency_hz": 49.92, "efficiency_percent": 84.1, "kafka_version": "3.7.1"}
+SENT #12 Вітряна ферма 0 MW partition=2 offset=15 key=lysenko-wind-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 12, "station_id": "wind-farm", "station_name": "Вітряна ферма", "station_type": "wind", "timestamp": "2026-11-17T17:38:19.550+00:00", "power_output_mw": 0, "voltage_kv": 218.9, "frequency_hz": 50.02, "efficiency_percent": 85.7, "kafka_version": "3.7.1"}
+SENT #13 Київська ТЕС 907.53 MW partition=2 offset=16 key=lysenko-kyiv-tpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 13, "station_id": "kyiv-tpp", "station_name": "Київська ТЕС", "station_type": "thermal", "timestamp": "2026-11-17T17:38:19.673+00:00", "power_output_mw": 907.53, "voltage_kv": 220.0, "frequency_hz": 49.98, "efficiency_percent": 84.4, "kafka_version": "3.7.1"}
+SENT #14 Дніпровська ГЕС 621.6 MW partition=0 offset=16 key=lysenko-dnipro-hpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 14, "station_id": "dnipro-hpp", "station_name": "Дніпровська ГЕС", "station_type": "hydro", "timestamp": "2026-11-17T17:38:19.801+00:00", "power_output_mw": 621.6, "voltage_kv": 219.6, "frequency_hz": 49.92, "efficiency_percent": 86.1, "kafka_version": "3.7.1"}
+SENT #15 Сонячна ферма 0.0 MW partition=1 offset=8 key=lysenko-solar-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 15, "station_id": "solar-farm", "station_name": "Сонячна ферма", "station_type": "solar", "timestamp": "2026-11-17T17:38:19.923+00:00", "power_output_mw": 0.0, "voltage_kv": 223.5, "frequency_hz": 50.3, "efficiency_percent": 72.0, "kafka_version": "3.7.1"}
+SENT #16 Вітряна ферма 200.0 MW partition=2 offset=17 key=lysenko-wind-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 16, "station_id": "wind-farm", "station_name": "Вітряна ферма", "station_type": "wind", "timestamp": "2026-11-17T17:38:20.049+00:00", "power_output_mw": 200.0, "voltage_kv": 219.5, "frequency_hz": 49.94, "efficiency_percent": 84.2, "kafka_version": "3.7.1"}
+SENT #17 Київська ТЕС 1119.06 MW partition=2 offset=18 key=lysenko-kyiv-tpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 17, "station_id": "kyiv-tpp", "station_name": "Київська ТЕС", "station_type": "thermal", "timestamp": "2026-11-17T17:38:20.172+00:00", "power_output_mw": 1119.06, "voltage_kv": 218.6, "frequency_hz": 50.05, "efficiency_percent": 87.6, "kafka_version": "3.7.1"}
+SENT #18 Дніпровська ГЕС 736.31 MW partition=0 offset=17 key=lysenko-dnipro-hpp
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 18, "station_id": "dnipro-hpp", "station_name": "Дніпровська ГЕС", "station_type": "hydro", "timestamp": "2026-11-17T17:38:20.295+00:00", "power_output_mw": 736.31, "voltage_kv": 219.9, "frequency_hz": 49.99, "efficiency_percent": 87.2, "kafka_version": "3.7.1"}
+SENT #19 Сонячна ферма 0.0 MW partition=1 offset=9 key=lysenko-solar-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 19, "station_id": "solar-farm", "station_name": "Сонячна ферма", "station_type": "solar", "timestamp": "2026-11-17T17:38:20.423+00:00", "power_output_mw": 0.0, "voltage_kv": 220.8, "frequency_hz": 50.06, "efficiency_percent": 83.1, "kafka_version": "3.7.1"}
+SENT #20 Вітряна ферма 115.6 MW partition=2 offset=19 key=lysenko-wind-farm
+{"schema_version": 1, "student": "lysenko", "run_id": "20261117T173810", "sequence": 20, "station_id": "wind-farm", "station_name": "Вітряна ферма", "station_type": "wind", "timestamp": "2026-11-17T17:38:20.546+00:00", "power_output_mw": 115.6, "voltage_kv": 223.5, "frequency_hz": 50.3, "efficiency_percent": 72.0, "kafka_version": "3.7.1"}
+PRODUCER_SUMMARY sent=20 run_id=20261117T173810

@@ -1,0 +1,4 @@
+$ python scripts/simple_consumer_lysenko.py --group energy-monitor-lysenko-verify-20261117T173810 --idle-timeout 4 --output C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\kafka-energy-lysenko\evidence\resume-20261117T173810.jsonl
+PROJECT=kafka-energy-lysenko
+CONSUMER=consumer-lysenko TOPIC=power-station-data-lysenko GROUP=energy-monitor-lysenko-verify-20261117T173810
+CONSUMER_SUMMARY {"processed": 0, "text": 0, "rejected": 0, "warnings": 0, "ignored": 0}

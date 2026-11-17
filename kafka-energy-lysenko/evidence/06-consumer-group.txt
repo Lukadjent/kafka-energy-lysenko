@@ -1,0 +1,10 @@
+PROJECT=kafka-energy-lysenko
+STUDENT=Lysenko Luka GROUP=ТР-61МП
+$ python lab.py groups --bootstrap-server 127.0.0.1:9092 --describe --group energy-monitor-lysenko-verify-20261117T173810
+
+GROUP                                         TOPIC                      PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID     HOST            CLIENT-ID
+energy-monitor-lysenko-verify-20261117T173810 power-station-data-lysenko 0          18              18              0               -               -               -
+energy-monitor-lysenko-verify-20261117T173810 power-station-data-lysenko 1          10              10              0               -               -               -
+energy-monitor-lysenko-verify-20261117T173810 power-station-data-lysenko 2          20              20              0               -               -               -
+
+Consumer group 'energy-monitor-lysenko-verify-20261117T173810' has no active members.

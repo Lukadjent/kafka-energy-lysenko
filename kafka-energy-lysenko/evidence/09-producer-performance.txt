@@ -1,0 +1,5 @@
+PROJECT=kafka-energy-lysenko
+STUDENT=Lysenko Luka GROUP=ТР-61МП
+$ python lab.py producer-perf --topic benchmark-lysenko-20261117t173810 --num-records 10000 --record-size 1024 --throughput 1000 --producer-props bootstrap.servers=127.0.0.1:9092 compression.type=gzip client.id=perf-producer-lysenko
+4999 records sent, 999.8 records/sec (0.98 MB/sec), 0.8 ms avg latency, 218.0 ms max latency.
+10000 records sent, 999.100809 records/sec (0.98 MB/sec), 0.48 ms avg latency, 218.00 ms max latency, 0 ms 50th, 1 ms 95th, 10 ms 99th, 17 ms 99.9th.

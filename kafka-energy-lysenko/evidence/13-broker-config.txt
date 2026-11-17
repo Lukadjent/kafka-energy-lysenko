@@ -1,0 +1,4 @@
+PROJECT=kafka-energy-lysenko
+STUDENT=Lysenko Luka GROUP=ТР-61МП
+$ python lab.py configs --bootstrap-server 127.0.0.1:9092 --entity-type brokers --entity-name 0 --describe
+Dynamic configs for broker 0 are:

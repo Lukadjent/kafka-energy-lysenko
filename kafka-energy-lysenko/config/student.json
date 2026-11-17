@@ -1,0 +1,9 @@
+{
+  "surname": "lysenko",
+  "student": "Lysenko Luka",
+  "group": "ТР-61МП",
+  "bootstrap_servers": "127.0.0.1:9092",
+  "topic": "power-station-data-lysenko",
+  "consumer_group": "energy-monitor-lysenko"
+}
+

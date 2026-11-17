@@ -1,0 +1,3 @@
+$ python lab.py stop
+STOPPED kafka (JVM shutdown hooks)
+STOPPED zookeeper (JVM shutdown hooks)

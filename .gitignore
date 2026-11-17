@@ -1,0 +1,9 @@
+tmp/
+**/.runtime/
+**/data/
+**/logs/
+**/__pycache__/
+*.pyc
+**/evidence/processed-*.jsonl
+**/evidence/resume-*.jsonl
+

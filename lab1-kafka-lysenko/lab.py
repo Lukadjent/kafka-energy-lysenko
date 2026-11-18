@@ -125,6 +125,22 @@ def start() -> None:
             STATE.write_text(json.dumps(services), encoding="utf-8")
             wait_port(port, True, process=process)
             print(f"STARTED {name} pid={process.pid} 127.0.0.1:{port}", flush=True)
+            if name == "zookeeper":
+                # A restored ZooKeeper snapshot can still contain the previous
+                # broker's ephemeral registration until its session expires.
+                # Observe that registration instead of starting a second owner.
+                deadline = time.monotonic() + 60
+                while True:
+                    probe = subprocess.run(java_command("org.apache.zookeeper.ZooKeeperMain",
+                        ["-server", "127.0.0.1:2181", "stat", "/brokers/ids/0"]),
+                        cwd=ROOT, capture_output=True, encoding="utf-8", errors="replace", timeout=15)
+                    message = probe.stdout + probe.stderr
+                    if "Node does not exist: /brokers/ids/0" in message:
+                        break
+                    if "ephemeralOwner" not in message or time.monotonic() > deadline:
+                        raise RuntimeError("Cannot verify expired broker registration: " + message[-1500:])
+                    print("Waiting for previous ZooKeeper broker session to expire", flush=True)
+                    time.sleep(1)
         # A listening socket alone does not prove the broker is ready for metadata requests.
         run_tool("topics", ["--bootstrap-server", CONFIG["bootstrap_servers"], "--list"], capture_output=True, timeout=60)
         print("Kafka 3.7.1 + ZooKeeper ready", flush=True)

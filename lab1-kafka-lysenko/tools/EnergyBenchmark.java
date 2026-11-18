@@ -45,7 +45,7 @@ public class EnergyBenchmark {
             props.put("key.serializer", ByteArraySerializer.class.getName());
             props.put("value.serializer", ByteArraySerializer.class.getName());
             props.put("acks", "all");
-            props.put("enable.idempotence", "false");
+            props.put("enable.idempotence", String.valueOf(config.getOrDefault("enable_idempotence", false)));
             props.put("retries", "3");
             props.put("batch.size", String.valueOf(config.getOrDefault("batch_size", 65536)));
             props.put("linger.ms", String.valueOf(config.getOrDefault("linger_ms", 10)));
@@ -225,8 +225,15 @@ public class EnergyBenchmark {
             output.put("records_per_request_avg",metric(producer,"records-per-request-avg"));
             output.put("bufferpool_wait_ratio",metric(producer,"bufferpool-wait-ratio"));
             output.put("partition_counts",Arrays.stream(distribution).mapToLong(LongAdder::sum).toArray());
+            output.put("measurement_scope", Map.of(
+                "timers_and_byte_deltas", "measured records only; warmup excluded",
+                "producer_average_metrics", "same producer metric window; includes warmup when configured",
+                "delivery", "normal operation only; no crash or retry fault injection"));
             Path destination = Path.of(String.valueOf(config.get("output_file")));
             JSON.writerWithDefaultPrettyPrinter().writeValue(destination.toFile(),output);
+            // Emit the actual measurement at execution time, so every reported value
+            // can be checked against the original key-aware performance-test stdout.
+            System.out.println("MEASUREMENT_RESULT " + JSON.writeValueAsString(output));
             System.out.println("MEASUREMENT_DONE " + destination);
         } finally {
             executor.shutdownNow();

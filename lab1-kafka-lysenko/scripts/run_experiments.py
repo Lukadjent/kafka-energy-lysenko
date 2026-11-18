@@ -18,7 +18,7 @@ import psutil
 from kafka.admin import KafkaAdminClient, NewTopic
 
 EVIDENCE = ROOT / "evidence"
-RESULTS = EVIDENCE / "runs"
+RESULTS = EVIDENCE / "runs" / "lecture-review"
 
 
 def process_snapshot(pid):
@@ -82,6 +82,8 @@ def run_trial(admin, spec, tag, index, services):
             resources[item["name"]]["peak_rss_bytes"] = peaks[item["name"]]
     result["resources_trial_including_warmup"] = resources
     result_path.write_text(json.dumps(result, indent=2), encoding="utf-8")
+    with (RESULTS / f"{index:03d}-{label}.txt").open("a", encoding="utf-8") as output:
+        output.write("RESOURCE_RESULT " + json.dumps(resources) + "\n")
     return result
 
 
@@ -116,6 +118,14 @@ def plan():
         specs.append(dict(label=f"linger-extra-{linger}", family="linger-extra", linger_ms=linger))
     for days in (7, 30, 90):
         specs.append(dict(label=f"retention-{days}d", family="retention", retention_ms=days * 86400000, compression="zstd", records=20000))
+    # Verify the complete operational candidate, including the delivery settings
+    # recommended in lecture 4, instead of combining unrelated table rows.
+    for rate in (-1, 500):
+        for repeat in range(3):
+            specs.append(dict(label=f"recommended-{rate}-r{repeat}", family="recommended",
+                partitions=4, strategy="device", batch_size=65536, linger_ms=10,
+                compression="lz4", enable_idempotence=True, max_in_flight=5,
+                records=5000 if rate == 500 else 50000, throughput=rate, repeat=repeat))
     random.Random(13).shuffle(specs)
     return specs
 

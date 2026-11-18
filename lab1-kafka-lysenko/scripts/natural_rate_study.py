@@ -22,7 +22,7 @@ def main():
     trials.append({"label": "archive-window-300", "family": "archive-window", "records": 150,
         "warmup_records": 0, "throughput": -1, "batch_size": 524288, "linger_ms": 100,
         "compression": "zstd", "strategy": "turbine"})
-    for index, spec in enumerate(trials, 102):
+    for index, spec in enumerate(trials, len(results) + 1):
         print(f"NATURAL/ARCHIVE START {spec['label']}", flush=True)
         result = run_trial(admin, spec, tag, index, services)
         results.append(result)

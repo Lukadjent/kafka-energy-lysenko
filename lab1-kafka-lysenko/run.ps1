@@ -31,8 +31,8 @@ try {
         'data' { & $pythonPath @pythonPrefix -X utf8 scripts/generate_data.py }
         'experiments' { & $pythonPath @pythonPrefix -X utf8 scripts/run_experiments.py }
         'load' { & $pythonPath @pythonPrefix -X utf8 scripts/run_load_scenarios.py }
-        'serialization' { & $pythonPath @pythonPrefix -X utf8 scripts/serialization_study.py }
-        'warehouse' { & $pythonPath @pythonPrefix -X utf8 scripts/warehouse_study.py }
+        'serialization' { & $pythonPath @pythonPrefix -X utf8 scripts/capture_step.py serialization }
+        'warehouse' { & $pythonPath @pythonPrefix -X utf8 scripts/capture_step.py warehouse }
         'natural' { & $pythonPath @pythonPrefix -X utf8 scripts/natural_rate_study.py }
         'analyze' { & $pythonPath @pythonPrefix -X utf8 scripts/analyze_results.py }
         'validate' { & $pythonPath @pythonPrefix -X utf8 scripts/validate_evidence.py }

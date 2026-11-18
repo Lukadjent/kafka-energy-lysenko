@@ -5,28 +5,28 @@
       "mean_bytes": 314.373,
       "min_bytes": 307,
       "max_bytes": 317,
-      "encode_us_median": 6.0831800000000005,
-      "decode_us_median": 4.95648,
+      "encode_us_median": 6.05593,
+      "decode_us_median": 4.95214,
       "timings": [
         {
-          "encode_us": 6.06917,
-          "decode_us": 5.04848
+          "encode_us": 6.0788,
+          "decode_us": 4.95214
         },
         {
-          "encode_us": 6.11999,
-          "decode_us": 4.983770000000001
+          "encode_us": 6.03642,
+          "decode_us": 4.92124
         },
         {
-          "encode_us": 6.0831800000000005,
-          "decode_us": 4.95441
+          "encode_us": 6.05593,
+          "decode_us": 4.85825
         },
         {
-          "encode_us": 6.1033599999999995,
-          "decode_us": 4.9341099999999996
+          "encode_us": 6.07542,
+          "decode_us": 4.96749
         },
         {
-          "encode_us": 6.04763,
-          "decode_us": 4.95648
+          "encode_us": 6.04066,
+          "decode_us": 4.96314
         }
       ],
       "round_trip_records": 1000
@@ -36,28 +36,28 @@
       "mean_bytes": 135.306,
       "min_bytes": 132,
       "max_bytes": 137,
-      "encode_us_median": 45.84548,
-      "decode_us_median": 23.72888,
+      "encode_us_median": 44.85192,
+      "decode_us_median": 22.95912,
       "timings": [
         {
-          "encode_us": 46.183339999999994,
-          "decode_us": 23.44655
+          "encode_us": 45.36741000000001,
+          "decode_us": 22.84959
         },
         {
-          "encode_us": 45.863260000000004,
-          "decode_us": 23.86906
+          "encode_us": 44.85192,
+          "decode_us": 23.77448
         },
         {
-          "encode_us": 45.84548,
-          "decode_us": 23.851490000000002
+          "encode_us": 45.07111,
+          "decode_us": 22.92531
         },
         {
-          "encode_us": 45.67059,
-          "decode_us": 23.50294
+          "encode_us": 44.240480000000005,
+          "decode_us": 23.09241
         },
         {
-          "encode_us": 45.63527,
-          "decode_us": 23.72888
+          "encode_us": 44.77324,
+          "decode_us": 22.95912
         }
       ],
       "round_trip_records": 1000
@@ -67,28 +67,28 @@
       "mean_bytes": 146.306,
       "min_bytes": 143,
       "max_bytes": 148,
-      "encode_us_median": 4.36012,
-      "decode_us_median": 2.54911,
+      "encode_us_median": 4.34339,
+      "decode_us_median": 2.5665500000000003,
       "timings": [
         {
-          "encode_us": 4.33198,
-          "decode_us": 2.54911
+          "encode_us": 4.24941,
+          "decode_us": 2.50267
         },
         {
-          "encode_us": 4.33662,
-          "decode_us": 2.54296
+          "encode_us": 4.34382,
+          "decode_us": 2.61004
         },
         {
-          "encode_us": 4.36436,
-          "decode_us": 2.55895
+          "encode_us": 4.33894,
+          "decode_us": 2.5665500000000003
         },
         {
-          "encode_us": 4.3662,
-          "decode_us": 2.5264699999999998
+          "encode_us": 4.34339,
+          "decode_us": 2.5924099999999997
         },
         {
-          "encode_us": 4.36012,
-          "decode_us": 2.56327
+          "encode_us": 4.34412,
+          "decode_us": 2.54635
         }
       ],
       "round_trip_records": 1000
@@ -97,10 +97,23 @@
   "registry": {
     "implementation": "educational local REST registry; not Confluent Schema Registry",
     "schema_id": 1,
-    "cold_lookup_ms": 1.0306,
+    "cold_lookup_ms": 0.9351,
     "url": "http://127.0.0.1:8081",
     "wire_header_bytes": 5,
     "kafka_round_trip": 10,
-    "topic": "hydro-avro-lysenko-1794940409"
+    "topic": "hydro-avro-lysenko-1795001160",
+    "compatibility": {
+      "mode": "BACKWARD against latest subject version",
+      "optional_field_with_default_accepted_id": 2,
+      "incompatible_type_rejected_http": 409,
+      "rejection": {
+        "error": "Incompatible Avro schema",
+        "mode": "BACKWARD",
+        "messages": [
+          "reader type: string not compatible with writer type: double"
+        ]
+      },
+      "new_reader_reads_old_payload_with_default": true
+    }
   }
 }

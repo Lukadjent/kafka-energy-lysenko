@@ -2,15 +2,15 @@
   "engine": "SQLite",
   "historical_days": 7,
   "input_records": 302400,
-  "database_bytes": 39735296,
-  "total_seconds": 8.729202700000315,
+  "database_bytes": 44400640,
+  "total_seconds": 10.28485769999952,
   "windows": [
     {
       "window_seconds": 30,
       "input_records": 302400,
       "aggregate_rows": 302400,
       "row_reduction_pct": 0.0,
-      "query_seconds": 0.8298052999998617,
+      "query_seconds": 1.6704508000002534,
       "modeled_mean_wait_seconds": 30.0,
       "modeled_max_wait_seconds": 30
     },
@@ -19,7 +19,7 @@
       "input_records": 302400,
       "aggregate_rows": 30240,
       "row_reduction_pct": 90.0,
-      "query_seconds": 0.4432419000004302,
+      "query_seconds": 0.4519923000007111,
       "modeled_mean_wait_seconds": 165.0,
       "modeled_max_wait_seconds": 300
     },
@@ -28,7 +28,7 @@
       "input_records": 302400,
       "aggregate_rows": 10080,
       "row_reduction_pct": 96.66666666666667,
-      "query_seconds": 0.30334360000051674,
+      "query_seconds": 0.3580452999995032,
       "modeled_mean_wait_seconds": 465.0,
       "modeled_max_wait_seconds": 900
     },
@@ -37,9 +37,20 @@
       "input_records": 302400,
       "aggregate_rows": 2520,
       "row_reduction_pct": 99.16666666666667,
-      "query_seconds": 0.2992981999996118,
+      "query_seconds": 0.33824580000054993,
       "modeled_mean_wait_seconds": 1815.0,
       "modeled_max_wait_seconds": 3600
     }
-  ]
+  ],
+  "rollup_contract": {
+    "stored_statistics": [
+      "cnt",
+      "sum",
+      "min",
+      "max"
+    ],
+    "daily_groups_verified_against_raw": 105,
+    "weighted_mean": "SUM(sum_power)/SUM(cnt)",
+    "all_daily_count_sum_min_max_match": true
+  }
 }

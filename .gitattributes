@@ -1,0 +1,3 @@
+# Preserve raw evidence bytes and their SHA-256 across platforms.
+lab1-kafka-lysenko/evidence/** -text
+*.pdf binary

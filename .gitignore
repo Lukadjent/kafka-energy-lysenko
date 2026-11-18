@@ -7,4 +7,5 @@ tmp/
 **/evidence/processed-*.jsonl
 **/evidence/resume-*.jsonl
 output/
+course-materials/
 

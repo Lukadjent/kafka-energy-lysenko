@@ -44,13 +44,13 @@ def group_results(results, family, keys):
 def main():
     configure_stdout()
     results = json.loads((EVIDENCE / "results.json").read_text(encoding="utf-8"))
-    assert len(results) == 104, len(results)
+    assert len(results) == 110, len(results)
     assert all(item["received"] == item["records"] and not item["errors"] for item in results)
     FIGURES.mkdir(exist_ok=True)
     families = {"batch": ("batch_size", "linger_ms"), "rate500": ("batch_size", "linger_ms"),
         "compression": ("compression",), "partition": ("partitions",), "strategy": ("strategy",),
         "analytics": ("batch_size", "linger_ms"), "buffer": ("buffer_memory",), "inflight": ("max_in_flight",),
-        "linger-extra": ("linger_ms",), "retention": ("retention_ms",), "natural": ("compression",), "archive-window": ("compression",)}
+        "linger-extra": ("linger_ms",), "retention": ("retention_ms",), "natural": ("compression",), "archive-window": ("compression",), "recommended": ("throughput",)}
     summary = {family: group_results(results, family, keys) for family, keys in families.items()}
     none = next(item for item in summary["compression"] if item["compression"] == "none")
     for row in summary["compression"]:

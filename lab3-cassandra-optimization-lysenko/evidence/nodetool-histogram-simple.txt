@@ -1,0 +1,11 @@
+energy_l3_lysenko/simple histograms
+Percentile      Read Latency     Write Latency          SSTables    Partition Size        Cell Count
+                    (micros)          (micros)                             (bytes)                  
+50%                     0,00             88,15              0,00          12108970           1131752
+75%                     0,00            182,79              0,00          12108970           1131752
+95%                     0,00            654,95              0,00          12108970           1131752
+98%                     0,00            943,13              0,00          12108970           1131752
+99%                     0,00            943,13              0,00          12108970           1131752
+Min                     0,00             51,01              0,00           2816160            263211
+Max                     0,00            943,13              0,00          12108970           1131752
+

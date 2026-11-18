@@ -1,0 +1,52 @@
+apiVersion: 1
+groups:
+- folder: Lysenko 3B
+  interval: 10s
+  name: hydro-grafana
+  orgId: 1
+  rules:
+  - annotations:
+      summary: Local laboratory test; production Prometheus rule retains 2h
+    condition: B
+    data:
+    - datasourceUid: hydro-prom
+      model:
+        expr: hydro_efficiency_percent
+        instant: true
+        intervalMs: 1000
+        maxDataPoints: 43200
+        range: false
+        refId: A
+      refId: A
+      relativeTimeRange:
+        from: 60
+        to: 0
+    - datasourceUid: __expr__
+      model:
+        conditions:
+        - evaluator:
+            params:
+            - 88
+            type: lt
+          operator:
+            type: and
+          query:
+            params:
+            - B
+          reducer:
+            type: last
+          type: query
+        expression: A
+        refId: B
+        type: threshold
+      refId: B
+      relativeTimeRange:
+        from: 0
+        to: 0
+    execErrState: Error
+    for: 15s
+    labels:
+      profile: accelerated-e2e
+    noDataState: NoData
+    title: 'Hydro efficiency: accelerated 15s lab test'
+    uid: hydro-low-eff-test

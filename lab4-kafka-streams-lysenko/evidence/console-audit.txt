@@ -1,0 +1,14 @@
+COMMAND ["C:\\Users\\Luka\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe", "-u", "C:\\Users\\Luka\\Documents\\ChatGPT\\\u041f\u0440\u043e\u0435\u043a\u0442\u0443\u0432\u0430\u043d\u043d\u044f \u0441\u0438\u0441\u0442\u0435\u043c \u0437 \u0440\u043e\u0437\u043f\u043e\u0434\u0456\u043b\u0435\u043d\u0438\u043c\u0438 \u0431\u0430\u0437\u0430\u043c\u0438 \u0434\u0430\u043d\u043d\u0438\u0445\\lab4-kafka-streams-lysenko\\run_lab.py", "--phase", "audit"]
+DELIVERY AUDIT {"mode": "at_most_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_most_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_most_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_most_once", "fault": true, "input": 1000, "committed_output": 900, "uncommitted_output": 900, "missing": 100, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_least_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_least_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_least_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "at_least_once", "fault": true, "input": 1000, "committed_output": 1100, "uncommitted_output": 1100, "missing": 0, "duplicates": 100}
+DELIVERY AUDIT {"mode": "exactly_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "exactly_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "exactly_once", "fault": false, "input": 1000, "committed_output": 1000, "uncommitted_output": 1000, "missing": 0, "duplicates": 0}
+DELIVERY AUDIT {"mode": "exactly_once", "fault": true, "input": 1000, "committed_output": 1000, "uncommitted_output": 1100, "missing": 0, "duplicates": 0}
+LAB4 PHASE PASS audit

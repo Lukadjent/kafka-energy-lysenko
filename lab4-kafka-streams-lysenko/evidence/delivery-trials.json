@@ -1,0 +1,361 @@
+[
+  {
+    "name": "delivery-at_most_once-0-0190569900",
+    "mode": "at_most_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 1.6184596000002784,
+    "timing": {
+      "rows": 1000,
+      "seconds": 1.4350868,
+      "mode": "at_most_once",
+      "batch_ms": [
+        25.9483,
+        4.7966,
+        8.9684,
+        4.4159,
+        4.3931,
+        4.0775,
+        3.8535,
+        3.532,
+        3.3198,
+        3.2969
+      ]
+    },
+    "prefix": "l4-lysenko-delivery-at_most_once-0-0190569900"
+  },
+  {
+    "name": "delivery-at_most_once-1-2236059900",
+    "mode": "at_most_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 1.8278162999995402,
+    "timing": {
+      "seconds": 1.6403644,
+      "rows": 1000,
+      "batch_ms": [
+        23.9776,
+        4.4933,
+        7.8449,
+        3.6923,
+        3.2348,
+        3.1623,
+        3.1464,
+        3.2652,
+        3.1947,
+        2.6138
+      ],
+      "mode": "at_most_once"
+    },
+    "prefix": "l4-lysenko-delivery-at_most_once-1-2236059900"
+  },
+  {
+    "name": "delivery-at_most_once-2-4312583300",
+    "mode": "at_most_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 1.6136260000002949,
+    "timing": {
+      "batch_ms": [
+        21.6596,
+        5.1594,
+        4.3432,
+        3.8185,
+        4.1056,
+        4.052,
+        4.0644,
+        3.6297,
+        4.6302,
+        2.658
+      ],
+      "mode": "at_most_once",
+      "seconds": 1.4317653,
+      "rows": 1000
+    },
+    "prefix": "l4-lysenko-delivery-at_most_once-2-4312583300"
+  },
+  {
+    "name": "delivery-at_most_once-0-crash-6178809000",
+    "mode": "at_most_once",
+    "fault": true,
+    "restarts": 1,
+    "input": 1000,
+    "committed_output": 900,
+    "uncommitted_output": 900,
+    "missing": 100,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 46.87935629999993,
+    "timing": {
+      "seconds": 45.0637798,
+      "rows": 900,
+      "batch_ms": [
+        23.7886,
+        4.2009,
+        4.2151,
+        3.534,
+        3.1816,
+        3.0856,
+        2.721,
+        3.4145,
+        2.9535
+      ],
+      "mode": "at_most_once"
+    },
+    "prefix": "l4-lysenko-delivery-at_most_once-0-crash-6178809000"
+  },
+  {
+    "name": "delivery-at_least_once-0-4361580000",
+    "mode": "at_least_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 1.8475956999991467,
+    "timing": {
+      "mode": "at_least_once",
+      "batch_ms": [
+        27.174,
+        5.0375,
+        5.0837,
+        4.3718,
+        4.4152,
+        4.8139,
+        5.3631,
+        4.2475,
+        4.7531,
+        5.3416
+      ],
+      "rows": 1000,
+      "seconds": 1.581924
+    },
+    "prefix": "l4-lysenko-delivery-at_least_once-0-4361580000"
+  },
+  {
+    "name": "delivery-at_least_once-1-6483182200",
+    "mode": "at_least_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 1.898835699999836,
+    "timing": {
+      "rows": 1000,
+      "batch_ms": [
+        25.7447,
+        4.6089,
+        3.9695,
+        3.6167,
+        3.8405,
+        3.8362,
+        3.3222,
+        2.8388,
+        2.9269,
+        3.4814
+      ],
+      "mode": "at_least_once",
+      "seconds": 1.7119262
+    },
+    "prefix": "l4-lysenko-delivery-at_least_once-1-6483182200"
+  },
+  {
+    "name": "delivery-at_least_once-2-8634225900",
+    "mode": "at_least_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 1.6824538999990182,
+    "timing": {
+      "seconds": 1.4959782,
+      "rows": 1000,
+      "batch_ms": [
+        24.7939,
+        5.106,
+        5.9402,
+        8.2922,
+        4.9536,
+        4.3068,
+        3.5012,
+        3.4941,
+        4.3836,
+        3.8564
+      ],
+      "mode": "at_least_once"
+    },
+    "prefix": "l4-lysenko-delivery-at_least_once-2-8634225900"
+  },
+  {
+    "name": "delivery-at_least_once-0-crash-0592208400",
+    "mode": "at_least_once",
+    "fault": true,
+    "restarts": 1,
+    "input": 1000,
+    "committed_output": 1100,
+    "uncommitted_output": 1100,
+    "missing": 0,
+    "duplicates": 100,
+    "seconds_including_startup_restart": 46.847090400000525,
+    "timing": {
+      "mode": "at_least_once",
+      "seconds": 44.9997548,
+      "rows": 1000,
+      "batch_ms": [
+        22.586,
+        4.4013,
+        4.1849,
+        3.4692,
+        3.7844,
+        3.813,
+        3.6462,
+        2.719,
+        2.477,
+        2.9527
+      ]
+    },
+    "prefix": "l4-lysenko-delivery-at_least_once-0-crash-0592208400"
+  },
+  {
+    "name": "delivery-exactly_once-0-8722201700",
+    "mode": "exactly_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 2.1781434000004083,
+    "timing": {
+      "rows": 1000,
+      "seconds": 1.9346166,
+      "mode": "exactly_once",
+      "batch_ms": [
+        150.4171,
+        11.5202,
+        10.1523,
+        8.8378,
+        12.2646,
+        12.5847,
+        8.4109,
+        9.1284,
+        8.3208,
+        9.7821
+      ]
+    },
+    "prefix": "l4-lysenko-delivery-exactly_once-0-8722201700"
+  },
+  {
+    "name": "delivery-exactly_once-1-2184049600",
+    "mode": "exactly_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 2.234088299999712,
+    "timing": {
+      "mode": "exactly_once",
+      "batch_ms": [
+        160.1574,
+        10.2713,
+        10.1289,
+        12.6538,
+        9.087,
+        9.6931,
+        8.3514,
+        7.8095,
+        35.9044,
+        29.8964
+      ],
+      "rows": 1000,
+      "seconds": 1.9965463
+    },
+    "prefix": "l4-lysenko-delivery-exactly_once-1-2184049600"
+  },
+  {
+    "name": "delivery-exactly_once-2-5689867000",
+    "mode": "exactly_once",
+    "fault": false,
+    "restarts": 0,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1000,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 2.226248000000851,
+    "timing": {
+      "rows": 1000,
+      "seconds": 2.0011213,
+      "mode": "exactly_once",
+      "batch_ms": [
+        158.2613,
+        12.2042,
+        12.4608,
+        10.5029,
+        11.8895,
+        13.699,
+        10.571,
+        7.1978,
+        12.6338,
+        43.3504
+      ]
+    },
+    "prefix": "l4-lysenko-delivery-exactly_once-2-5689867000"
+  },
+  {
+    "name": "delivery-exactly_once-0-crash-9202201100",
+    "mode": "exactly_once",
+    "fault": true,
+    "restarts": 1,
+    "input": 1000,
+    "committed_output": 1000,
+    "uncommitted_output": 1100,
+    "missing": 0,
+    "duplicates": 0,
+    "seconds_including_startup_restart": 47.27337840000109,
+    "timing": {
+      "seconds": 45.1968341,
+      "rows": 1000,
+      "batch_ms": [
+        140.8244,
+        9.1794,
+        7.9032,
+        6.2719,
+        6.8658,
+        6.0511,
+        6.7617,
+        5.673,
+        4.6699,
+        5.1317
+      ],
+      "mode": "exactly_once"
+    },
+    "prefix": "l4-lysenko-delivery-exactly_once-0-crash-9202201100"
+  }
+]

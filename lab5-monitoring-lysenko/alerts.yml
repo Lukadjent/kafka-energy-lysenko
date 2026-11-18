@@ -1,0 +1,42 @@
+groups:
+  - name: hydro-production
+    interval: 15s
+    rules:
+      - alert: HydroEfficiencyLow
+        expr: hydro_efficiency_percent < 88
+        for: 2h
+        labels: {severity: warning, profile: production}
+        annotations: {summary: 'ККД турбіни нижче 88% протягом 2 годин'}
+      - alert: HydroCavitation
+        expr: hydro_cavitation == 1
+        for: 10m
+        labels: {severity: critical, profile: production}
+        annotations: {summary: 'Ризик кавітації протягом 10 хвилин'}
+      - alert: HydroOffDesign
+        expr: hydro_offdesign == 1
+        for: 5m
+        labels: {severity: warning, profile: production}
+      - alert: GeneratorOverheat
+        expr: hydro_generator_temperature_celsius > 85
+        for: 5m
+        labels: {severity: critical, profile: production}
+      - alert: VoltageDeviation
+        expr: abs(hydro_voltage_kv - 220) > 10
+        for: 2m
+        labels: {severity: critical, profile: production}
+      - alert: FrequencyDeviation
+        expr: abs(hydro_frequency_hz - 50) > 0.5
+        for: 1m
+        labels: {severity: critical, profile: production}
+      - alert: ProducerDown
+        expr: energy_producer_alive == 0 or absent(energy_producer_alive)
+        for: 1m
+        labels: {severity: critical, profile: production}
+  - name: hydro-accelerated-e2e
+    interval: 5s
+    rules:
+      - alert: HydroEfficiencyLiveTest
+        expr: hydro_efficiency_percent < 88
+        for: 15s
+        labels: {severity: warning, profile: accelerated-e2e}
+        annotations: {summary: 'Прискорений лабораторний тест; це НЕ production 2h'}

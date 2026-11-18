@@ -1,0 +1,23 @@
+{
+  "ttl_seconds": 3,
+  "initial_remaining": 3,
+  "expired_verified": true,
+  "snapshots": [
+    {
+      "node": 1,
+      "files": 151,
+      "bytes": 179890380
+    },
+    {
+      "node": 2,
+      "files": 127,
+      "bytes": 179918483
+    },
+    {
+      "node": 3,
+      "files": 111,
+      "bytes": 179803920
+    }
+  ],
+  "policy": "daily new writes: TTL 30 days, TWCS 1 day; existing rows are not retroactively expired"
+}

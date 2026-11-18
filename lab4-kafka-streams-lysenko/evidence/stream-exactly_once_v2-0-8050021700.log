@@ -1,0 +1,25 @@
+log4j:WARN No appenders could be found for logger (org.apache.kafka.streams.kstream.internals.KTableImpl).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+STATE REBALANCING
+STATE PENDING_ERROR
+org.apache.kafka.streams.errors.ProcessorStateException: Error opening store l4-lysenko-stream-exactly_once_v2-0-8050021700-reference-STATE-STORE-0000000000 at location C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab-support\.runtime\lab4\stream-exactly_once_v2-0-8050021700\stream-exactly_once_v2-0-8050021700\global\rocksdb\l4-lysenko-stream-exactly_once_v2-0-8050021700-reference-STATE-STORE-0000000000
+	at org.apache.kafka.streams.state.internals.RocksDBTimestampedStore.openRocksDB(RocksDBTimestampedStore.java:87)
+	at org.apache.kafka.streams.state.internals.RocksDBStore.openDB(RocksDBStore.java:248)
+	at org.apache.kafka.streams.state.internals.RocksDBStore.init(RocksDBStore.java:169)
+	at org.apache.kafka.streams.state.internals.WrappedStateStore.init(WrappedStateStore.java:71)
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.lambda$init$3(MeteredKeyValueStore.java:151)
+	at org.apache.kafka.streams.processor.internals.metrics.StreamsMetricsImpl.maybeMeasureLatency(StreamsMetricsImpl.java:872)
+	at org.apache.kafka.streams.state.internals.MeteredKeyValueStore.init(MeteredKeyValueStore.java:151)
+	at org.apache.kafka.streams.processor.internals.GlobalStateManagerImpl.initialize(GlobalStateManagerImpl.java:138)
+	at org.apache.kafka.streams.processor.internals.GlobalStateUpdateTask.initialize(GlobalStateUpdateTask.java:77)
+	at org.apache.kafka.streams.processor.internals.GlobalStreamThread$StateConsumer.initialize(GlobalStreamThread.java:249)
+	at org.apache.kafka.streams.processor.internals.GlobalStreamThread.initialize(GlobalStreamThread.java:416)
+	at org.apache.kafka.streams.processor.internals.GlobalStreamThread.run(GlobalStreamThread.java:279)
+Caused by: org.rocksdb.RocksDBException: Failed to create a directory: C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab-support\.runtime\lab4\stream-exactly_once_v2-0-8050021700\stream-exactly_once_v2-0-8050021700\global\rocksdb\l4-lysenko-stream-exactly_once_v2-0-8050021700-reference-STATE-STORE-0000000000: Ñèñòåìå íå óäàåòñÿ íàéòè óêàçàííûé ïóòü.
+
+	at org.rocksdb.RocksDB.open(Native Method)
+	at org.rocksdb.RocksDB.open(RocksDB.java:307)
+	at org.apache.kafka.streams.state.internals.RocksDBTimestampedStore.openRocksDB(RocksDBTimestampedStore.java:75)
+	... 11 more
+STATE ERROR

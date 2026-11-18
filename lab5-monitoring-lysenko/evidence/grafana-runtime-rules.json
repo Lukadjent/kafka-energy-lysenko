@@ -1,0 +1,162 @@
+{
+  "status": "success",
+  "data": {
+    "groups": [
+      {
+        "name": "hydro-grafana",
+        "file": "Lysenko 3B",
+        "folderUid": "cg4o7u8txi22of",
+        "rules": [
+          {
+            "state": "inactive",
+            "name": "Hydro efficiency: accelerated 15s lab test",
+            "query": "hydro_efficiency_percent",
+            "queriedDatasourceUIDs": [
+              "hydro-prom"
+            ],
+            "duration": 15,
+            "annotations": {
+              "summary": "Local laboratory test; production Prometheus rule retains 2h"
+            },
+            "alerts": [
+              {
+                "labels": {
+                  "__name__": "hydro_efficiency_percent",
+                  "alertname": "Hydro efficiency: accelerated 15s lab test",
+                  "grafana_folder": "Lysenko 3B",
+                  "instance": "127.0.0.1:18400",
+                  "job": "hydro-python",
+                  "profile": "accelerated-e2e",
+                  "station": "DNIPRO",
+                  "turbine_type": "kaplan"
+                },
+                "annotations": {
+                  "summary": "Local laboratory test; production Prometheus rule retains 2h"
+                },
+                "state": "Normal",
+                "activeAt": "2026-11-18T14:33:50+02:00",
+                "value": ""
+              },
+              {
+                "labels": {
+                  "__name__": "hydro_efficiency_percent",
+                  "alertname": "Hydro efficiency: accelerated 15s lab test",
+                  "grafana_folder": "Lysenko 3B",
+                  "instance": "127.0.0.1:18400",
+                  "job": "hydro-python",
+                  "profile": "accelerated-e2e",
+                  "station": "KAKHOVKA_MODEL",
+                  "turbine_type": "pelton"
+                },
+                "annotations": {
+                  "summary": "Local laboratory test; production Prometheus rule retains 2h"
+                },
+                "state": "Normal",
+                "activeAt": "2026-11-18T14:33:50+02:00",
+                "value": ""
+              },
+              {
+                "labels": {
+                  "__name__": "hydro_efficiency_percent",
+                  "alertname": "Hydro efficiency: accelerated 15s lab test",
+                  "grafana_folder": "Lysenko 3B",
+                  "instance": "127.0.0.1:18400",
+                  "job": "hydro-python",
+                  "profile": "accelerated-e2e",
+                  "station": "KAMIANSKE",
+                  "turbine_type": "francis"
+                },
+                "annotations": {
+                  "summary": "Local laboratory test; production Prometheus rule retains 2h"
+                },
+                "state": "Normal",
+                "activeAt": "2026-11-18T14:33:50+02:00",
+                "value": ""
+              },
+              {
+                "labels": {
+                  "__name__": "hydro_efficiency_percent",
+                  "alertname": "Hydro efficiency: accelerated 15s lab test",
+                  "grafana_folder": "Lysenko 3B",
+                  "instance": "127.0.0.1:18400",
+                  "job": "hydro-python",
+                  "profile": "accelerated-e2e",
+                  "station": "KANIV",
+                  "turbine_type": "francis"
+                },
+                "annotations": {
+                  "summary": "Local laboratory test; production Prometheus rule retains 2h"
+                },
+                "state": "Normal",
+                "activeAt": "2026-11-18T14:33:50+02:00",
+                "value": ""
+              },
+              {
+                "labels": {
+                  "__name__": "hydro_efficiency_percent",
+                  "alertname": "Hydro efficiency: accelerated 15s lab test",
+                  "grafana_folder": "Lysenko 3B",
+                  "instance": "127.0.0.1:18400",
+                  "job": "hydro-python",
+                  "profile": "accelerated-e2e",
+                  "station": "KREMENCHUK",
+                  "turbine_type": "pelton"
+                },
+                "annotations": {
+                  "summary": "Local laboratory test; production Prometheus rule retains 2h"
+                },
+                "state": "Normal",
+                "activeAt": "2026-11-18T14:33:50+02:00",
+                "value": ""
+              },
+              {
+                "labels": {
+                  "__name__": "hydro_efficiency_percent",
+                  "alertname": "Hydro efficiency: accelerated 15s lab test",
+                  "grafana_folder": "Lysenko 3B",
+                  "instance": "127.0.0.1:18400",
+                  "job": "hydro-python",
+                  "profile": "accelerated-e2e",
+                  "station": "KYIV",
+                  "turbine_type": "kaplan"
+                },
+                "annotations": {
+                  "summary": "Local laboratory test; production Prometheus rule retains 2h"
+                },
+                "state": "Normal",
+                "activeAt": "2026-11-18T14:33:50+02:00",
+                "value": ""
+              }
+            ],
+            "totals": {
+              "normal": 6
+            },
+            "totalsFiltered": {
+              "normal": 6
+            },
+            "uid": "hydro-low-eff-test",
+            "folderUid": "cg4o7u8txi22of",
+            "labels": {
+              "profile": "accelerated-e2e"
+            },
+            "health": "ok",
+            "type": "alerting",
+            "lastEvaluation": "2026-11-18T14:39:10+02:00",
+            "evaluationTime": 0.001995,
+            "isPaused": false,
+            "provenance": "file"
+          }
+        ],
+        "totals": {
+          "inactive": 1
+        },
+        "interval": 10,
+        "lastEvaluation": "2026-11-18T14:39:10+02:00",
+        "evaluationTime": 0.001995
+      }
+    ],
+    "totals": {
+      "inactive": 1
+    }
+  }
+}

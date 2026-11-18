@@ -1,0 +1,2 @@
+Requested creating snapshot(s) for [energy_l3_lysenko] with snapshot name [lab3-3b] and options {skipFlush=false}
+Snapshot directory: lab3-3b

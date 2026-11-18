@@ -1,0 +1,20 @@
+{
+  "table": "daily",
+  "rows": 1296000,
+  "requests": 21600,
+  "max_batch_rows": 60,
+  "max_inflight": 8,
+  "load_seconds": 70.55509150000034,
+  "rows_per_second": 18368.6247504901,
+  "batch_ack": {
+    "n": 21600,
+    "avg_ms": 15.247160884252683,
+    "p50_ms": 12.596300000041083,
+    "p95_ms": 25.43070000137959,
+    "p99_ms": 59.18999999994412,
+    "min_ms": 1.8816000010701828,
+    "max_ms": 5445.997799999532
+  },
+  "consistency": "LOCAL_QUORUM",
+  "scope": "CSV decoding, batch formation, async submission and acknowledgements; data generation excluded"
+}

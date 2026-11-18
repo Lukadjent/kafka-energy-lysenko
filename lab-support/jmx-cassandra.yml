@@ -1,0 +1,25 @@
+lowercaseOutputName: true
+lowercaseOutputLabelNames: true
+includeObjectNames:
+  - 'org.apache.cassandra.metrics:type=ClientRequest,scope=Read,name=Latency'
+  - 'org.apache.cassandra.metrics:type=ClientRequest,scope=Write,name=Latency'
+  - 'org.apache.cassandra.metrics:type=Storage,name=Load'
+  - 'java.lang:type=Memory'
+rules:
+  - pattern: 'org.apache.cassandra.metrics<type=ClientRequest, scope=(Read|Write), name=Latency><>Count'
+    name: cassandra_client_requests_total
+    type: COUNTER
+    labels:
+      operation: '$1'
+  - pattern: 'org.apache.cassandra.metrics<type=ClientRequest, scope=(Read|Write), name=Latency><>(95thPercentile|99thPercentile)'
+    name: cassandra_client_latency_microseconds
+    type: GAUGE
+    labels:
+      operation: '$1'
+      percentile: '$2'
+  - pattern: 'org.apache.cassandra.metrics<type=Storage, name=Load><>Count'
+    name: cassandra_storage_bytes
+    type: GAUGE
+  - pattern: 'java.lang<type=Memory><HeapMemoryUsage>used'
+    name: cassandra_heap_used_bytes
+    type: GAUGE

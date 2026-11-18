@@ -1,0 +1,1906 @@
+{
+  "summary": {
+    "name": "stream-at_least_once-1-1889759100",
+    "prefix": "l4-lysenko-s-1889759100",
+    "mode": "at_least_once",
+    "recovery": false,
+    "restarts": 0,
+    "valid_input": 6480,
+    "input_with_invalid_tick": 6484,
+    "windows": 20,
+    "window_memberships": 19440,
+    "anomalies": 20,
+    "invalid": 3,
+    "seconds_until_all_outputs_read": 5.3246400999996695,
+    "valid_events_per_second": 1216.9836605483256,
+    "oracle_all_fields_match": true,
+    "event_time_start_ms": 1794993600000,
+    "event_time_hours": 3,
+    "natural_rate_per_second": 0.6,
+    "scope": "Accelerated 3h replay; wall-clock includes producer flush, Streams processing and output polling; not per-record latency"
+  },
+  "outputs": [
+    {
+      "key": "DNIPRO|1794992400000",
+      "value": {
+        "coordinated_flow": 1175.4241021804612,
+        "count": 360,
+        "end": 1794994200000,
+        "objective": 38349.653652404864,
+        "start": 1794992400000,
+        "stations": {
+          "DNIPRO": {
+            "count": 60,
+            "desired_flow": 1178.7816638786496,
+            "mean_efficiency": 0.9157078628957919,
+            "mean_flow": 1185.4637402226404,
+            "mean_power": 178.18296752783007,
+            "mean_upper": 83.95881127785604,
+            "prediction_10m": 83.66589618280047,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 60,
+            "desired_flow": 1132.2009569075738,
+            "mean_efficiency": 0.9172911962291252,
+            "mean_flow": 1135.8787444445977,
+            "mean_power": 171.98484305557474,
+            "mean_upper": 79.65915128340394,
+            "prediction_10m": 79.8161106231488,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 60,
+            "desired_flow": 1117.62261770219,
+            "mean_efficiency": 0.9172911962291252,
+            "mean_flow": 1127.2097171541982,
+            "mean_power": 170.90121464427486,
+            "mean_upper": 81.64645955181868,
+            "prediction_10m": 81.52064502739958,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 60,
+            "desired_flow": 1285.4589299998136,
+            "mean_efficiency": 0.9172911962291252,
+            "mean_flow": 1276.2196925985531,
+            "mean_power": 189.52746157481914,
+            "mean_upper": 88.3751298294393,
+            "prediction_10m": 88.46196187006302,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 60,
+            "desired_flow": 1259.4487504317094,
+            "mean_efficiency": 0.9172911962291252,
+            "mean_flow": 1257.0823334929912,
+            "mean_power": 187.13529168662387,
+            "mean_upper": 86.30903172508106,
+            "prediction_10m": 86.11832084693592,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 60,
+            "desired_flow": 1110.8646651350527,
+            "mean_efficiency": 0.9172911962291252,
+            "mean_flow": 1225.2810178341274,
+            "mean_power": 183.16012722926592,
+            "mean_upper": 90.19633529861093,
+            "prediction_10m": 84.27918236504627,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 0,
+      "received_ns": 10622525169100
+    },
+    {
+      "key": "DNIPRO|1794993000000",
+      "value": {
+        "coordinated_flow": 1181.068261619235,
+        "count": 720,
+        "end": 1794994800000,
+        "objective": 25648.01675119581,
+        "start": 1794993000000,
+        "stations": {
+          "DNIPRO": {
+            "count": 120,
+            "desired_flow": 1153.549714078068,
+            "mean_efficiency": 0.9184281782426623,
+            "mean_flow": 1163.1601434103015,
+            "mean_power": 175.39501792628778,
+            "mean_upper": 83.86695776579715,
+            "prediction_10m": 83.51947853338832,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 120,
+            "desired_flow": 1157.1686346650824,
+            "mean_efficiency": 0.919219844909329,
+            "mean_flow": 1156.759251034622,
+            "mean_power": 174.59490637932774,
+            "mean_upper": 79.7282658108905,
+            "prediction_10m": 80.02046918152303,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 120,
+            "desired_flow": 1117.3780582766583,
+            "mean_efficiency": 0.919219844909329,
+            "mean_flow": 1125.892778278629,
+            "mean_power": 170.73659728482863,
+            "mean_upper": 81.62541671679341,
+            "prediction_10m": 81.57426399990146,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 120,
+            "desired_flow": 1281.4916444211628,
+            "mean_efficiency": 0.919219844909329,
+            "mean_flow": 1273.9023285226856,
+            "mean_power": 189.23779106533567,
+            "mean_upper": 88.38246439889089,
+            "prediction_10m": 88.37946579492386,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 120,
+            "desired_flow": 1232.427548539634,
+            "mean_efficiency": 0.919219844909329,
+            "mean_flow": 1234.2979027948406,
+            "mean_power": 184.28723784935502,
+            "mean_upper": 86.23081723137129,
+            "prediction_10m": 85.90648228723967,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 120,
+            "desired_flow": 1195.128496559175,
+            "mean_efficiency": 0.919219844909329,
+            "mean_flow": 1245.5612942248229,
+            "mean_power": 185.6951617781029,
+            "mean_upper": 90.28247556189507,
+            "prediction_10m": 87.4783601167176,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 1,
+      "received_ns": 10622525169800
+    },
+    {
+      "key": "DNIPRO|1794993600000",
+      "value": {
+        "coordinated_flow": 1184.1385210344383,
+        "count": 1080,
+        "end": 1794995400000,
+        "objective": 18980.828685316003,
+        "start": 1794993600000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1138.4979439278052,
+            "mean_efficiency": 0.9193326900102983,
+            "mean_flow": 1149.2987911413104,
+            "mean_power": 173.66234889266386,
+            "mean_upper": 83.79345836113771,
+            "prediction_10m": 83.45995763932474,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1185.6137266694773,
+            "mean_efficiency": 0.9204325450215001,
+            "mean_flow": 1180.8314994544307,
+            "mean_power": 177.60393743180384,
+            "mean_upper": 79.81391645830138,
+            "prediction_10m": 80.23911136075233,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1129.7723435764515,
+            "mean_efficiency": 0.9204325450215001,
+            "mean_flow": 1135.3420218223996,
+            "mean_power": 171.91775272779995,
+            "mean_upper": 81.63666157233027,
+            "prediction_10m": 81.7215160877026,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1265.5740454817008,
+            "mean_efficiency": 0.9204325450215001,
+            "mean_flow": 1261.3667958968888,
+            "mean_power": 187.6708494871111,
+            "mean_upper": 88.35798684095425,
+            "prediction_10m": 88.2103624792406,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1203.7682510006714,
+            "mean_efficiency": 0.9204325450215001,
+            "mean_flow": 1209.8700180642961,
+            "mean_power": 181.233752258037,
+            "mean_upper": 86.14014858019955,
+            "prediction_10m": 85.69491164681877,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1226.867901269908,
+            "mean_efficiency": 0.9204325450215001,
+            "mean_flow": 1256.4432245893609,
+            "mean_power": 187.05540307367013,
+            "mean_upper": 90.31336031774315,
+            "prediction_10m": 88.52123383402736,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 2,
+      "received_ns": 10622525170200
+    },
+    {
+      "key": "DNIPRO|1794994200000",
+      "value": {
+        "coordinated_flow": 1191.637201647292,
+        "count": 1080,
+        "end": 1794996000000,
+        "objective": 23229.27293078141,
+        "start": 1794994200000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1123.4434020412161,
+            "mean_efficiency": 0.9213708658961269,
+            "mean_flow": 1132.770459215296,
+            "mean_power": 171.59630740191204,
+            "mean_upper": 83.6753125624417,
+            "prediction_10m": 83.53364714129602,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1233.682155924293,
+            "mean_efficiency": 0.921942943129551,
+            "mean_flow": 1224.8399096685594,
+            "mean_power": 183.1049887085699,
+            "mean_upper": 79.98642415631802,
+            "prediction_10m": 80.44211231278669,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1160.3236543978821,
+            "mean_efficiency": 0.921942943129551,
+            "mean_flow": 1160.7723022317712,
+            "mean_power": 175.0965377789714,
+            "mean_upper": 81.68696850118305,
+            "prediction_10m": 81.97756760830555,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1230.0354161904263,
+            "mean_efficiency": 0.921942943129551,
+            "mean_flow": 1231.114811771585,
+            "mean_power": 183.88935147144815,
+            "mean_upper": 88.28381114369495,
+            "prediction_10m": 87.94603022094206,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1156.9489327890158,
+            "mean_efficiency": 0.921942943129551,
+            "mean_flow": 1166.5791459513653,
+            "mean_power": 175.82239324392066,
+            "mean_upper": 85.96217275641862,
+            "prediction_10m": 85.51848934188253,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1275.5074764617766,
+            "mean_efficiency": 0.921942943129551,
+            "mean_flow": 1267.0436631423147,
+            "mean_power": 188.38045789278937,
+            "mean_upper": 90.411181540987,
+            "prediction_10m": 90.4231906659731,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 3,
+      "received_ns": 10622525170500
+    },
+    {
+      "key": "DNIPRO|1794994800000",
+      "value": {
+        "coordinated_flow": 1198.1589267399443,
+        "count": 1080,
+        "end": 1794996600000,
+        "objective": 26189.39567911364,
+        "start": 1794994800000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1139.4618513115752,
+            "mean_efficiency": 0.919920965760855,
+            "mean_flow": 1145.0315295575233,
+            "mean_power": 173.1289411946904,
+            "mean_upper": 83.63666157233027,
+            "prediction_10m": 83.7215160877026,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1268.9486127092086,
+            "mean_efficiency": 0.9210279714527222,
+            "mean_flow": 1258.2112376803104,
+            "mean_power": 187.27640471003878,
+            "mean_upper": 80.16225569434204,
+            "prediction_10m": 80.53686875144491,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1207.783109501328,
+            "mean_efficiency": 0.9210279714527222,
+            "mean_flow": 1203.0008822862815,
+            "mean_power": 180.37511028578515,
+            "mean_upper": 81.81391645830139,
+            "prediction_10m": 82.23911136075233,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1181.4369054250078,
+            "mean_efficiency": 0.9210279714527222,
+            "mean_flow": 1187.5386724886325,
+            "mean_power": 178.44233406107912,
+            "mean_upper": 88.14014858019955,
+            "prediction_10m": 87.69491164681877,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1126.7990878399837,
+            "mean_efficiency": 0.9210279714527222,
+            "mean_flow": 1137.599935053489,
+            "mean_power": 172.19999188168612,
+            "mean_upper": 85.79345836113771,
+            "prediction_10m": 85.45995763932474,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1253.1415465541843,
+            "mean_efficiency": 0.9210279714527222,
+            "mean_flow": 1248.9342969693723,
+            "mean_power": 186.1167871211715,
+            "mean_upper": 90.42465350762095,
+            "prediction_10m": 90.2103624792406,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 4,
+      "received_ns": 10622525170800
+    },
+    {
+      "key": "DNIPRO|1794995400000",
+      "value": {
+        "coordinated_flow": 1205.5288564422149,
+        "count": 1080,
+        "end": 1794997200000,
+        "objective": 29217.72196820473,
+        "start": 1794995400000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1180.3828516205417,
+            "mean_efficiency": 0.9174723274631863,
+            "mean_flow": 1180.8314994544307,
+            "mean_power": 177.60393743180384,
+            "mean_upper": 83.68696850118305,
+            "prediction_10m": 83.97756760830555,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1276.6586505014143,
+            "mean_efficiency": 0.9180072559216295,
+            "mean_flow": 1266.6550305854714,
+            "mean_power": 188.33187882318393,
+            "mean_upper": 80.2983613795259,
+            "prediction_10m": 80.50018099579714,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1252.786654343723,
+            "mean_efficiency": 0.9180072559216295,
+            "mean_flow": 1243.9444080879891,
+            "mean_power": 185.4930510109986,
+            "mean_upper": 81.98642415631802,
+            "prediction_10m": 82.44211231278669,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1139.668577978961,
+            "mean_efficiency": 0.9180072559216295,
+            "mean_flow": 1149.2987911413104,
+            "mean_power": 173.66234889266386,
+            "mean_upper": 87.96217275641862,
+            "prediction_10m": 87.51848934188253,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1126.0149646483198,
+            "mean_efficiency": 0.9180072559216295,
+            "mean_flow": 1135.3420218223996,
+            "mean_power": 171.91775272779995,
+            "mean_upper": 85.6753125624417,
+            "prediction_10m": 85.53364714129602,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1208.7906224831374,
+            "mean_efficiency": 0.9180072559216295,
+            "mean_flow": 1209.8700180642961,
+            "mean_power": 181.233752258037,
+            "mean_upper": 90.35047781036161,
+            "prediction_10m": 89.94603022094206,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 5,
+      "received_ns": 10622525171000
+    },
+    {
+      "key": "DNIPRO|1794996000000",
+      "value": {
+        "coordinated_flow": 1210.725010709874,
+        "count": 1080,
+        "end": 1794997800000,
+        "objective": 28363.605979921074,
+        "start": 1794996000000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1229.622136883606,
+            "mean_efficiency": 0.9134010909193726,
+            "mean_flow": 1224.8399096685594,
+            "mean_power": 183.1049887085699,
+            "mean_upper": 83.81391645830138,
+            "prediction_10m": 84.23911136075233,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1253.3760708864515,
+            "mean_efficiency": 0.9139360193778155,
+            "mean_flow": 1246.5554411273283,
+            "mean_power": 185.81943014091607,
+            "mean_upper": 80.36141779328507,
+            "prediction_10m": 80.34103148795616,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1276.8071937400844,
+            "mean_efficiency": 0.9139360193778155,
+            "mean_flow": 1266.0698187111861,
+            "mean_power": 188.2587273388982,
+            "mean_upper": 82.16225569434205,
+            "prediction_10m": 82.53686875144491,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1121.9696120017911,
+            "mean_efficiency": 0.9139360193778155,
+            "mean_flow": 1132.7704592152963,
+            "mean_power": 171.59630740191204,
+            "mean_upper": 87.79345836113771,
+            "prediction_10m": 87.45995763932474,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1155.202623985823,
+            "mean_efficiency": 0.9139360193778155,
+            "mean_flow": 1160.7723022317712,
+            "mean_power": 175.0965377789714,
+            "mean_upper": 85.63666157233027,
+            "prediction_10m": 85.7215160877026,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1160.4773788877405,
+            "mean_efficiency": 0.9139360193778155,
+            "mean_flow": 1166.5791459513653,
+            "mean_power": 175.82239324392066,
+            "mean_upper": 90.20681524686621,
+            "prediction_10m": 89.69491164681877,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 6,
+      "received_ns": 10622525171300
+    },
+    {
+      "key": "DNIPRO|1794996600000",
+      "value": {
+        "coordinated_flow": 1211.6088211974436,
+        "count": 1080,
+        "end": 1794998400000,
+        "objective": 25079.582423130527,
+        "start": 1794996600000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1267.0534839360444,
+            "mean_efficiency": 0.9097518293134301,
+            "mean_flow": 1258.2112376803104,
+            "mean_power": 187.27640471003878,
+            "mean_upper": 83.98642415631804,
+            "prediction_10m": 84.44211231278669,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1208.487337177657,
+            "mean_efficiency": 0.9102364618762454,
+            "mean_flow": 1206.5196256181664,
+            "mean_power": 180.81495320227077,
+            "mean_upper": 80.3359865263618,
+            "prediction_10m": 80.09838557797454,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1269.9060695218805,
+            "mean_efficiency": 0.9102364618762454,
+            "mean_flow": 1259.9024496059376,
+            "mean_power": 187.48780620074226,
+            "mean_upper": 82.2983613795259,
+            "prediction_10m": 82.50018099579714,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1135.7044723834435,
+            "mean_efficiency": 0.9102364618762454,
+            "mean_flow": 1145.0315295575233,
+            "mean_power": 173.1289411946904,
+            "mean_upper": 87.6753125624417,
+            "prediction_10m": 87.53364714129602,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1202.5522344523924,
+            "mean_efficiency": 0.9102364618762454,
+            "mean_flow": 1203.0008822862815,
+            "mean_power": 180.37511028578515,
+            "mean_upper": 85.68696850118305,
+            "prediction_10m": 85.97756760830555,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1127.9697218911394,
+            "mean_efficiency": 0.9102364618762454,
+            "mean_flow": 1137.599935053489,
+            "mean_power": 172.19999188168612,
+            "mean_upper": 89.99550608975196,
+            "prediction_10m": 89.51848934188253,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 7,
+      "received_ns": 10622525171700
+    },
+    {
+      "key": "DNIPRO|1794997200000",
+      "value": {
+        "coordinated_flow": 1207.8197284648406,
+        "count": 1080,
+        "end": 1794999000000,
+        "objective": 24126.53911453416,
+        "start": 1794997200000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1277.3924056143696,
+            "mean_efficiency": 0.9077163127263401,
+            "mean_flow": 1266.6550305854714,
+            "mean_power": 188.33187882318393,
+            "mean_upper": 84.16225569434205,
+            "prediction_10m": 84.53686875144491,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1160.324969253131,
+            "mean_efficiency": 0.9082009452891553,
+            "mean_flow": 1163.6919403093755,
+            "mean_power": 175.46149253867193,
+            "mean_upper": 80.22829403984535,
+            "prediction_10m": 79.83165144718778,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1234.9039551172166,
+            "mean_efficiency": 0.9082009452891553,
+            "mean_flow": 1228.0833253580934,
+            "mean_power": 183.5104156697616,
+            "mean_upper": 82.36141779328506,
+            "prediction_10m": 82.34103148795616,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1175.2618212084826,
+            "mean_efficiency": 0.9082009452891553,
+            "mean_flow": 1180.8314994544307,
+            "mean_power": 177.60393743180384,
+            "mean_upper": 87.63666157233027,
+            "prediction_10m": 87.7215160877026,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1248.726635303036,
+            "mean_efficiency": 0.9082009452891553,
+            "mean_flow": 1243.9444080879891,
+            "mean_power": 185.4930510109986,
+            "mean_upper": 85.81391645830136,
+            "prediction_10m": 86.23911136075233,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1124.5411746088944,
+            "mean_efficiency": 0.9082009452891553,
+            "mean_flow": 1135.3420218223996,
+            "mean_power": 171.91775272779995,
+            "mean_upper": 89.86012502780437,
+            "prediction_10m": 89.45995763932474,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 8,
+      "received_ns": 10622525172000
+    },
+    {
+      "key": "DNIPRO|1794997800000",
+      "value": {
+        "coordinated_flow": 1200.9251975450427,
+        "count": 1080,
+        "end": 1794999600000,
+        "objective": 26595.602529757183,
+        "start": 1794997800000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1256.559061043271,
+            "mean_efficiency": 0.9075422388293836,
+            "mean_flow": 1246.5554411273283,
+            "mean_power": 185.81943014091607,
+            "mean_upper": 84.2983613795259,
+            "prediction_10m": 84.50018099579714,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1128.534989502862,
+            "mean_efficiency": 0.9085405341225955,
+            "mean_flow": 1136.412291233052,
+            "mean_power": 172.05153640413147,
+            "mean_upper": 80.06470721034182,
+            "prediction_10m": 79.6061349134905,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1186.2059172319127,
+            "mean_efficiency": 0.9085405341225955,
+            "mean_flow": 1184.238205672422,
+            "mean_power": 178.02977570905276,
+            "mean_upper": 82.3359865263618,
+            "prediction_10m": 82.09838557797454,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1224.3912618346703,
+            "mean_efficiency": 0.9085405341225955,
+            "mean_flow": 1224.8399096685594,
+            "mean_power": 183.1049887085699,
+            "mean_upper": 87.68696850118305,
+            "prediction_10m": 87.97756760830555,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1274.9120649669198,
+            "mean_efficiency": 0.9085405341225955,
+            "mean_flow": 1266.0698187111861,
+            "mean_power": 188.2587273388982,
+            "mean_upper": 85.98642415631804,
+            "prediction_10m": 86.44211231278669,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1151.4452450576914,
+            "mean_efficiency": 0.9085405341225955,
+            "mean_flow": 1160.7723022317712,
+            "mean_power": 175.0965377789714,
+            "mean_upper": 89.74197922910837,
+            "prediction_10m": 89.53364714129602,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 9,
+      "received_ns": 10622525172500
+    },
+    {
+      "key": "DNIPRO|1794998400000",
+      "value": {
+        "coordinated_flow": 1193.762985027356,
+        "count": 1080,
+        "end": 1795000200000,
+        "objective": 28359.70732655291,
+        "start": 1794998400000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1213.3402553772896,
+            "mean_efficiency": 0.9106229374966156,
+            "mean_flow": 1206.5196256181664,
+            "mean_power": 180.81495320227077,
+            "mean_upper": 84.36141779328507,
+            "prediction_10m": 84.34103148795616,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1125.9035249566627,
+            "mean_efficiency": 0.9111366002270123,
+            "mean_flow": 1136.362519166746,
+            "mean_power": 172.04531489584326,
+            "mean_upper": 79.88527779900375,
+            "prediction_10m": 79.47705028949584,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1143.7757168476019,
+            "mean_efficiency": 0.9111366002270123,
+            "mean_flow": 1147.1426879038463,
+            "mean_power": 173.39283598798076,
+            "mean_upper": 82.22829403984535,
+            "prediction_10m": 81.83165144718778,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1262.9934648953572,
+            "mean_efficiency": 0.9111366002270123,
+            "mean_flow": 1258.2112376803104,
+            "mean_power": 187.27640471003878,
+            "mean_upper": 87.81391645830138,
+            "prediction_10m": 88.23911136075233,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1270.6398246348358,
+            "mean_efficiency": 0.9111366002270123,
+            "mean_flow": 1259.9024496059376,
+            "mean_power": 187.48780620074226,
+            "mean_upper": 86.16225569434204,
+            "prediction_10m": 86.53686875144491,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1197.4312040403333,
+            "mean_efficiency": 0.9111366002270123,
+            "mean_flow": 1203.0008822862815,
+            "mean_power": 180.37511028578515,
+            "mean_upper": 89.70332823899693,
+            "prediction_10m": 89.7215160877026,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 10,
+      "received_ns": 10622525172700
+    },
+    {
+      "key": "DNIPRO|1794999000000",
+      "value": {
+        "coordinated_flow": 1189.2540114686738,
+        "count": 1080,
+        "end": 1795000800000,
+        "objective": 26190.09967051039,
+        "start": 1794999000000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1165.6596518688661,
+            "mean_efficiency": 0.9145686002924471,
+            "mean_flow": 1163.6919403093755,
+            "mean_power": 175.46149253867193,
+            "mean_upper": 84.33598652636181,
+            "prediction_10m": 84.09838557797454,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1153.0839776401926,
+            "mean_efficiency": 0.9150822630228439,
+            "mean_flow": 1163.563937777365,
+            "mean_power": 175.4454922221706,
+            "mean_upper": 79.7339363835462,
+            "prediction_10m": 79.47600199314138,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1124.8047161668314,
+            "mean_efficiency": 0.9150822630228439,
+            "mean_flow": 1132.6820178970215,
+            "mean_power": 171.5852522371277,
+            "mean_upper": 82.06470721034182,
+            "prediction_10m": 81.6061349134905,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1275.4972768412053,
+            "mean_efficiency": 0.9150822630228439,
+            "mean_flow": 1266.6550305854714,
+            "mean_power": 188.33187882318393,
+            "mean_upper": 87.98642415631804,
+            "prediction_10m": 88.44211231278669,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1238.0869452740362,
+            "mean_efficiency": 0.9150822630228439,
+            "mean_flow": 1228.0833253580934,
+            "mean_power": 183.5104156697616,
+            "mean_upper": 86.2983613795259,
+            "prediction_10m": 86.50018099579714,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1243.4957602541,
+            "mean_efficiency": 0.9150822630228439,
+            "mean_flow": 1243.9444080879891,
+            "mean_power": 185.4930510109986,
+            "mean_upper": 89.75363516784971,
+            "prediction_10m": 89.97756760830555,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 11,
+      "received_ns": 10622525173000
+    },
+    {
+      "key": "DNIPRO|1794999600000",
+      "value": {
+        "coordinated_flow": 1189.1873243870707,
+        "count": 1080,
+        "end": 1795001400000,
+        "objective": 22433.841221388127,
+        "start": 1794999600000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1133.0453201768075,
+            "mean_efficiency": 0.918430544392482,
+            "mean_flow": 1136.412291233052,
+            "mean_power": 172.05153640413147,
+            "mean_upper": 84.22829403984534,
+            "prediction_10m": 83.83165144718778,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1198.4331402446692,
+            "mean_efficiency": 0.9189991889780744,
+            "mean_flow": 1206.3682065659639,
+            "mean_power": 180.79602582074548,
+            "mean_upper": 79.64773662068947,
+            "prediction_10m": 79.60324668393527,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1136.589628774187,
+            "mean_efficiency": 0.9189991889780744,
+            "mean_flow": 1147.0486229842704,
+            "mean_power": 173.3810778730338,
+            "mean_upper": 81.88527779900375,
+            "prediction_10m": 81.47705028949584,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1257.2928161562265,
+            "mean_efficiency": 0.9189991889780744,
+            "mean_flow": 1246.5554411273283,
+            "mean_power": 185.8194301409161,
+            "mean_upper": 88.16225569434204,
+            "prediction_10m": 88.53686875144491,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1191.0588354315453,
+            "mean_efficiency": 0.9189991889780744,
+            "mean_flow": 1184.238205672422,
+            "mean_power": 178.02977570905276,
+            "mean_upper": 86.36141779328509,
+            "prediction_10m": 86.34103148795616,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1270.8520459262327,
+            "mean_efficiency": 0.9189991889780744,
+            "mean_flow": 1266.0698187111861,
+            "mean_power": 188.2587273388982,
+            "mean_upper": 89.88058312496804,
+            "prediction_10m": 90.23911136075233,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 12,
+      "received_ns": 10622525173400
+    },
+    {
+      "key": "DNIPRO|1795000200000",
+      "value": {
+        "coordinated_flow": 1193.4887025273777,
+        "count": 1080,
+        "end": 1795002000000,
+        "objective": 21431.721698831032,
+        "start": 1795000200000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1128.485217436556,
+            "mean_efficiency": 0.9209504385802811,
+            "mean_flow": 1136.362519166746,
+            "mean_power": 172.04531489584326,
+            "mean_upper": 84.06470721034182,
+            "prediction_10m": 83.6061349134905,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1242.9980555261582,
+            "mean_efficiency": 0.9215190831658736,
+            "mean_flow": 1246.445447051009,
+            "mean_power": 185.80568088137616,
+            "mean_upper": 79.64778321870295,
+            "prediction_10m": 79.82763042375745,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1173.6103966912874,
+            "mean_efficiency": 0.9215190831658736,
+            "mean_flow": 1184.0903568284598,
+            "mean_power": 178.01129460355747,
+            "mean_upper": 81.73393638354618,
+            "prediction_10m": 81.47600199314138,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1216.5232455341093,
+            "mean_efficiency": 0.9215190831658736,
+            "mean_flow": 1206.5196256181664,
+            "mean_power": 180.81495320227077,
+            "mean_upper": 88.29836137952591,
+            "prediction_10m": 88.50018099579714,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1149.1103994633372,
+            "mean_efficiency": 0.9215190831658736,
+            "mean_flow": 1147.1426879038463,
+            "mean_power": 173.39283598798076,
+            "mean_upper": 86.33598652636181,
+            "prediction_10m": 86.09838557797454,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1268.7446958616715,
+            "mean_efficiency": 0.9215190831658736,
+            "mean_flow": 1259.9024496059378,
+            "mean_power": 187.48780620074228,
+            "mean_upper": 90.0530908229847,
+            "prediction_10m": 90.44211231278669,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 13,
+      "received_ns": 10622525173700
+    },
+    {
+      "key": "DNIPRO|1795000800000",
+      "value": {
+        "coordinated_flow": 1200.277603021372,
+        "count": 1080,
+        "end": 1795002600000,
+        "objective": 23173.423112379172,
+        "start": 1795000800000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1153.1049435672817,
+            "mean_efficiency": 0.9206445400445774,
+            "mean_flow": 1163.563937777365,
+            "mean_power": 175.4454922221706,
+            "mean_upper": 83.88527779900375,
+            "prediction_10m": 83.47705028949584,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1268.5178886998535,
+            "mean_efficiency": 0.9217616740486325,
+            "mean_flow": 1266.6335637509944,
+            "mean_power": 188.3291954688742,
+            "mean_upper": 79.73406476876752,
+            "prediction_10m": 80.09421624744296,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1220.0099389103948,
+            "mean_efficiency": 0.9217616740486325,
+            "mean_flow": 1227.9450052316895,
+            "mean_power": 183.4931256539612,
+            "mean_upper": 81.64773662068947,
+            "prediction_10m": 81.60324668393527,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1170.5125700684987,
+            "mean_efficiency": 0.9217616740486325,
+            "mean_flow": 1163.6919403093755,
+            "mean_power": 175.46149253867193,
+            "mean_upper": 88.36141779328507,
+            "prediction_10m": 88.34103148795616,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1129.315046840777,
+            "mean_efficiency": 0.9217616740486325,
+            "mean_flow": 1132.6820178970215,
+            "mean_power": 171.5852522371277,
+            "mean_upper": 86.22829403984534,
+            "prediction_10m": 85.83165144718778,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1238.8207003869916,
+            "mean_efficiency": 0.9217616740486325,
+            "mean_flow": 1228.0833253580934,
+            "mean_power": 183.5104156697616,
+            "mean_upper": 90.22892236100871,
+            "prediction_10m": 90.53686875144491,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 14,
+      "received_ns": 10622525174000
+    },
+    {
+      "key": "DNIPRO|1795001400000",
+      "value": {
+        "coordinated_flow": 1206.6819042595087,
+        "count": 1080,
+        "end": 1795003200000,
+        "objective": 23578.740076174712,
+        "start": 1795001400000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1195.8882464287915,
+            "mean_efficiency": 0.9190937282331586,
+            "mean_flow": 1206.3682065659639,
+            "mean_power": 180.79602582074548,
+            "mean_upper": 83.7339363835462,
+            "prediction_10m": 83.47600199314138,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1265.042183690098,
+            "mean_efficiency": 0.9196422176516212,
+            "mean_flow": 1258.2874907331395,
+            "mean_power": 187.28593634164244,
+            "mean_upper": 79.8854565382533,
+            "prediction_10m": 80.33773464784792,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1256.3854988745488,
+            "mean_efficiency": 0.9196422176516212,
+            "mean_flow": 1259.8328903993997,
+            "mean_power": 187.47911129992494,
+            "mean_upper": 81.64778321870295,
+            "prediction_10m": 81.82763042375745,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1138.3800027925427,
+            "mean_efficiency": 0.9196422176516212,
+            "mean_flow": 1136.412291233052,
+            "mean_power": 172.05153640413147,
+            "mean_upper": 88.3359865263618,
+            "prediction_10m": 88.09838557797454,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1139.1713212540803,
+            "mean_efficiency": 0.9196422176516212,
+            "mean_flow": 1147.0486229842704,
+            "mean_power": 173.3810778730338,
+            "mean_upper": 86.06470721034182,
+            "prediction_10m": 85.6061349134905,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1194.241825588365,
+            "mean_efficiency": 0.9196422176516212,
+            "mean_flow": 1184.238205672422,
+            "mean_power": 178.02977570905276,
+            "mean_upper": 90.33169471285925,
+            "prediction_10m": 90.50018099579714,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 15,
+      "received_ns": 10622525174300
+    },
+    {
+      "key": "DNIPRO|1795002000000",
+      "value": {
+        "coordinated_flow": 1210.059237984936,
+        "count": 1080,
+        "end": 1795003800000,
+        "objective": 20704.9303462138,
+        "start": 1795002000000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1238.5103807297144,
+            "mean_efficiency": 0.9153526116529946,
+            "mean_flow": 1246.445447051009,
+            "mean_power": 185.80568088137616,
+            "mean_upper": 83.64773662068947,
+            "prediction_10m": 83.60324668393527,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1234.9525056597047,
+            "mean_efficiency": 0.9159011010714574,
+            "mean_flow": 1224.9812291086635,
+            "mean_power": 183.12265363858293,
+            "mean_upper": 80.06489254201756,
+            "prediction_10m": 80.49856382755206,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1267.9831323978742,
+            "mean_efficiency": 0.9159011010714574,
+            "mean_flow": 1266.098807449015,
+            "mean_power": 188.2623509311269,
+            "mean_upper": 81.73406476876752,
+            "prediction_10m": 82.09421624744296,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1132.9955481105017,
+            "mean_efficiency": 0.9159011010714574,
+            "mean_flow": 1136.362519166746,
+            "mean_power": 172.04531489584326,
+            "mean_upper": 88.22829403984534,
+            "prediction_10m": 87.83165144718778,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1173.6313626183764,
+            "mean_efficiency": 0.9159011010714574,
+            "mean_flow": 1184.0903568284598,
+            "mean_power": 178.01129460355747,
+            "mean_upper": 85.88527779900375,
+            "prediction_10m": 85.47705028949584,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1153.9633176629695,
+            "mean_efficiency": 0.9159011010714574,
+            "mean_flow": 1147.1426879038463,
+            "mean_power": 173.39283598798076,
+            "mean_upper": 90.42808445995173,
+            "prediction_10m": 90.34103148795616,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 16,
+      "received_ns": 10622525174600
+    },
+    {
+      "key": "DNIPRO|1795002600000",
+      "value": {
+        "coordinated_flow": 1209.1040066434475,
+        "count": 1080,
+        "end": 1795004400000,
+        "objective": 17480.888091589164,
+        "start": 1795002600000,
+        "stations": {
+          "DNIPRO": {
+            "count": 180,
+            "desired_flow": 1263.1861722261435,
+            "mean_efficiency": 0.911354949783461,
+            "mean_flow": 1266.6335637509944,
+            "mean_power": 188.3291954688742,
+            "mean_upper": 83.64778321870295,
+            "prediction_10m": 83.82763042375745,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 180,
+            "desired_flow": 1191.7239125819615,
+            "mean_efficiency": 0.9118452039621935,
+            "mean_flow": 1180.977368696959,
+            "mean_power": 177.62217108711985,
+            "mean_upper": 80.22844058828936,
+            "prediction_10m": 80.53732719425012,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 180,
+            "desired_flow": 1250.8142240110153,
+            "mean_efficiency": 0.9118452039621935,
+            "mean_flow": 1244.0595310540568,
+            "mean_power": 185.5074413817572,
+            "mean_upper": 81.8854565382533,
+            "prediction_10m": 82.33773464784792,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 180,
+            "desired_flow": 1155.686636047175,
+            "mean_efficiency": 0.9118452039621935,
+            "mean_flow": 1163.563937777365,
+            "mean_power": 175.4454922221706,
+            "mean_upper": 88.06470721034185,
+            "prediction_10m": 87.6061349134905,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 180,
+            "desired_flow": 1217.465045094517,
+            "mean_efficiency": 0.9118452039621935,
+            "mean_flow": 1227.9450052316895,
+            "mean_power": 183.4931256539612,
+            "mean_upper": 85.73393638354618,
+            "prediction_10m": 85.47600199314138,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 180,
+            "desired_flow": 1134.6497294565124,
+            "mean_efficiency": 0.9118452039621935,
+            "mean_flow": 1132.6820178970215,
+            "mean_power": 171.5852522371277,
+            "mean_upper": 90.40265319302847,
+            "prediction_10m": 90.09838557797454,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 17,
+      "received_ns": 10622525175000
+    },
+    {
+      "key": "DNIPRO|1795003200000",
+      "value": {
+        "coordinated_flow": 1207.4663786062874,
+        "count": 720,
+        "end": 1795005000000,
+        "objective": 19702.574978416815,
+        "start": 1795003200000,
+        "stations": {
+          "DNIPRO": {
+            "count": 120,
+            "desired_flow": 1270.353078970602,
+            "mean_efficiency": 0.9090224966267856,
+            "mean_flow": 1272.8608127018003,
+            "mean_power": 189.10760158772504,
+            "mean_upper": 83.6634582766778,
+            "prediction_10m": 83.87461331344008,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 120,
+            "desired_flow": 1167.107298461361,
+            "mean_efficiency": 0.9097578778948843,
+            "mean_flow": 1156.895629647529,
+            "mean_power": 174.61195370594115,
+            "mean_upper": 80.30733130738017,
+            "prediction_10m": 80.5105834406916,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 120,
+            "desired_flow": 1234.6661276706677,
+            "mean_efficiency": 0.9097578778948843,
+            "mean_flow": 1227.5368456012018,
+            "mean_power": 183.44210570015028,
+            "mean_upper": 81.9729684515273,
+            "prediction_10m": 82.3564641034733,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 120,
+            "desired_flow": 1174.338279028705,
+            "mean_efficiency": 0.9097578778948843,
+            "mean_flow": 1182.4627769242552,
+            "mean_power": 177.80784711553187,
+            "mean_upper": 87.97277023967307,
+            "prediction_10m": 87.59377510522249,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 120,
+            "desired_flow": 1241.3577339148108,
+            "mean_efficiency": 0.9097578778948843,
+            "mean_flow": 1251.196884619216,
+            "mean_power": 186.399610577402,
+            "mean_upper": 85.66336301020907,
+            "prediction_10m": 85.50804246477973,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 120,
+            "desired_flow": 1130.9120920585192,
+            "mean_efficiency": 0.9097578778948843,
+            "mean_flow": 1129.852311248087,
+            "mean_power": 171.23153890601088,
+            "mean_upper": 90.40721238520513,
+            "prediction_10m": 90.05298904052161,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 18,
+      "received_ns": 10622525175300
+    },
+    {
+      "key": "DNIPRO|1795003800000",
+      "value": {
+        "coordinated_flow": 1204.3823380094275,
+        "count": 360,
+        "end": 1795005600000,
+        "objective": 22003.233769877574,
+        "start": 1795003800000,
+        "stations": {
+          "DNIPRO": {
+            "count": 60,
+            "desired_flow": 1266.3441600195642,
+            "mean_efficiency": 0.9066155560630773,
+            "mean_flow": 1267.9929250149669,
+            "mean_power": 188.49911562687086,
+            "mean_upper": 83.71043271170535,
+            "prediction_10m": 83.91756175022986,
+            "weight": 1.6
+          },
+          "KAKHOVKA_MODEL": {
+            "count": 60,
+            "desired_flow": 1145.4071770614457,
+            "mean_efficiency": 0.9080863185992746,
+            "mean_flow": 1135.9813437798534,
+            "mean_power": 171.99766797248157,
+            "mean_upper": 80.36592189176241,
+            "prediction_10m": 80.47129166407962,
+            "weight": 2.0
+          },
+          "KAMIANSKE": {
+            "count": 60,
+            "desired_flow": 1210.8747796866496,
+            "mean_efficiency": 0.9080863185992746,
+            "mean_flow": 1203.6778195758704,
+            "mean_power": 180.4597274469838,
+            "mean_upper": 82.07065915010767,
+            "prediction_10m": 82.35984800553896,
+            "weight": 1.8
+          },
+          "KANIV": {
+            "count": 60,
+            "desired_flow": 1199.3749983075168,
+            "mean_efficiency": 0.9080863185992746,
+            "mean_flow": 1207.428574915016,
+            "mean_power": 180.92857186437703,
+            "mean_upper": 87.87508313022036,
+            "prediction_10m": 87.59732116962503,
+            "weight": 1.2
+          },
+          "KREMENCHUK": {
+            "count": 60,
+            "desired_flow": 1260.8170255922616,
+            "mean_efficiency": 0.9080863185992746,
+            "mean_flow": 1269.7956487607416,
+            "mean_power": 188.72445609509268,
+            "mean_upper": 85.61643310275313,
+            "prediction_10m": 85.551068841576,
+            "weight": 1.4
+          },
+          "KYIV": {
+            "count": 60,
+            "desired_flow": 1138.5075946964982,
+            "mean_efficiency": 0.9080863185992746,
+            "mean_flow": 1138.2317035510532,
+            "mean_power": 172.27896294388165,
+            "mean_upper": 90.34858115167931,
+            "prediction_10m": 90.01379455727225,
+            "weight": 1.0
+          }
+        }
+      },
+      "offset": 19,
+      "received_ns": 10622525175600
+    }
+  ],
+  "anomalies": [
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-0",
+        "station": "KYIV",
+        "ts": 1794993600000,
+        "tick": false,
+        "upper": 96.0,
+        "lower": 78.0,
+        "flow": 1200.0,
+        "power": 180.0,
+        "gate": 45.0,
+        "efficiency": 0.915
+      },
+      "offset": 0,
+      "received_ns": 10622532423300
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-0",
+        "station": "DNIPRO",
+        "ts": 1794993600000,
+        "tick": false,
+        "upper": 84.05644800322395,
+        "lower": 63.05644800322395,
+        "flow": 1211.2896006447893,
+        "power": 181.41120008059866,
+        "gate": 45.0,
+        "efficiency": 0.82
+      },
+      "offset": 1,
+      "received_ns": 10622532424000
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-97",
+        "station": "KYIV",
+        "ts": 1794994570000,
+        "tick": false,
+        "upper": 96.28925480195723,
+        "lower": 78.28925480195723,
+        "flow": 1270.4726586967577,
+        "power": 188.8090823370947,
+        "gate": 49.99474070206598,
+        "efficiency": 0.9215990857067077
+      },
+      "offset": 2,
+      "received_ns": 10622532424300
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-149",
+        "station": "DNIPRO",
+        "ts": 1794995090000,
+        "tick": false,
+        "upper": 83.64350362813398,
+        "lower": 62.643503628133985,
+        "flow": 1120.1291667537012,
+        "power": 170.01614584421264,
+        "gate": 48.05870400165789,
+        "efficiency": 0.82
+      },
+      "offset": 3,
+      "received_ns": 10622532424600
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-194",
+        "station": "KYIV",
+        "ts": 1794995540000,
+        "tick": false,
+        "upper": 96.39957925616528,
+        "lower": 78.39957925616528,
+        "flow": 1266.7076012359942,
+        "power": 188.33845015449927,
+        "gate": 44.541939765470126,
+        "efficiency": 0.9224609201121776
+      },
+      "offset": 4,
+      "received_ns": 10622532425000
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-291",
+        "station": "KYIV",
+        "ts": 1794996510000,
+        "tick": false,
+        "upper": 96.26272767465939,
+        "lower": 78.26272767465939,
+        "flow": 1192.6710362475221,
+        "power": 179.08387953094027,
+        "gate": 40.04726732016643,
+        "efficiency": 0.9168362235761701
+      },
+      "offset": 5,
+      "received_ns": 10622532425300
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-298",
+        "station": "DNIPRO",
+        "ts": 1794996580000,
+        "tick": false,
+        "upper": 83.71309881910953,
+        "lower": 62.71309881910953,
+        "flow": 1202.2337739531392,
+        "power": 180.2792217441424,
+        "gate": 40.16077378220608,
+        "efficiency": 0.82
+      },
+      "offset": 6,
+      "received_ns": 10622532425600
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-388",
+        "station": "KYIV",
+        "ts": 1794997480000,
+        "tick": false,
+        "upper": 95.96335518123762,
+        "lower": 77.96335518123762,
+        "flow": 1126.3549906895203,
+        "power": 170.79437383619003,
+        "gate": 45.91226797587467,
+        "efficiency": 0.9096151125412515
+      },
+      "offset": 7,
+      "received_ns": 10622532425900
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-447",
+        "station": "DNIPRO",
+        "ts": 1794998070000,
+        "tick": false,
+        "upper": 84.17103224367192,
+        "lower": 63.17103224367192,
+        "flow": 1279.4926205658046,
+        "power": 189.93657757072558,
+        "gate": 49.59751587914485,
+        "efficiency": 0.82
+      },
+      "offset": 8,
+      "received_ns": 10622532426100
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-485",
+        "station": "KYIV",
+        "ts": 1794998450000,
+        "tick": false,
+        "upper": 95.68665083410067,
+        "lower": 77.68665083410067,
+        "flow": 1137.618497240299,
+        "power": 172.20231215503736,
+        "gate": 49.86906994178384,
+        "efficiency": 0.9070756277122664
+      },
+      "offset": 9,
+      "received_ns": 10622532426700
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-582",
+        "station": "KYIV",
+        "ts": 1794999420000,
+        "tick": false,
+        "upper": 95.60378138561332,
+        "lower": 77.60378138561332,
+        "flow": 1214.5962876139947,
+        "power": 181.82453595174934,
+        "gate": 43.64119686794529,
+        "efficiency": 0.9114255995807566
+      },
+      "offset": 10,
+      "received_ns": 10622532426900
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-596",
+        "station": "DNIPRO",
+        "ts": 1794999560000,
+        "tick": false,
+        "upper": 84.39746310282902,
+        "lower": 63.39746310282902,
+        "flow": 1184.3068887394938,
+        "power": 178.03836109243673,
+        "gate": 42.56542026369621,
+        "efficiency": 0.82
+      },
+      "offset": 11,
+      "received_ns": 10622532427600
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-679",
+        "station": "KYIV",
+        "ts": 1795000390000,
+        "tick": false,
+        "upper": 95.7660091108883,
+        "lower": 77.7660091108883,
+        "flow": 1276.1979721775783,
+        "power": 189.5247465221973,
+        "gate": 40.25554387071927,
+        "efficiency": 0.9188831585253784
+      },
+      "offset": 12,
+      "received_ns": 10622532427900
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-745",
+        "station": "DNIPRO",
+        "ts": 1795001050000,
+        "tick": false,
+        "upper": 84.08590342883633,
+        "lower": 63.08590342883633,
+        "flow": 1123.1644673041612,
+        "power": 170.39555841302015,
+        "gate": 44.254273010151145,
+        "efficiency": 0.82
+      },
+      "offset": 13,
+      "received_ns": 10622532428300
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-776",
+        "station": "KYIV",
+        "ts": 1795001360000,
+        "tick": false,
+        "upper": 96.07298143806997,
+        "lower": 78.07298143806997,
+        "flow": 1257.5307477073948,
+        "power": 187.19134346342435,
+        "gate": 46.79391014099236,
+        "efficiency": 0.9229646958068789
+      },
+      "offset": 14,
+      "received_ns": 10622532428500
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-873",
+        "station": "KYIV",
+        "ts": 1795002330000,
+        "tick": false,
+        "upper": 96.33480812201691,
+        "lower": 78.33480812201691,
+        "flow": 1178.2591498871245,
+        "power": 177.28239373589057,
+        "gate": 49.5799393006957,
+        "efficiency": 0.9201217190855486
+      },
+      "offset": 15,
+      "received_ns": 10622532428800
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-894",
+        "station": "DNIPRO",
+        "ts": 1795002540000,
+        "tick": false,
+        "upper": 83.65806822851148,
+        "lower": 62.65806822851148,
+        "flow": 1228.7025622558776,
+        "power": 183.5878202819847,
+        "gate": 48.61440674755988,
+        "efficiency": 0.82
+      },
+      "offset": 16,
+      "received_ns": 10622532429200
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-970",
+        "station": "KYIV",
+        "ts": 1795003300000,
+        "tick": false,
+        "upper": 96.3895255953427,
+        "lower": 78.3895255953427,
+        "flow": 1121.8899242711987,
+        "power": 170.23624053389983,
+        "gate": 42.78607044351696,
+        "efficiency": 0.9128259149887125
+      },
+      "offset": 17,
+      "received_ns": 10622532429700
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "DNIPRO-1043",
+        "station": "DNIPRO",
+        "ts": 1795004030000,
+        "tick": false,
+        "upper": 83.69305851999863,
+        "lower": 62.69305851999863,
+        "flow": 1271.9757423877843,
+        "power": 188.99696779847304,
+        "gate": 40.027314261751414,
+        "efficiency": 0.82
+      },
+      "offset": 18,
+      "received_ns": 10622532430000
+    },
+    {
+      "key": "DNIPRO",
+      "value": {
+        "id": "KYIV-1067",
+        "station": "KYIV",
+        "ts": 1795004270000,
+        "tick": false,
+        "upper": 96.20328613464264,
+        "lower": 78.20328613464264,
+        "flow": 1147.8038668829536,
+        "power": 173.4754833603692,
+        "gate": 40.62309688323589,
+        "efficiency": 0.9074202624392843
+      },
+      "offset": 19,
+      "received_ns": 10622532430400
+    }
+  ],
+  "expected_anomaly_ids": [
+    "DNIPRO-0",
+    "DNIPRO-1043",
+    "DNIPRO-149",
+    "DNIPRO-298",
+    "DNIPRO-447",
+    "DNIPRO-596",
+    "DNIPRO-745",
+    "DNIPRO-894",
+    "KYIV-0",
+    "KYIV-1067",
+    "KYIV-194",
+    "KYIV-291",
+    "KYIV-388",
+    "KYIV-485",
+    "KYIV-582",
+    "KYIV-679",
+    "KYIV-776",
+    "KYIV-873",
+    "KYIV-97",
+    "KYIV-970"
+  ],
+  "input_samples": [
+    {
+      "id": "KYIV-0",
+      "station": "KYIV",
+      "ts": 1794993600000,
+      "tick": false,
+      "upper": 96.0,
+      "lower": 78.0,
+      "flow": 1200.0,
+      "power": 180.0,
+      "gate": 45.0,
+      "efficiency": 0.915
+    },
+    {
+      "id": "KANIV-0",
+      "station": "KANIV",
+      "ts": 1794993600000,
+      "tick": false,
+      "upper": 88.33658839392317,
+      "lower": 69.33658839392317,
+      "flow": 1267.3176787846317,
+      "power": 188.41470984807896,
+      "gate": 45.0,
+      "efficiency": 0.915
+    },
+    {
+      "id": "KREMENCHUK-0",
+      "station": "KREMENCHUK",
+      "ts": 1794993600000,
+      "tick": false,
+      "upper": 86.36371897073028,
+      "lower": 66.36371897073028,
+      "flow": 1272.7437941460546,
+      "power": 189.09297426825682,
+      "gate": 45.0,
+      "efficiency": 0.915
+    }
+  ]
+}

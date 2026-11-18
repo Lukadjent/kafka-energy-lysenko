@@ -1,0 +1,197 @@
+2026-11-18 14:26:43,189 INFO  [main] org.apache.kafka.streams.kstream.internals.KTableImpl - Using grace period of [PT1M] as the suppress duration for node [KTABLE-SUPPRESS-0000000014].
+2026-11-18 14:26:43,250 INFO  [main] org.apache.kafka.streams.StreamsConfig - StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = ly4-7763121000
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [127.0.0.1:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 100
+	connections.max.idle.ms = 540000
+	default.client.supplier = class org.apache.kafka.streams.processor.internals.DefaultKafkaClientSupplier
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = class org.apache.kafka.common.serialization.Serdes$StringSerde
+	dsl.store.suppliers.class = class org.apache.kafka.streams.state.BuiltInDslStoreSuppliers$RocksDBDslStoreSuppliers
+	enable.metrics.push = true
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = exactly_once_v2
+	rack.aware.assignment.non_overlap_cost = null
+	rack.aware.assignment.strategy = none
+	rack.aware.assignment.tags = []
+	rack.aware.assignment.traffic_cost = null
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = 1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = C:\Users\Luka\AppData\Local\Temp\lysenko-l4-rocksdb\7763121000
+	statestore.cache.max.bytes = 0
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2026-11-18 14:26:43,304 WARN  [main] org.apache.kafka.streams.processor.internals.StateDirectory - Using an OS temp directory in the state.dir property can cause failures with writing the checkpoint file due to the fact that this directory can be cleared by the OS. Resolved state.dir: [C:\Users\Luka\AppData\Local\Temp\lysenko-l4-rocksdb\7763121000]
+2026-11-18 14:26:43,305 ERROR [main] org.apache.kafka.streams.processor.internals.StateDirectory - Failed to change permissions for the directory C:\Users\Luka\AppData\Local\Temp\lysenko-l4-rocksdb\7763121000
+2026-11-18 14:26:43,305 ERROR [main] org.apache.kafka.streams.processor.internals.StateDirectory - Failed to change permissions for the directory C:\Users\Luka\AppData\Local\Temp\lysenko-l4-rocksdb\7763121000\ly4-7763121000
+2026-11-18 14:26:43,380 INFO  [main] org.apache.kafka.streams.processor.internals.StateDirectory - Reading UUID from process file: 05ca53fd-d085-42f5-9b05-700f22eaf1af
+2026-11-18 14:26:43,622 INFO  [main] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Kafka Streams version: 3.7.1
+2026-11-18 14:26:43,622 INFO  [main] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Kafka Streams commit ID: e2494e6ffb89f828
+2026-11-18 14:26:43,737 INFO  [main] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Creating restore consumer client
+2026-11-18 14:26:43,751 INFO  [main] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Creating thread producer client
+2026-11-18 14:26:43,803 INFO  [main] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Creating consumer client
+2026-11-18 14:26:43,819 INFO  [main] org.apache.kafka.streams.processor.internals.assignment.AssignorConfiguration - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2026-11-18 14:26:43,852 INFO  [main] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] State transition from CREATED to REBALANCING
+STATE REBALANCING
+2026-11-18 14:26:44,302 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store l4-lysenko-s-7763121000-reference-STATE-STORE-0000000000 in regular mode
+2026-11-18 14:26:44,308 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] org.apache.kafka.streams.processor.internals.GlobalStateManagerImpl - global-stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] Restoring state for global store l4-lysenko-s-7763121000-reference-STATE-STORE-0000000000
+2026-11-18 14:26:44,377 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] org.apache.kafka.streams.processor.internals.GlobalStreamThread - global-stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] State transition from CREATED to RUNNING
+2026-11-18 14:26:44,380 INFO  [main] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Started 1 stream threads
+2026-11-18 14:26:44,380 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Starting
+2026-11-18 14:26:44,380 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] State transition from CREATED to STARTING
+2026-11-18 14:26:44,487 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2026-11-18 14:27:24,476 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.RepartitionTopics - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2026-11-18 14:27:24,496 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] 1 client nodes and Optional[1] consumers participating in this rebalance: 
+05ca53fd-d085-42f5-9b05-700f22eaf1af: [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a].
+2026-11-18 14:27:24,496 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Assigning stateful tasks: [1_0]
+and stateless tasks: []
+2026-11-18 14:27:24,502 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.assignment.HighAvailabilityTaskAssignor - Decided on assignment: {05ca53fd-d085-42f5-9b05-700f22eaf1af=[activeTasks: ([1_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=3400]) clientTags: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2026-11-18 14:27:24,502 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Assigned 1 total tasks including 1 stateful tasks to 1 client nodes.
+2026-11-18 14:27:24,502 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Assignment of tasks to nodes: 05ca53fd-d085-42f5-9b05-700f22eaf1af=[activeTasks: ([1_0]) standbyTasks: ([])]
+2026-11-18 14:27:24,506 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Client 05ca53fd-d085-42f5-9b05-700f22eaf1af per-consumer assignment:
+	prev owned active {}
+	prev owned standby {ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a=[]}
+	assigned active {ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a=[1_0]}
+	revoking active {}
+	assigned standby {}
+
+2026-11-18 14:27:24,506 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2026-11-18 14:27:24,510 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2026-11-18 14:27:24,511 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.TaskManager - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2026-11-18 14:27:24,526 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2026-11-18 14:27:24,778 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794993000000 in regular mode
+2026-11-18 14:27:24,804 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794993930000 in regular mode
+2026-11-18 14:27:24,832 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794994860000 in regular mode
+2026-11-18 14:27:24,834 WARN  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.ProcessorStateManager - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] stream-task [1_0] State store hydro-history did not find checkpoint offsets while stores are not empty, since under EOS it has the risk of getting uncommitted data in stores we have to treat it as a task corruption error and wipe out the local state of task 1_0 before re-bootstrapping
+2026-11-18 14:27:24,835 WARN  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Detected the states of tasks [1_0] are corrupted. Will close the task as dirty and re-create and bootstrap from scratch.
+org.apache.kafka.streams.errors.TaskCorruptedException: Tasks [1_0] are corrupted and hence need to be re-initialized
+	at org.apache.kafka.streams.processor.internals.ProcessorStateManager.initializeStoreOffsetsFromCheckpoint(ProcessorStateManager.java:285)
+	at org.apache.kafka.streams.processor.internals.StateManagerUtil.registerStateStores(StateManagerUtil.java:108)
+	at org.apache.kafka.streams.processor.internals.StreamTask.initializeIfNeeded(StreamTask.java:258)
+	at org.apache.kafka.streams.processor.internals.TaskManager.tryToCompleteRestoration(TaskManager.java:727)
+	at org.apache.kafka.streams.processor.internals.StreamThread.initializeAndRestorePhase(StreamThread.java:1117)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runOnceWithoutProcessingThreads(StreamThread.java:921)
+	at org.apache.kafka.streams.processor.internals.StreamThread.runLoop(StreamThread.java:686)
+	at org.apache.kafka.streams.processor.internals.StreamThread.run(StreamThread.java:645)
+2026-11-18 14:27:24,837 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamTask - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] task [1_0] Suspended from CREATED
+2026-11-18 14:27:24,859 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.RecordCollectorImpl - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] stream-task [1_0] Closing record collector dirty
+2026-11-18 14:27:24,859 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamTask - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] task [1_0] Closed dirty
+2026-11-18 14:27:24,859 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Active task(s) got corrupted. Triggering a rebalance.
+2026-11-18 14:27:24,862 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.ProcessorStateManager - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] stream-task [1_0] State store hydro-history did not find checkpoint offset, hence would default to the starting offset at changelog ly4-7763121000-hydro-history-changelog-0
+2026-11-18 14:27:24,862 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.ProcessorStateManager - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] stream-task [1_0] Initializing to the starting offset for changelog ly4-7763121000-KTABLE-SUPPRESS-STATE-STORE-0000000015-changelog-0 of in-memory state store KTABLE-SUPPRESS-STATE-STORE-0000000015
+2026-11-18 14:27:24,862 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamTask - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] task [1_0] Initialized
+2026-11-18 14:27:24,865 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StoreChangelogReader - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] End offset for changelog ly4-7763121000-KTABLE-SUPPRESS-STATE-STORE-0000000015-changelog-0 initialized as 48.
+2026-11-18 14:27:24,865 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StoreChangelogReader - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] End offset for changelog ly4-7763121000-hydro-history-changelog-0 initialized as 3353.
+2026-11-18 14:27:24,883 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StoreChangelogReader - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Finished restoring changelog ly4-7763121000-KTABLE-SUPPRESS-STATE-STORE-0000000015-changelog-0 to store KTABLE-SUPPRESS-STATE-STORE-0000000015 with a total number of 37 records
+2026-11-18 14:27:24,943 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794992070000 in regular mode
+2026-11-18 14:27:25,005 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794993000000 in regular mode
+2026-11-18 14:27:25,009 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StoreChangelogReader - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Restoration in progress for 1 partitions. {ly4-7763121000-hydro-history-changelog-0: position=586, end=3353, totalRestored=582}
+2026-11-18 14:27:25,009 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.RepartitionTopics - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2026-11-18 14:27:25,011 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] 1 client nodes and Optional[1] consumers participating in this rebalance: 
+05ca53fd-d085-42f5-9b05-700f22eaf1af: [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a].
+2026-11-18 14:27:25,012 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Assigning stateful tasks: [1_0]
+and stateless tasks: []
+2026-11-18 14:27:25,012 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.assignment.HighAvailabilityTaskAssignor - Decided on assignment: {05ca53fd-d085-42f5-9b05-700f22eaf1af=[activeTasks: ([1_0]) standbyTasks: ([]) prevActiveTasks: ([1_0]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([1_0=3401]) clientTags: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2026-11-18 14:27:25,012 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Assigned 1 total tasks including 1 stateful tasks to 1 client nodes.
+2026-11-18 14:27:25,012 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Assignment of tasks to nodes: 05ca53fd-d085-42f5-9b05-700f22eaf1af=[activeTasks: ([1_0]) standbyTasks: ([])]
+2026-11-18 14:27:25,012 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Client 05ca53fd-d085-42f5-9b05-700f22eaf1af per-consumer assignment:
+	prev owned active {ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a=[1_0]}
+	prev owned standby {ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a=[]}
+	assigned active {ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer-20070d4c-8486-4f50-a225-11e33726a03a=[1_0]}
+	revoking active {}
+	assigned standby {}
+
+2026-11-18 14:27:25,012 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2026-11-18 14:27:25,079 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794993930000 in regular mode
+2026-11-18 14:27:25,081 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamsPartitionAssignor - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2026-11-18 14:27:25,081 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.TaskManager - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Handle new assignment with:
+	New active tasks: [1_0]
+	New standby tasks: []
+	Existing active tasks: [1_0]
+	Existing standby tasks: []
+2026-11-18 14:27:25,081 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] State transition from PARTITIONS_ASSIGNED to PARTITIONS_ASSIGNED
+2026-11-18 14:27:25,182 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794994860000 in regular mode
+2026-11-18 14:27:25,183 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StoreChangelogReader - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Finished restoring changelog ly4-7763121000-hydro-history-changelog-0 to store hydro-history with a total number of 3261 records
+2026-11-18 14:27:25,188 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamTask - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] task [1_0] Restored and ready to run
+2026-11-18 14:27:25,188 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Restoration took 107 ms for all active tasks [1_0]
+2026-11-18 14:27:25,188 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2026-11-18 14:27:25,189 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] State transition from REBALANCING to RUNNING
+STATE RUNNING
+2026-11-18 14:27:25,745 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794995790000 in regular mode
+2026-11-18 14:27:26,085 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794996720000 in regular mode
+2026-11-18 14:27:26,283 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794997650000 in regular mode
+2026-11-18 14:27:26,575 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794998580000 in regular mode
+2026-11-18 14:27:26,746 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1794999510000 in regular mode
+2026-11-18 14:27:27,002 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795000440000 in regular mode
+2026-11-18 14:27:27,170 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795001370000 in regular mode
+2026-11-18 14:27:27,426 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795002300000 in regular mode
+2026-11-18 14:27:27,675 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795003230000 in regular mode
+2026-11-18 14:27:27,836 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795004160000 in regular mode
+2026-11-18 14:27:27,911 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795005090000 in regular mode
+2026-11-18 14:27:27,987 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.state.internals.RocksDBTimestampedStore - Opening store hydro-history.1795006020000 in regular mode
+2026-11-18 14:27:28,163 INFO  [Thread-1] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] State transition from RUNNING to PENDING_SHUTDOWN
+STATE PENDING_SHUTDOWN
+2026-11-18 14:27:28,164 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Informed to shut down
+2026-11-18 14:27:28,164 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2026-11-18 14:27:28,164 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Shutting down 1 stream threads
+2026-11-18 14:27:28,223 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Shutting down clean
+2026-11-18 14:27:28,258 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamTask - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] task [1_0] Suspended from RUNNING
+2026-11-18 14:27:28,271 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.RecordCollectorImpl - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] stream-task [1_0] Closing record collector clean
+2026-11-18 14:27:28,271 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamTask - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] task [1_0] Closed clean
+2026-11-18 14:27:28,276 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.TaskManager - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Shutdown complete
+2026-11-18 14:27:28,286 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2026-11-18 14:27:28,286 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] org.apache.kafka.streams.processor.internals.StreamThread - stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-StreamThread-1] Shutdown complete
+2026-11-18 14:27:28,287 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Shutdown 1 stream threads complete
+2026-11-18 14:27:28,287 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Shutting down the global stream threads
+2026-11-18 14:27:28,287 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.processor.internals.GlobalStreamThread - global-stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] State transition from RUNNING to PENDING_SHUTDOWN
+2026-11-18 14:27:28,316 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] org.apache.kafka.streams.processor.internals.GlobalStreamThread - global-stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] Shutting down
+2026-11-18 14:27:28,781 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] org.apache.kafka.streams.processor.internals.GlobalStreamThread - global-stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] State transition from PENDING_SHUTDOWN to DEAD
+2026-11-18 14:27:28,781 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] org.apache.kafka.streams.processor.internals.GlobalStreamThread - global-stream-thread [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-GlobalStreamThread] Shutdown complete
+2026-11-18 14:27:28,782 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Shutdown global stream threads complete
+2026-11-18 14:27:28,783 INFO  [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af-CloseThread] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+STATE NOT_RUNNING
+2026-11-18 14:27:28,783 INFO  [Thread-1] org.apache.kafka.streams.KafkaStreams - stream-client [ly4-7763121000-05ca53fd-d085-42f5-9b05-700f22eaf1af] Streams client stopped completely

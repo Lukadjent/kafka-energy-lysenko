@@ -1,0 +1,184 @@
+# HELP python_gc_objects_collected_total Objects collected during gc
+# TYPE python_gc_objects_collected_total counter
+python_gc_objects_collected_total{generation="0"} 114038.0
+python_gc_objects_collected_total{generation="1"} 30889.0
+python_gc_objects_collected_total{generation="2"} 585.0
+# HELP python_gc_objects_uncollectable_total Uncollectable objects found during GC
+# TYPE python_gc_objects_uncollectable_total counter
+python_gc_objects_uncollectable_total{generation="0"} 0.0
+python_gc_objects_uncollectable_total{generation="1"} 0.0
+python_gc_objects_uncollectable_total{generation="2"} 0.0
+# HELP python_gc_collections_total Number of times this generation was collected
+# TYPE python_gc_collections_total counter
+python_gc_collections_total{generation="0"} 313.0
+python_gc_collections_total{generation="1"} 28.0
+python_gc_collections_total{generation="2"} 1.0
+# HELP python_info Python platform information
+# TYPE python_info gauge
+python_info{implementation="CPython",major="3",minor="12",patchlevel="14",version="3.12.14"} 1.0
+# HELP energy_messages_sent_total Acknowledged Kafka sends
+# TYPE energy_messages_sent_total counter
+energy_messages_sent_total{station="KYIV"} 635.0
+energy_messages_sent_total{station="KANIV"} 635.0
+energy_messages_sent_total{station="KREMENCHUK"} 635.0
+energy_messages_sent_total{station="DNIPRO"} 635.0
+energy_messages_sent_total{station="KAMIANSKE"} 635.0
+energy_messages_sent_total{station="KAKHOVKA_MODEL"} 635.0
+# HELP energy_messages_sent_created Acknowledged Kafka sends
+# TYPE energy_messages_sent_created gauge
+energy_messages_sent_created{station="KYIV"} 1.7950049232891154e+09
+energy_messages_sent_created{station="KANIV"} 1.7950049232911098e+09
+energy_messages_sent_created{station="KREMENCHUK"} 1.7950049232941022e+09
+energy_messages_sent_created{station="DNIPRO"} 1.7950049232960963e+09
+energy_messages_sent_created{station="KAMIANSKE"} 1.7950049232970943e+09
+energy_messages_sent_created{station="KAKHOVKA_MODEL"} 1.795004923300087e+09
+# HELP energy_messages_stored_total Successful Cassandra upserts before offset commit
+# TYPE energy_messages_stored_total counter
+energy_messages_stored_total{station="KYIV"} 635.0
+energy_messages_stored_total{station="KANIV"} 635.0
+energy_messages_stored_total{station="KREMENCHUK"} 635.0
+energy_messages_stored_total{station="DNIPRO"} 635.0
+energy_messages_stored_total{station="KAMIANSKE"} 634.0
+energy_messages_stored_total{station="KAKHOVKA_MODEL"} 634.0
+# HELP energy_messages_stored_created Successful Cassandra upserts before offset commit
+# TYPE energy_messages_stored_created gauge
+energy_messages_stored_created{station="KYIV"} 1.7950049235668802e+09
+energy_messages_stored_created{station="KANIV"} 1.7950049235928094e+09
+energy_messages_stored_created{station="KREMENCHUK"} 1.795004923634208e+09
+energy_messages_stored_created{station="DNIPRO"} 1.7950049236437314e+09
+energy_messages_stored_created{station="KAMIANSKE"} 1.7950049236591985e+09
+energy_messages_stored_created{station="KAKHOVKA_MODEL"} 1.7950049236691718e+09
+# HELP energy_pipeline_errors_total Exceptions in the real pipeline
+# TYPE energy_pipeline_errors_total counter
+energy_pipeline_errors_total 0.0
+# HELP energy_pipeline_errors_created Exceptions in the real pipeline
+# TYPE energy_pipeline_errors_created gauge
+energy_pipeline_errors_created 1.795004919999141e+09
+# HELP energy_send_ack_seconds Kafka send acknowledgement latency
+# TYPE energy_send_ack_seconds histogram
+energy_send_ack_seconds_bucket{le="0.001"} 3094.0
+energy_send_ack_seconds_bucket{le="0.005"} 3803.0
+energy_send_ack_seconds_bucket{le="0.01"} 3808.0
+energy_send_ack_seconds_bucket{le="0.025"} 3808.0
+energy_send_ack_seconds_bucket{le="0.05"} 3809.0
+energy_send_ack_seconds_bucket{le="0.1"} 3809.0
+energy_send_ack_seconds_bucket{le="0.25"} 3810.0
+energy_send_ack_seconds_bucket{le="0.5"} 3810.0
+energy_send_ack_seconds_bucket{le="1.0"} 3810.0
+energy_send_ack_seconds_bucket{le="5.0"} 3810.0
+energy_send_ack_seconds_bucket{le="+Inf"} 3810.0
+energy_send_ack_seconds_count 3810.0
+energy_send_ack_seconds_sum 3.3010959999974148
+# HELP energy_send_ack_seconds_created Kafka send acknowledgement latency
+# TYPE energy_send_ack_seconds_created gauge
+energy_send_ack_seconds_created 1.795004919999141e+09
+# HELP energy_sink_write_seconds Cassandra upsert latency
+# TYPE energy_sink_write_seconds histogram
+energy_sink_write_seconds_bucket{le="0.001"} 0.0
+energy_sink_write_seconds_bucket{le="0.005"} 66.0
+energy_sink_write_seconds_bucket{le="0.01"} 261.0
+energy_sink_write_seconds_bucket{le="0.025"} 3801.0
+energy_sink_write_seconds_bucket{le="0.05"} 3808.0
+energy_sink_write_seconds_bucket{le="0.1"} 3808.0
+energy_sink_write_seconds_bucket{le="0.25"} 3808.0
+energy_sink_write_seconds_bucket{le="0.5"} 3808.0
+energy_sink_write_seconds_bucket{le="1.0"} 3808.0
+energy_sink_write_seconds_bucket{le="5.0"} 3808.0
+energy_sink_write_seconds_bucket{le="+Inf"} 3808.0
+energy_sink_write_seconds_count 3808.0
+energy_sink_write_seconds_sum 56.95389759996215
+# HELP energy_sink_write_seconds_created Cassandra upsert latency
+# TYPE energy_sink_write_seconds_created gauge
+energy_sink_write_seconds_created 1.795004919999141e+09
+# HELP energy_producer_alive Pipeline worker is alive
+# TYPE energy_producer_alive gauge
+energy_producer_alive 1.0
+# HELP energy_consumer_lag End offset minus next consumed offset
+# TYPE energy_consumer_lag gauge
+energy_consumer_lag{partition="0"} 0.0
+# HELP hydro_efficiency_percent Synthetic modeled turbine efficiency percent
+# TYPE hydro_efficiency_percent gauge
+hydro_efficiency_percent{station="KYIV",turbine_type="kaplan"} 93.83822326496987
+hydro_efficiency_percent{station="KANIV",turbine_type="francis"} 93.91736757615017
+hydro_efficiency_percent{station="KREMENCHUK",turbine_type="pelton"} 93.96771432572964
+hydro_efficiency_percent{station="DNIPRO",turbine_type="kaplan"} 93.84666673341349
+hydro_efficiency_percent{station="KAMIANSKE",turbine_type="francis"} 93.89706712906204
+hydro_efficiency_percent{station="KAKHOVKA_MODEL",turbine_type="pelton"} 93.97616679095846
+# HELP hydro_head_m Net hydraulic head metres
+# TYPE hydro_head_m gauge
+hydro_head_m{station="KYIV",turbine_type="kaplan"} 20.262315199060662
+hydro_head_m{station="KANIV",turbine_type="francis"} 31.16653409004328
+hydro_head_m{station="KREMENCHUK",turbine_type="pelton"} 82.31223818361963
+hydro_head_m{station="DNIPRO",turbine_type="kaplan"} 19.846964417800837
+hydro_head_m{station="KAMIANSKE",turbine_type="francis"} 28.884854247316394
+hydro_head_m{station="KAKHOVKA_MODEL",turbine_type="pelton"} 77.39872461384192
+# HELP hydro_flow_m3s Water flow cubic metres per second
+# TYPE hydro_flow_m3s gauge
+hydro_flow_m3s{station="KYIV",turbine_type="kaplan"} 1080.366422758735
+hydro_flow_m3s{station="KANIV",turbine_type="francis"} 939.5638807562508
+hydro_flow_m3s{station="KREMENCHUK",turbine_type="pelton"} 362.0354844857853
+hydro_flow_m3s{station="DNIPRO",turbine_type="kaplan"} 1317.1139718004533
+hydro_flow_m3s{station="KAMIANSKE",turbine_type="francis"} 1071.074483157787
+hydro_flow_m3s{station="KAKHOVKA_MODEL",turbine_type="pelton"} 342.7229532218448
+# HELP hydro_power_mw Generated power MW from rho*g*H*Q*eta
+# TYPE hydro_power_mw gauge
+hydro_power_mw{station="KYIV",turbine_type="kaplan"} 201.51571908563167
+hydro_power_mw{station="KANIV",turbine_type="francis"} 269.79241790097035
+hydro_power_mw{station="KREMENCHUK",turbine_type="pelton"} 274.70288528791895
+hydro_power_mw{station="DNIPRO",turbine_type="kaplan"} 240.6607728507301
+hydro_power_mw{station="KAMIANSKE",turbine_type="francis"} 284.9777072599832
+hydro_power_mw{station="KAKHOVKA_MODEL",turbine_type="pelton"} 244.54778287135127
+# HELP hydro_voltage_kv Generator model voltage kV
+# TYPE hydro_voltage_kv gauge
+hydro_voltage_kv{station="KYIV",turbine_type="kaplan"} 218.02289863929988
+hydro_voltage_kv{station="KANIV",turbine_type="francis"} 219.18570535281657
+hydro_voltage_kv{station="KREMENCHUK",turbine_type="pelton"} 221.0971708096415
+hydro_voltage_kv{station="DNIPRO",turbine_type="kaplan"} 221.99990248394448
+hydro_voltage_kv{station="KAMIANSKE",turbine_type="francis"} 221.06393303753174
+hydro_voltage_kv{station="KAKHOVKA_MODEL",turbine_type="pelton"} 219.1497884629909
+# HELP hydro_frequency_hz Grid model frequency Hz
+# TYPE hydro_frequency_hz gauge
+hydro_frequency_hz{station="KYIV",turbine_type="kaplan"} 49.993214037382785
+hydro_frequency_hz{station="KANIV",turbine_type="francis"} 49.993214037382785
+hydro_frequency_hz{station="KREMENCHUK",turbine_type="pelton"} 49.993214037382785
+hydro_frequency_hz{station="DNIPRO",turbine_type="kaplan"} 49.993214037382785
+hydro_frequency_hz{station="KAMIANSKE",turbine_type="francis"} 49.993214037382785
+hydro_frequency_hz{station="KAKHOVKA_MODEL",turbine_type="pelton"} 49.993214037382785
+# HELP hydro_cavitation Injected or off-design cavitation model risk 0/1
+# TYPE hydro_cavitation gauge
+hydro_cavitation{station="KYIV",turbine_type="kaplan"} 0.0
+hydro_cavitation{station="KANIV",turbine_type="francis"} 0.0
+hydro_cavitation{station="KREMENCHUK",turbine_type="pelton"} 0.0
+hydro_cavitation{station="DNIPRO",turbine_type="kaplan"} 0.0
+hydro_cavitation{station="KAMIANSKE",turbine_type="francis"} 0.0
+hydro_cavitation{station="KAKHOVKA_MODEL",turbine_type="pelton"} 0.0
+# HELP hydro_offdesign Distance from design point risk 0/1
+# TYPE hydro_offdesign gauge
+hydro_offdesign{station="KYIV",turbine_type="kaplan"} 0.0
+hydro_offdesign{station="KANIV",turbine_type="francis"} 0.0
+hydro_offdesign{station="KREMENCHUK",turbine_type="pelton"} 0.0
+hydro_offdesign{station="DNIPRO",turbine_type="kaplan"} 0.0
+hydro_offdesign{station="KAMIANSKE",turbine_type="francis"} 0.0
+hydro_offdesign{station="KAKHOVKA_MODEL",turbine_type="pelton"} 0.0
+# HELP hydro_generator_temperature_celsius Generator model winding temperature
+# TYPE hydro_generator_temperature_celsius gauge
+hydro_generator_temperature_celsius{station="KYIV",turbine_type="kaplan"} 60.20258838717117
+hydro_generator_temperature_celsius{station="KANIV",turbine_type="francis"} 60.20258838717117
+hydro_generator_temperature_celsius{station="KREMENCHUK",turbine_type="pelton"} 60.20258838717117
+hydro_generator_temperature_celsius{station="DNIPRO",turbine_type="kaplan"} 60.20258838717117
+hydro_generator_temperature_celsius{station="KAMIANSKE",turbine_type="francis"} 60.20258838717117
+hydro_generator_temperature_celsius{station="KAKHOVKA_MODEL",turbine_type="pelton"} 60.20258838717117
+# HELP hydro_generator_running Generator state 0/1
+# TYPE hydro_generator_running gauge
+hydro_generator_running{station="KYIV",turbine_type="kaplan"} 1.0
+hydro_generator_running{station="KANIV",turbine_type="francis"} 1.0
+hydro_generator_running{station="KREMENCHUK",turbine_type="pelton"} 1.0
+hydro_generator_running{station="DNIPRO",turbine_type="kaplan"} 1.0
+hydro_generator_running{station="KAMIANSKE",turbine_type="francis"} 1.0
+hydro_generator_running{station="KAKHOVKA_MODEL",turbine_type="pelton"} 1.0
+# HELP hydro_stream_windows_verified Last actual verified Streams trial window count
+# TYPE hydro_stream_windows_verified gauge
+hydro_stream_windows_verified 20.0
+# HELP hydro_saga_scenarios_verified Actual validated Saga scenarios
+# TYPE hydro_saga_scenarios_verified gauge
+hydro_saga_scenarios_verified 3.0

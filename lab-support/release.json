@@ -1,0 +1,14 @@
+{
+  "archive": "Labs3-5_Lysenko_3B.zip",
+  "files": 198,
+  "bytes": 2454648,
+  "sha256": "4d4a9d1ff1c281cfe0233d1657509085fd436bf858fba6df9e254160a49e0db8",
+  "all_member_hashes_verified": true,
+  "excluded": [
+    "portable binaries",
+    "raw generated CSV/SSTables",
+    "runtime credentials",
+    "teacher materials",
+    "video"
+  ]
+}

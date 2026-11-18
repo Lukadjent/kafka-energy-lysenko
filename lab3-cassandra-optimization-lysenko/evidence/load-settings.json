@@ -1,0 +1,6 @@
+{
+  "server_write_timeout_ms": 20000,
+  "max_inflight": 8,
+  "batch_rows": 60,
+  "note": "Shared-host exploratory run hit default 2s timeout; successful rerun starts each table empty; no client retry."
+}

@@ -1,0 +1,143 @@
+{
+  "status": "success",
+  "data": {
+    "activeTargets": [
+      {
+        "discoveredLabels": {
+          "__address__": "127.0.0.1:18082",
+          "__always_scrape_classic_histograms__": "false",
+          "__convert_classic_histograms_to_nhcb__": "false",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "5s",
+          "__scrape_native_histograms__": "false",
+          "__scrape_timeout__": "5s",
+          "job": "cassandra-jmx"
+        },
+        "labels": {
+          "instance": "127.0.0.1:18082",
+          "job": "cassandra-jmx"
+        },
+        "scrapePool": "cassandra-jmx",
+        "scrapeUrl": "http://127.0.0.1:18082/metrics",
+        "globalUrl": "http://DESKTOP-794IIO1:18082/metrics",
+        "lastError": "",
+        "lastScrape": "2026-11-18T14:39:13.4095879+02:00",
+        "lastScrapeDuration": 0.0026432,
+        "health": "up",
+        "scrapeInterval": "5s",
+        "scrapeTimeout": "5s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "127.0.0.1:18083",
+          "__always_scrape_classic_histograms__": "false",
+          "__convert_classic_histograms_to_nhcb__": "false",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "5s",
+          "__scrape_native_histograms__": "false",
+          "__scrape_timeout__": "5s",
+          "job": "cassandra-jmx"
+        },
+        "labels": {
+          "instance": "127.0.0.1:18083",
+          "job": "cassandra-jmx"
+        },
+        "scrapePool": "cassandra-jmx",
+        "scrapeUrl": "http://127.0.0.1:18083/metrics",
+        "globalUrl": "http://DESKTOP-794IIO1:18083/metrics",
+        "lastError": "",
+        "lastScrape": "2026-11-18T14:39:15.2948768+02:00",
+        "lastScrapeDuration": 0.0037647,
+        "health": "up",
+        "scrapeInterval": "5s",
+        "scrapeTimeout": "5s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "127.0.0.1:18081",
+          "__always_scrape_classic_histograms__": "false",
+          "__convert_classic_histograms_to_nhcb__": "false",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "5s",
+          "__scrape_native_histograms__": "false",
+          "__scrape_timeout__": "5s",
+          "job": "cassandra-jmx"
+        },
+        "labels": {
+          "instance": "127.0.0.1:18081",
+          "job": "cassandra-jmx"
+        },
+        "scrapePool": "cassandra-jmx",
+        "scrapeUrl": "http://127.0.0.1:18081/metrics",
+        "globalUrl": "http://DESKTOP-794IIO1:18081/metrics",
+        "lastError": "",
+        "lastScrape": "2026-11-18T14:39:14.9571443+02:00",
+        "lastScrapeDuration": 0.0029919,
+        "health": "up",
+        "scrapeInterval": "5s",
+        "scrapeTimeout": "5s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "127.0.0.1:18400",
+          "__always_scrape_classic_histograms__": "false",
+          "__convert_classic_histograms_to_nhcb__": "false",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "5s",
+          "__scrape_native_histograms__": "false",
+          "__scrape_timeout__": "5s",
+          "job": "hydro-python"
+        },
+        "labels": {
+          "instance": "127.0.0.1:18400",
+          "job": "hydro-python"
+        },
+        "scrapePool": "hydro-python",
+        "scrapeUrl": "http://127.0.0.1:18400/metrics",
+        "globalUrl": "http://DESKTOP-794IIO1:18400/metrics",
+        "lastError": "",
+        "lastScrape": "2026-11-18T14:39:14.1467323+02:00",
+        "lastScrapeDuration": 0.0019952,
+        "health": "up",
+        "scrapeInterval": "5s",
+        "scrapeTimeout": "5s"
+      },
+      {
+        "discoveredLabels": {
+          "__address__": "127.0.0.1:18080",
+          "__always_scrape_classic_histograms__": "false",
+          "__convert_classic_histograms_to_nhcb__": "false",
+          "__metrics_path__": "/metrics",
+          "__scheme__": "http",
+          "__scrape_interval__": "5s",
+          "__scrape_native_histograms__": "false",
+          "__scrape_timeout__": "5s",
+          "job": "kafka-jmx"
+        },
+        "labels": {
+          "instance": "127.0.0.1:18080",
+          "job": "kafka-jmx"
+        },
+        "scrapePool": "kafka-jmx",
+        "scrapeUrl": "http://127.0.0.1:18080/metrics",
+        "globalUrl": "http://DESKTOP-794IIO1:18080/metrics",
+        "lastError": "",
+        "lastScrape": "2026-11-18T14:39:15.5767534+02:00",
+        "lastScrapeDuration": 0.0043648,
+        "health": "up",
+        "scrapeInterval": "5s",
+        "scrapeTimeout": "5s"
+      }
+    ],
+    "droppedTargets": [],
+    "droppedTargetCounts": {
+      "cassandra-jmx": 0,
+      "hydro-python": 0,
+      "kafka-jmx": 0
+    }
+  }
+}

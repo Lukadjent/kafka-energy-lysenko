@@ -1,0 +1,9 @@
+{
+  "topic": "l5-lysenko-telemetry-0000124100",
+  "interval_seconds": 1,
+  "stations": 6,
+  "time_acceleration_vs_10s_spec": 10,
+  "synthetic": true,
+  "started_utc": 1795004923.1873877,
+  "consistency": "LOCAL_QUORUM"
+}

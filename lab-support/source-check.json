@@ -1,0 +1,20 @@
+{
+  "python_syntax_passed": true,
+  "files": [
+    "lab-support/build_reports.py",
+    "lab-support/capture.py",
+    "lab-support/common.py",
+    "lab-support/hydro_model.py",
+    "lab-support/package.py",
+    "lab-support/pdf_tools.py",
+    "lab-support/qa_reports.py",
+    "lab-support/services.py",
+    "lab-support/validate.py",
+    "lab3-cassandra-optimization-lysenko/run_lab.py",
+    "lab4-kafka-streams-lysenko/run_lab.py",
+    "lab4-kafka-streams-lysenko/saga.py",
+    "lab5-monitoring-lysenko/exporter.py",
+    "lab5-monitoring-lysenko/run_lab.py"
+  ],
+  "powershell_setup_syntax_passed": true
+}

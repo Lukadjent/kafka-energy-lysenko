@@ -1,0 +1,17 @@
+{
+  "records": 1296000,
+  "devices": 15,
+  "days": 30,
+  "interval_seconds": 30,
+  "start_utc": "2026-09-01T00:00:00+00:00",
+  "end_exclusive_utc": "2026-10-01T00:00:00+00:00",
+  "generation_seconds": 11.106968099998994,
+  "csv_bytes": 171663518,
+  "sha256": "a5f181e4ba9d425daf4ad62bdcaa79a46df6650c426143eadeee4f268368561c",
+  "synthetic": true,
+  "level_bands": {
+    "high": ">=18.3 m",
+    "low": "<15.5 m",
+    "normal": "otherwise"
+  }
+}

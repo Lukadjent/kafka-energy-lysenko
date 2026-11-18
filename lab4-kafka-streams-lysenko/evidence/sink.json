@@ -1,0 +1,8 @@
+{
+  "run_id": "stream-exactly_once_v2-0-recovery-7763121000",
+  "write_attempts": 40,
+  "unique_rows": 20,
+  "fault": "connection closed after Cassandra upserts, before Kafka commit",
+  "manual_commit": true,
+  "isolation": "read_committed"
+}

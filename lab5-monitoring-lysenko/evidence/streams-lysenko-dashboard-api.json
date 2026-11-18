@@ -1,0 +1,274 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canAdmin": false,
+    "canStar": false,
+    "canDelete": false,
+    "slug": "lr4-c2b7-streams-i-saga-c2b7-lisenko-c2b7-3b",
+    "url": "/d/streams-lysenko/lr4-c2b7-streams-i-saga-c2b7-lisenko-c2b7-3b",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2026-11-18T14:31:57+02:00",
+    "updated": "2026-11-18T14:35:07+02:00",
+    "updatedBy": "Anonymous",
+    "createdBy": "Anonymous",
+    "version": 2,
+    "hasAcl": false,
+    "isFolder": false,
+    "apiVersion": "v0alpha1",
+    "folderId": 1836027623858176,
+    "folderUid": "cg4o7u8txi22of",
+    "folderTitle": "Lysenko 3B",
+    "folderUrl": "/dashboards/f/cg4o7u8txi22of/lysenko-3b",
+    "provisioned": true,
+    "provisionedExternalId": "streams-lysenko.json",
+    "annotationsPermissions": {
+      "dashboard": {
+        "canAdd": false,
+        "canEdit": false,
+        "canDelete": false
+      }
+    }
+  },
+  "dashboard": {
+    "id": 1836028253876224,
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_stream_windows_verified",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Перевірені вікна останнього Streams тесту",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 8,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_saga_scenarios_verified",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Перевірені сценарії Saga",
+        "type": "stat"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 16,
+          "y": 0
+        },
+        "id": 3,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "kafka_broker_messages_in_total",
+            "legendFormat": "Value",
+            "refId": "A"
+          }
+        ],
+        "title": "Kafka broker: MessagesIn total",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "ops"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 0,
+          "y": 7
+        },
+        "id": 4,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "sum(rate(energy_messages_stored_total[1m]))",
+            "legendFormat": "Value",
+            "refId": "A"
+          }
+        ],
+        "title": "Реальний потік Kafka → Cassandra",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 12,
+          "x": 12,
+          "y": 7
+        },
+        "id": 5,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, sum by (le) (rate(energy_send_ack_seconds_bucket[1m])))",
+            "legendFormat": "Value",
+            "refId": "A"
+          }
+        ],
+        "title": "Producer ack p95",
+        "type": "timeseries"
+      }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 39,
+    "tags": [
+      "Lysenko",
+      "3B",
+      "synthetic-model"
+    ],
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "timezone": "utc",
+    "title": "ЛР4 · Streams і Saga · Лисенко · 3Б",
+    "uid": "streams-lysenko",
+    "version": 2
+  }
+}

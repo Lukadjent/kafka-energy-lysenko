@@ -1,0 +1,62 @@
+[
+  {
+    "table": "simple",
+    "rows": 1296000,
+    "requests": 21600,
+    "max_batch_rows": 60,
+    "max_inflight": 8,
+    "load_seconds": 65.16146540000045,
+    "rows_per_second": 19889.05547234656,
+    "batch_ack": {
+      "n": 21600,
+      "avg_ms": 14.920762050921304,
+      "p50_ms": 12.043499999890628,
+      "p95_ms": 22.807900000771042,
+      "p99_ms": 61.790199999450124,
+      "min_ms": 1.994499998545507,
+      "max_ms": 3768.199900001491
+    },
+    "consistency": "LOCAL_QUORUM",
+    "scope": "CSV decoding, batch formation, async submission and acknowledgements; data generation excluded"
+  },
+  {
+    "table": "hourly",
+    "rows": 1296000,
+    "requests": 21600,
+    "max_batch_rows": 60,
+    "max_inflight": 8,
+    "load_seconds": 74.0405193000006,
+    "rows_per_second": 17503.929095213538,
+    "batch_ack": {
+      "n": 21600,
+      "avg_ms": 15.617282467596347,
+      "p50_ms": 12.462300000152027,
+      "p95_ms": 23.661600000195904,
+      "p99_ms": 62.78089999977965,
+      "min_ms": 1.741599999149912,
+      "max_ms": 7351.625299999796
+    },
+    "consistency": "LOCAL_QUORUM",
+    "scope": "CSV decoding, batch formation, async submission and acknowledgements; data generation excluded"
+  },
+  {
+    "table": "daily",
+    "rows": 1296000,
+    "requests": 21600,
+    "max_batch_rows": 60,
+    "max_inflight": 8,
+    "load_seconds": 70.55509150000034,
+    "rows_per_second": 18368.6247504901,
+    "batch_ack": {
+      "n": 21600,
+      "avg_ms": 15.247160884252683,
+      "p50_ms": 12.596300000041083,
+      "p95_ms": 25.43070000137959,
+      "p99_ms": 59.18999999994412,
+      "min_ms": 1.8816000010701828,
+      "max_ms": 5445.997799999532
+    },
+    "consistency": "LOCAL_QUORUM",
+    "scope": "CSV decoding, batch formation, async submission and acknowledgements; data generation excluded"
+  }
+]

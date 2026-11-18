@@ -1,0 +1,62 @@
+evaluation_interval: 15s
+rule_files:
+- C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab5-monitoring-lysenko\config\production-test-rules.yml
+tests:
+- alert_rule_test:
+  - alertname: HydroEfficiencyLow
+    eval_time: 119m45s
+    exp_alerts: []
+  - alertname: HydroEfficiencyLow
+    eval_time: 120m
+    exp_alerts:
+    - exp_annotations:
+        summary: ККД турбіни нижче 88% протягом 2 годин
+      exp_labels:
+        profile: production
+        severity: warning
+        station: TEST
+        turbine_type: kaplan
+  - alertname: HydroEfficiencyLow
+    eval_time: 121m
+    exp_alerts: []
+  input_series:
+  - series: hydro_efficiency_percent{station="TEST",turbine_type="kaplan"}
+    values: 85+0x480 94+0x8
+  interval: 15s
+  name: HydroEfficiencyLow boundary/recovery
+- alert_rule_test:
+  - alertname: HydroCavitation
+    eval_time: 9m45s
+    exp_alerts: []
+  - alertname: HydroCavitation
+    eval_time: 10m
+    exp_alerts:
+    - exp_annotations:
+        summary: Ризик кавітації протягом 10 хвилин
+      exp_labels:
+        profile: production
+        severity: critical
+        station: TEST
+        turbine_type: kaplan
+  - alertname: HydroCavitation
+    eval_time: 11m
+    exp_alerts: []
+  input_series:
+  - series: hydro_cavitation{station="TEST",turbine_type="kaplan"}
+    values: 1+0x40 0+0x8
+  interval: 15s
+  name: HydroCavitation boundary/recovery
+- alert_rule_test:
+  - alertname: ProducerDown
+    eval_time: 45s
+    exp_alerts: []
+  - alertname: ProducerDown
+    eval_time: 1m
+    exp_alerts:
+    - exp_annotations: {}
+      exp_labels:
+        profile: production
+        severity: critical
+  input_series: []
+  interval: 15s
+  name: producer absent boundary

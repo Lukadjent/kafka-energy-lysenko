@@ -1,0 +1,713 @@
+{
+  "captured_epoch": 1795005557.3700662,
+  "queries": {
+    "up": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "up",
+              "instance": "127.0.0.1:18081",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.196,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "up",
+              "instance": "127.0.0.1:18083",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.196,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "up",
+              "instance": "127.0.0.1:18080",
+              "job": "kafka-jmx"
+            },
+            "value": [
+              1795005557.196,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "up",
+              "instance": "127.0.0.1:18082",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.196,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "up",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python"
+            },
+            "value": [
+              1795005557.196,
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    "energy_producer_alive": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "energy_producer_alive",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python"
+            },
+            "value": [
+              1795005557.214,
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    "sum(energy_messages_sent_total)": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1795005557.229,
+              "3786"
+            ]
+          }
+        ]
+      }
+    },
+    "sum(energy_messages_stored_total)": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1795005557.244,
+              "3786"
+            ]
+          }
+        ]
+      }
+    },
+    "energy_pipeline_errors_total": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "energy_pipeline_errors_total",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python"
+            },
+            "value": [
+              1795005557.259,
+              "0"
+            ]
+          }
+        ]
+      }
+    },
+    "sum(rate(energy_messages_stored_total[1m]))": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1795005557.274,
+              "6"
+            ]
+          }
+        ]
+      }
+    },
+    "energy_consumer_lag": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "energy_consumer_lag",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "partition": "0"
+            },
+            "value": [
+              1795005557.29,
+              "0"
+            ]
+          }
+        ]
+      }
+    },
+    "hydro_efficiency_percent": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "hydro_efficiency_percent",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KYIV",
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.306,
+              "93.85782600471325"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_efficiency_percent",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KANIV",
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.306,
+              "93.87837761623776"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_efficiency_percent",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KREMENCHUK",
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.306,
+              "93.98056268293557"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_efficiency_percent",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "DNIPRO",
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.306,
+              "93.87496308691375"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_efficiency_percent",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KAMIANSKE",
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.306,
+              "93.86066789586621"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_efficiency_percent",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KAKHOVKA_MODEL",
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.306,
+              "93.97816528895257"
+            ]
+          }
+        ]
+      }
+    },
+    "hydro_power_mw": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "hydro_power_mw",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KYIV",
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.321,
+              "201.25219732390272"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_power_mw",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KANIV",
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.321,
+              "263.5962515578517"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_power_mw",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KREMENCHUK",
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.321,
+              "269.1253549847096"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_power_mw",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "DNIPRO",
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.321,
+              "240.62985852319147"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_power_mw",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KAMIANSKE",
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.321,
+              "290.23321622996576"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_power_mw",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KAKHOVKA_MODEL",
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.321,
+              "250.1406340094843"
+            ]
+          }
+        ]
+      }
+    },
+    "hydro_generator_running": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "hydro_generator_running",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KYIV",
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.322,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_generator_running",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KANIV",
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.322,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_generator_running",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KREMENCHUK",
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.322,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_generator_running",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "DNIPRO",
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.322,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_generator_running",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KAMIANSKE",
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.322,
+              "1"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "hydro_generator_running",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python",
+              "station": "KAKHOVKA_MODEL",
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.322,
+              "1"
+            ]
+          }
+        ]
+      }
+    },
+    "cassandra_client_requests_total": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "cassandra_client_requests_total",
+              "instance": "127.0.0.1:18081",
+              "job": "cassandra-jmx",
+              "operation": "Read"
+            },
+            "value": [
+              1795005557.323,
+              "1765"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_client_requests_total",
+              "instance": "127.0.0.1:18081",
+              "job": "cassandra-jmx",
+              "operation": "Write"
+            },
+            "value": [
+              1795005557.323,
+              "67627"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_client_requests_total",
+              "instance": "127.0.0.1:18083",
+              "job": "cassandra-jmx",
+              "operation": "Read"
+            },
+            "value": [
+              1795005557.323,
+              "1670"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_client_requests_total",
+              "instance": "127.0.0.1:18083",
+              "job": "cassandra-jmx",
+              "operation": "Write"
+            },
+            "value": [
+              1795005557.323,
+              "51252"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_client_requests_total",
+              "instance": "127.0.0.1:18082",
+              "job": "cassandra-jmx",
+              "operation": "Read"
+            },
+            "value": [
+              1795005557.323,
+              "2696"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_client_requests_total",
+              "instance": "127.0.0.1:18082",
+              "job": "cassandra-jmx",
+              "operation": "Write"
+            },
+            "value": [
+              1795005557.323,
+              "46486"
+            ]
+          }
+        ]
+      }
+    },
+    "cassandra_storage_bytes": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "cassandra_storage_bytes",
+              "instance": "127.0.0.1:18081",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.337,
+              "188968219"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_storage_bytes",
+              "instance": "127.0.0.1:18083",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.337,
+              "188920884"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_storage_bytes",
+              "instance": "127.0.0.1:18082",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.337,
+              "188890595"
+            ]
+          }
+        ]
+      }
+    },
+    "cassandra_heap_used_bytes": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "cassandra_heap_used_bytes",
+              "instance": "127.0.0.1:18081",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.351,
+              "280353680"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_heap_used_bytes",
+              "instance": "127.0.0.1:18083",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.351,
+              "256208928"
+            ]
+          },
+          {
+            "metric": {
+              "__name__": "cassandra_heap_used_bytes",
+              "instance": "127.0.0.1:18082",
+              "job": "cassandra-jmx"
+            },
+            "value": [
+              1795005557.351,
+              "264061808"
+            ]
+          }
+        ]
+      }
+    },
+    "kafka_broker_messages_in_total": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "kafka_broker_messages_in_total",
+              "instance": "127.0.0.1:18080",
+              "job": "kafka-jmx"
+            },
+            "value": [
+              1795005557.352,
+              "239456"
+            ]
+          }
+        ]
+      }
+    },
+    "histogram_quantile(0.95,sum by(le)(rate(energy_send_ack_seconds_bucket[1m])))": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1795005557.353,
+              "0.00353333333333333"
+            ]
+          }
+        ]
+      }
+    },
+    "avg by(turbine_type)(hydro_efficiency_percent)": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "turbine_type": "kaplan"
+            },
+            "value": [
+              1795005557.367,
+              "93.8663945458135"
+            ]
+          },
+          {
+            "metric": {
+              "turbine_type": "francis"
+            },
+            "value": [
+              1795005557.367,
+              "93.86952275605199"
+            ]
+          },
+          {
+            "metric": {
+              "turbine_type": "pelton"
+            },
+            "value": [
+              1795005557.367,
+              "93.97936398594408"
+            ]
+          }
+        ]
+      }
+    },
+    "sum(hydro_power_mw * (94 / hydro_efficiency_percent - 1))": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {},
+            "value": [
+              1795005557.368,
+              "1.5114745509901821"
+            ]
+          }
+        ]
+      }
+    },
+    "hydro_stream_windows_verified": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "hydro_stream_windows_verified",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python"
+            },
+            "value": [
+              1795005557.369,
+              "20"
+            ]
+          }
+        ]
+      }
+    },
+    "hydro_saga_scenarios_verified": {
+      "status": "success",
+      "data": {
+        "resultType": "vector",
+        "result": [
+          {
+            "metric": {
+              "__name__": "hydro_saga_scenarios_verified",
+              "instance": "127.0.0.1:18400",
+              "job": "hydro-python"
+            },
+            "value": [
+              1795005557.37,
+              "3"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

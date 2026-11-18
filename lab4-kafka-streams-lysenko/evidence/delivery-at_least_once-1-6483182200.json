@@ -1,0 +1,30 @@
+{
+  "name": "delivery-at_least_once-1-6483182200",
+  "mode": "at_least_once",
+  "fault": false,
+  "restarts": 0,
+  "input": 1000,
+  "committed_output": 1000,
+  "uncommitted_output": 1000,
+  "missing": 0,
+  "duplicates": 0,
+  "seconds_including_startup_restart": 1.898835699999836,
+  "timing": {
+    "rows": 1000,
+    "batch_ms": [
+      25.7447,
+      4.6089,
+      3.9695,
+      3.6167,
+      3.8405,
+      3.8362,
+      3.3222,
+      2.8388,
+      2.9269,
+      3.4814
+    ],
+    "mode": "at_least_once",
+    "seconds": 1.7119262
+  },
+  "prefix": "l4-lysenko-delivery-at_least_once-1-6483182200"
+}

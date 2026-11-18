@@ -1,0 +1,64 @@
+{
+  "state": {
+    "saga_id": "lysenko-success-6065854300",
+    "fail_lower": false,
+    "next_step": 3,
+    "status": "COMPLETED"
+  },
+  "participant": {
+    "station_id": "lysenko-success-6065854300-upper",
+    "commands": {
+      "lysenko-success-6065854300:OPEN_GATES": "{\"gate\": 60, \"prepared\": true}",
+      "lysenko-success-6065854300:PREPARE_UPPER": "{\"gate\": 20, \"prepared\": true}"
+    },
+    "gate": 60.0,
+    "prepared": true,
+    "version": 2
+  },
+  "lower_participant": {
+    "station_id": "lysenko-success-6065854300-lower",
+    "commands": {
+      "lysenko-success-6065854300:ACK_LOWER": "{\"gate\": 20, \"prepared\": true}"
+    },
+    "gate": 20.0,
+    "prepared": true,
+    "version": 1
+  },
+  "log": [
+    {
+      "saga_id": "lysenko-success-6065854300",
+      "sequence": 10,
+      "action": "PREPARE_UPPER",
+      "status": "DONE"
+    },
+    {
+      "saga_id": "lysenko-success-6065854300",
+      "sequence": 20,
+      "action": "OPEN_GATES",
+      "status": "DONE"
+    },
+    {
+      "saga_id": "lysenko-success-6065854300",
+      "sequence": 30,
+      "action": "ACK_LOWER",
+      "status": "DONE"
+    }
+  ],
+  "attempts": [
+    {
+      "action": "PREPARE_UPPER",
+      "deduplicated": false,
+      "version": 1
+    },
+    {
+      "action": "OPEN_GATES",
+      "deduplicated": false,
+      "version": 2
+    },
+    {
+      "action": "ACK_LOWER",
+      "deduplicated": false,
+      "version": 1
+    }
+  ]
+}

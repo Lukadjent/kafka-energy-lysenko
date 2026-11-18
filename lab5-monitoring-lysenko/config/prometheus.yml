@@ -1,0 +1,20 @@
+global:
+  evaluation_interval: 5s
+  scrape_interval: 5s
+rule_files:
+- C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab5-monitoring-lysenko\alerts.yml
+scrape_configs:
+- job_name: hydro-python
+  static_configs:
+  - targets:
+    - 127.0.0.1:18400
+- job_name: kafka-jmx
+  static_configs:
+  - targets:
+    - 127.0.0.1:18080
+- job_name: cassandra-jmx
+  static_configs:
+  - targets:
+    - 127.0.0.1:18081
+    - 127.0.0.1:18082
+    - 127.0.0.1:18083

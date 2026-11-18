@@ -1,0 +1,597 @@
+{
+  "meta": {
+    "type": "db",
+    "canSave": false,
+    "canEdit": false,
+    "canAdmin": false,
+    "canStar": false,
+    "canDelete": false,
+    "slug": "lr5-c2b7-ges-c2b7-lisenko-c2b7-3b",
+    "url": "/d/hydro-lysenko/lr5-c2b7-ges-c2b7-lisenko-c2b7-3b",
+    "expires": "0001-01-01T00:00:00Z",
+    "created": "2026-11-18T14:31:57+02:00",
+    "updated": "2026-11-18T14:36:41+02:00",
+    "updatedBy": "Anonymous",
+    "createdBy": "Anonymous",
+    "version": 3,
+    "hasAcl": false,
+    "isFolder": false,
+    "apiVersion": "v0alpha1",
+    "folderId": 1836027623858176,
+    "folderUid": "cg4o7u8txi22of",
+    "folderTitle": "Lysenko 3B",
+    "folderUrl": "/dashboards/f/cg4o7u8txi22of/lysenko-3b",
+    "provisioned": true,
+    "provisionedExternalId": "hydro-lysenko.json",
+    "annotationsPermissions": {
+      "dashboard": {
+        "canAdd": false,
+        "canEdit": false,
+        "canDelete": false
+      }
+    }
+  },
+  "dashboard": {
+    "id": 1836028325179392,
+    "panels": [
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "percent"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 0,
+          "y": 0
+        },
+        "id": 1,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_efficiency_percent",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "ККД турбін (%)",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "suffix: MW"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 8,
+          "y": 0
+        },
+        "id": 2,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_power_mw",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Потужність (МВт)",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 16,
+          "y": 0
+        },
+        "id": 3,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_cavitation",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Кавітація: 0 норма / 1 ризик",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "ops"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 0,
+          "y": 7
+        },
+        "id": 4,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "sum(rate(energy_messages_stored_total[1m]))",
+            "legendFormat": "Value",
+            "refId": "A"
+          }
+        ],
+        "title": "Kafka → Cassandra: подій/с",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 8,
+          "y": 7
+        },
+        "id": 5,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_voltage_kv",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Напруга (кВ)",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "hertz"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 16,
+          "y": 7
+        },
+        "id": 6,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_frequency_hz",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Частота (Гц)",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "celsius"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 0,
+          "y": 14
+        },
+        "id": 7,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_generator_temperature_celsius",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Температура генератора (°C)",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 8,
+          "y": 14
+        },
+        "id": 8,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "hydro_generator_running",
+            "legendFormat": "{{station}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Генератори: стан 0/1",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 8,
+          "x": 16,
+          "y": 14
+        },
+        "id": 9,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "energy_consumer_lag",
+            "legendFormat": "Value",
+            "refId": "A"
+          }
+        ],
+        "title": "Consumer lag",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "µs"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 0,
+          "y": 21
+        },
+        "id": 10,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "cassandra_client_latency_microseconds{operation=\"Write\",percentile=\"95thPercentile\"}",
+            "legendFormat": "{{operation}} {{instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Cassandra write p95, мкс",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "bytes"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 7,
+          "w": 12,
+          "x": 12,
+          "y": 21
+        },
+        "id": 11,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "cassandra_heap_used_bytes",
+            "legendFormat": "{{operation}} {{instance}}",
+            "refId": "A"
+          }
+        ],
+        "title": "JMX: JVM heap Cassandra",
+        "type": "timeseries"
+      },
+      {
+        "gridPos": {
+          "h": 16,
+          "w": 24,
+          "x": 0,
+          "y": 28
+        },
+        "id": 12,
+        "options": {
+          "content": "<p>Синтетична характеристика; точки оптимуму задані моделлю, не паспортні дані ГЕС.</p><img src=\"http://127.0.0.1:18400/hill.png\" width=\"100%\" />",
+          "mode": "html"
+        },
+        "title": "Hill chart: модель η(H,Q), три типи турбін",
+        "type": "text"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "hydro-prom"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "fillOpacity": 8,
+              "lineWidth": 2
+            },
+            "unit": "short"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 8,
+          "w": 24,
+          "x": 0,
+          "y": 44
+        },
+        "id": 13,
+        "options": {
+          "legend": {
+            "displayMode": "list",
+            "placement": "bottom"
+          },
+          "tooltip": {
+            "mode": "multi"
+          }
+        },
+        "targets": [
+          {
+            "expr": "sum by(alertname,alertstate)(ALERTS)",
+            "legendFormat": "{{alertname}} / {{alertstate}}",
+            "refId": "A"
+          }
+        ],
+        "title": "Prometheus ALERTS: production і прискорений тест",
+        "type": "timeseries"
+      }
+    ],
+    "refresh": "5s",
+    "schemaVersion": 39,
+    "tags": [
+      "Lysenko",
+      "3B",
+      "synthetic-model"
+    ],
+    "time": {
+      "from": "now-5m",
+      "to": "now"
+    },
+    "timezone": "utc",
+    "title": "ЛР5 · ГЕС · Лисенко · 3Б",
+    "uid": "hydro-lysenko",
+    "version": 3
+  }
+}

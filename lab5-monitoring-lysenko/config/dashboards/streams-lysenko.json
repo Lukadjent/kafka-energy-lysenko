@@ -1,0 +1,239 @@
+{
+  "uid": "streams-lysenko",
+  "title": "ЛР4 · Streams і Saga · Лисенко · 3Б",
+  "panels": [
+    {
+      "id": 1,
+      "title": "Перевірені вікна останнього Streams тесту",
+      "type": "stat",
+      "gridPos": {
+        "x": 0,
+        "y": 0,
+        "w": 8,
+        "h": 7
+      },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hydro-prom"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "hydro_stream_windows_verified",
+          "legendFormat": "{{station}}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title": "Перевірені сценарії Saga",
+      "type": "stat",
+      "gridPos": {
+        "x": 8,
+        "y": 0,
+        "w": 8,
+        "h": 7
+      },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hydro-prom"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "hydro_saga_scenarios_verified",
+          "legendFormat": "{{station}}"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title": "Kafka broker: MessagesIn total",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 16,
+        "y": 0,
+        "w": 8,
+        "h": 7
+      },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hydro-prom"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "kafka_broker_messages_in_total",
+          "legendFormat": "Value"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "short",
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title": "Реальний потік Kafka → Cassandra",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 0,
+        "y": 7,
+        "w": 12,
+        "h": 8
+      },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hydro-prom"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "sum(rate(energy_messages_stored_total[1m]))",
+          "legendFormat": "Value"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "ops",
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title": "Producer ack p95",
+      "type": "timeseries",
+      "gridPos": {
+        "x": 12,
+        "y": 7,
+        "w": 12,
+        "h": 8
+      },
+      "datasource": {
+        "type": "prometheus",
+        "uid": "hydro-prom"
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "expr": "histogram_quantile(0.95, sum by (le) (rate(energy_send_ack_seconds_bucket[1m])))",
+          "legendFormat": "Value"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "unit": "s",
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "lineWidth": 2,
+            "fillOpacity": 8
+          }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "multi"
+        }
+      }
+    }
+  ],
+  "schemaVersion": 39,
+  "version": 1,
+  "timezone": "utc",
+  "refresh": "5s",
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "tags": [
+    "Lysenko",
+    "3B",
+    "synthetic-model"
+  ]
+}

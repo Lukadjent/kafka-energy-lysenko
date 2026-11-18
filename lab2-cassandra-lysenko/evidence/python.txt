@@ -1,0 +1,29 @@
+> python hydro.py
+Cassandra 4.0.21 | Test Cluster | DC datacenter1
+Python 3.12.14 | cassandra-driver 3.30.0 | LOCAL_ONE
+Keyspace: dnipro_hydro_lysenko | generated UTC day: 2025-07-15
+turbine_readings       1440 rows |  120 requests | 0.037 s | 39205 rows/s
+reservoir_readings       72 rows |    6 requests | 0.016 s | 4603 rows/s
+station_daily          3288 rows | 3288 requests | 0.524 s | 6278 rows/s
+seasonal_by_station      36 rows |   36 requests | 0.020 s | 1813 rows/s
+seasonal_by_season       36 rows |   36 requests | 0.022 s | 1636 rows/s
+
+Latest HYDRO_DN_001 readings (UTC):
+  23:45:00  21.469 MW
+  23:30:00  21.894 MW
+  23:15:00  21.711 MW
+
+Station daily aggregates reconstructed from Cassandra telemetry (2025-07-15 UTC):
+  KYIV    mean  129.39 MW | peak  150.82 MW | energy  3105.39 MWh
+  KANIV   mean  165.80 MW | peak  192.37 MW | energy  3979.14 MWh
+  DNIPRO  mean  534.82 MW | peak  611.21 MW | energy 12835.78 MWh
+
+Variant 3B: KYIV 129.39 MW | KANIV 165.80 MW | KANIV - KYIV +36.41 MW
+Comparison is based on mean generation over the same 24 hours.
+
+Archive reads: 60 measured repetitions/layout/scenario (10 warm-ups).
+  station_year   by_station 1 queries | p50 15.808 ms | p95 17.382 ms
+  station_year   by_season  4 queries | p50 61.825 ms | p95 64.509 ms
+  cascade_season by_station 3 queries | p50 46.466 ms | p95 48.589 ms
+  cascade_season by_season  1 queries | p50 15.715 ms | p95 17.668 ms
+PASS: all table counts, daily rollups, and archive result sets verified.

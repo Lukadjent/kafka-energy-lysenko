@@ -1,0 +1,32 @@
+[
+  {
+    "command": [
+      "check",
+      "config",
+      "C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\config\\prometheus.yml"
+    ],
+    "exit_code": 0,
+    "stdout": "Checking C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\config\\prometheus.yml\n  SUCCESS: 1 rule files found\n SUCCESS: C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\config\\prometheus.yml is valid prometheus config file syntax\n\nChecking C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\alerts.yml\n  SUCCESS: 8 rules found\n\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "check",
+      "rules",
+      "C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\alerts.yml"
+    ],
+    "exit_code": 0,
+    "stdout": "Checking C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\alerts.yml\n  SUCCESS: 8 rules found\n\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "test",
+      "rules",
+      "C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\config\\rule-tests.yml"
+    ],
+    "exit_code": 0,
+    "stdout": "Processing test file: C:\\Users\\Luka\\Documents\\ChatGPT\\Проектування систем з розподіленими базами данних\\lab5-monitoring-lysenko\\config\\rule-tests.yml\n  SUCCESS\n\n",
+    "stderr": ""
+  }
+]

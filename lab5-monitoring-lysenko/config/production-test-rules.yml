@@ -1,0 +1,50 @@
+groups:
+- interval: 15s
+  name: hydro-production
+  rules:
+  - alert: HydroEfficiencyLow
+    annotations:
+      summary: ККД турбіни нижче 88% протягом 2 годин
+    expr: hydro_efficiency_percent < 88
+    for: 2h
+    labels:
+      profile: production
+      severity: warning
+  - alert: HydroCavitation
+    annotations:
+      summary: Ризик кавітації протягом 10 хвилин
+    expr: hydro_cavitation == 1
+    for: 10m
+    labels:
+      profile: production
+      severity: critical
+  - alert: HydroOffDesign
+    expr: hydro_offdesign == 1
+    for: 5m
+    labels:
+      profile: production
+      severity: warning
+  - alert: GeneratorOverheat
+    expr: hydro_generator_temperature_celsius > 85
+    for: 5m
+    labels:
+      profile: production
+      severity: critical
+  - alert: VoltageDeviation
+    expr: abs(hydro_voltage_kv - 220) > 10
+    for: 2m
+    labels:
+      profile: production
+      severity: critical
+  - alert: FrequencyDeviation
+    expr: abs(hydro_frequency_hz - 50) > 0.5
+    for: 1m
+    labels:
+      profile: production
+      severity: critical
+  - alert: ProducerDown
+    expr: energy_producer_alive == 0 or absent(energy_producer_alive)
+    for: 1m
+    labels:
+      profile: production
+      severity: critical

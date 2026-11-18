@@ -1,0 +1,50 @@
+> nodetool status
+Datacenter: datacenter1
+========================
+Status=Up/Down
+|/ State=Normal/Leaving/Joining/Moving
+--  Address    Load        Tokens  Owns (effective)  Host ID                               Rack 
+UN  127.0.0.1  271,45 KiB  16      100,0%            a4fdbd10-8343-4126-ba3f-929bf56ba644  rack1
+
+
+> nodetool flush dnipro_hydro_lysenko
+
+> nodetool tablehistograms dnipro_hydro_lysenko turbine_readings
+dnipro_hydro_lysenko/turbine_readings histograms
+Percentile      Read Latency     Write Latency          SSTables    Partition Size        Cell Count
+                    (micros)          (micros)                             (bytes)                  
+50%                   785,94             29,52              1,00              5722               535
+75%                   785,94             51,01              1,00              5722               535
+95%                   943,13            126,93              1,00              6866               535
+98%                   943,13            379,02              1,00              6866               535
+99%                   943,13            454,83              1,00              6866               535
+Min                   379,02              9,89              1,00                25                 0
+Max                   943,13            454,83              1,00              6866               535
+
+
+> nodetool tablehistograms dnipro_hydro_lysenko seasonal_by_station
+dnipro_hydro_lysenko/seasonal_by_station histograms
+Percentile      Read Latency     Write Latency          SSTables    Partition Size        Cell Count
+                    (micros)          (micros)                             (bytes)                  
+50%                   219,34              6,87              0,00               642                50
+75%                   263,21             24,60              0,00               642                50
+95%                   785,94            105,78              1,00               642                50
+98%                  1131,75            126,93              1,00               642                50
+99%                  1358,10            126,93              1,00               642                50
+Min                    35,43              2,76              0,00               536                43
+Max                  2346,80            126,93              1,00               642                50
+
+
+> nodetool tablehistograms dnipro_hydro_lysenko seasonal_by_season
+dnipro_hydro_lysenko/seasonal_by_season histograms
+Percentile      Read Latency     Write Latency          SSTables    Partition Size        Cell Count
+                    (micros)          (micros)                             (bytes)                  
+50%                   219,34             11,86              0,00               179                12
+75%                   263,21             24,60              0,00               179                12
+95%                   654,95            152,32              1,00               179                12
+98%                   785,94            182,79              1,00               179                12
+99%                   943,13            182,79              1,00               179                12
+Min                    42,51              2,30              0,00               150                11
+Max                   943,13            182,79              1,00               179                12
+
+

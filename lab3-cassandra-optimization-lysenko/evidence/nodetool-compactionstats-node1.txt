@@ -1,0 +1,6 @@
+pending tasks: 2
+- energy_l3_lysenko.by_level_band: 2
+
+id                                   compaction type keyspace          table         completed total     unit  progress
+e4f427c0-e349-11f1-ac85-772a77c4d5b8 Compaction      energy_l3_lysenko by_level_band 57778842  152444049 bytes 37,90%  
+Active compaction remaining time :   0h00m01s

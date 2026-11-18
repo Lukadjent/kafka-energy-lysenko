@@ -1,0 +1,23 @@
+lowercaseOutputName: true
+includeObjectNames:
+  - 'kafka.server:type=BrokerTopicMetrics,name=MessagesInPerSec'
+  - 'kafka.server:type=BrokerTopicMetrics,name=BytesInPerSec'
+  - 'kafka.server:type=ReplicaManager,name=UnderReplicatedPartitions'
+  - 'kafka.controller:type=KafkaController,name=ActiveControllerCount'
+  - 'java.lang:type=Memory'
+rules:
+  - pattern: 'kafka.server<type=BrokerTopicMetrics, name=MessagesInPerSec><>Count'
+    name: kafka_broker_messages_in_total
+    type: COUNTER
+  - pattern: 'kafka.server<type=BrokerTopicMetrics, name=BytesInPerSec><>Count'
+    name: kafka_broker_bytes_in_total
+    type: COUNTER
+  - pattern: 'kafka.server<type=ReplicaManager, name=UnderReplicatedPartitions><>Value'
+    name: kafka_under_replicated_partitions
+    type: GAUGE
+  - pattern: 'kafka.controller<type=KafkaController, name=ActiveControllerCount><>Value'
+    name: kafka_active_controller
+    type: GAUGE
+  - pattern: 'java.lang<type=Memory><HeapMemoryUsage>used'
+    name: kafka_heap_used_bytes
+    type: GAUGE

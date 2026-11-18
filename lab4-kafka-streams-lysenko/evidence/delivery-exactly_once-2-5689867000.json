@@ -1,0 +1,30 @@
+{
+  "name": "delivery-exactly_once-2-5689867000",
+  "mode": "exactly_once",
+  "fault": false,
+  "restarts": 0,
+  "input": 1000,
+  "committed_output": 1000,
+  "uncommitted_output": 1000,
+  "missing": 0,
+  "duplicates": 0,
+  "seconds_including_startup_restart": 2.226248000000851,
+  "timing": {
+    "rows": 1000,
+    "seconds": 2.0011213,
+    "mode": "exactly_once",
+    "batch_ms": [
+      158.2613,
+      12.2042,
+      12.4608,
+      10.5029,
+      11.8895,
+      13.699,
+      10.571,
+      7.1978,
+      12.6338,
+      43.3504
+    ]
+  },
+  "prefix": "l4-lysenko-delivery-exactly_once-2-5689867000"
+}

@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "uid": "hydro-low-eff-test",
+    "orgID": 1,
+    "folderUID": "cg4o7u8txi22of",
+    "ruleGroup": "hydro-grafana",
+    "title": "Hydro efficiency: accelerated 15s lab test",
+    "condition": "B",
+    "data": [
+      {
+        "refId": "A",
+        "queryType": "",
+        "relativeTimeRange": {
+          "from": 60,
+          "to": 0
+        },
+        "datasourceUid": "hydro-prom",
+        "model": {
+          "expr": "hydro_efficiency_percent",
+          "instant": true,
+          "intervalMs": 1000,
+          "maxDataPoints": 43200,
+          "range": false,
+          "refId": "A"
+        }
+      },
+      {
+        "refId": "B",
+        "queryType": "",
+        "relativeTimeRange": {
+          "from": 0,
+          "to": 0
+        },
+        "datasourceUid": "__expr__",
+        "model": {
+          "conditions": [
+            {
+              "evaluator": {
+                "params": [
+                  88
+                ],
+                "type": "lt"
+              },
+              "operator": {
+                "type": "and"
+              },
+              "query": {
+                "params": [
+                  "B"
+                ]
+              },
+              "reducer": {
+                "type": "last"
+              },
+              "type": "query"
+            }
+          ],
+          "expression": "A",
+          "intervalMs": 1000,
+          "maxDataPoints": 43200,
+          "refId": "B",
+          "type": "threshold"
+        }
+      }
+    ],
+    "updated": "2026-11-18T14:31:56+02:00",
+    "noDataState": "NoData",
+    "execErrState": "Error",
+    "annotations": {
+      "summary": "Local laboratory test; production Prometheus rule retains 2h"
+    },
+    "labels": {
+      "profile": "accelerated-e2e"
+    },
+    "provenance": "file",
+    "isPaused": false,
+    "notification_settings": null,
+    "record": null,
+    "for": "15s",
+    "keep_firing_for": "0s"
+  }
+]

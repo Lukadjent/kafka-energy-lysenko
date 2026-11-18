@@ -1,3 +1,8 @@
 # Preserve raw evidence bytes and their SHA-256 across platforms.
 lab1-kafka-lysenko/evidence/** -text
+lab2-cassandra-lysenko/evidence/** -text
+lab-support/** -text
+lab3-cassandra-optimization-lysenko/** -text
+lab4-kafka-streams-lysenko/** -text
+lab5-monitoring-lysenko/** -text
 *.pdf binary

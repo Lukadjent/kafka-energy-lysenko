@@ -22,9 +22,9 @@ def fmt(value,digits=2):return f'{value:,.{digits}f}'.replace(',',' ').replace('
 
 class Report:
     def __init__(self,number,title,project):
-        self.number=number;self.project=project;self.story=[]
+        self.number=number;self.project=project;self.story=[];self.body_started=False
         self.styles={'body':ParagraphStyle('body',fontName='UA',fontSize=11.5,leading=15.1,spaceAfter=8),
-            'heading':ParagraphStyle('heading',fontName='UABold',fontSize=16,leading=20,textColor=NAVY,spaceAfter=12),
+            'heading':ParagraphStyle('heading',fontName='UABold',fontSize=16,leading=20,textColor=NAVY,spaceAfter=12,keepWithNext=True),
             'small':ParagraphStyle('small',fontName='UA',fontSize=9.5,leading=12,spaceAfter=6),
             'code':ParagraphStyle('code',fontName='Code',fontSize=8.3,leading=11,spaceAfter=8,backColor=colors.HexColor('#edf3f5'),borderPadding=5),
             'cell':ParagraphStyle('cell',fontName='UA',fontSize=9.4,leading=11.8),
@@ -35,12 +35,14 @@ class Report:
         self.p('НАЦІОНАЛЬНИЙ ТЕХНІЧНИЙ УНІВЕРСИТЕТ УКРАЇНИ<br/>«КИЇВСЬКИЙ ПОЛІТЕХНІЧНИЙ ІНСТИТУТ<br/>імені ІГОРЯ СІКОРСЬКОГО»','center')
         self.story.append(Spacer(1,40*mm));self.p('ЛАБОРАТОРНА РОБОТА №'+str(number),'title');self.p(title,'center')
         self.p('з дисципліни «Проєктування систем<br/>з розподіленими базами даних»','center');self.p('Варіант 3, підваріант Б','center')
-        self.story.append(Spacer(1,25*mm));self.p('Виконав: студент групи ТР-61МП','author');self.p('Лисенко Лука Сергійович','author');self.p('Перевірив: ____________________','author')
+        self.story.append(Spacer(1,25*mm));self.p('Виконав: студент групи ТР-61МП','author');self.p('Лисенко Лука Сергійович','author');self.p('Перевірив: <b>Головакін Микита Андрійович</b>','author')
         self.story.append(Spacer(1,28*mm));self.p('Київ - 2026','center')
     def p(self,text,style='body'):
         for char in ('\u2010','\u2011','\u2012','\u2013','\u2014','\u2015'):text=text.replace(char,'-')
         self.story.append(Paragraph(text,self.styles[style]))
-    def page(self,title):self.story.append(PageBreak());self.p(title,'heading')
+    def page(self,title):
+        self.story.append(Spacer(1,12) if self.body_started else PageBreak())
+        self.body_started=True;self.p(title,'heading')
     def table(self,headers,rows,widths=None):
         content=[[Paragraph(escape(unescape(str(v))),self.styles['header']) for v in headers]]+[[Paragraph(escape(unescape(str(v))),self.styles['cell']) for v in row] for row in rows]
         t=Table(content,colWidths=[v*mm for v in widths] if widths else None,repeatRows=1,hAlign='LEFT')
@@ -48,7 +50,11 @@ class Report:
     def figure(self,path,caption,width=170):
         from PIL import Image as PILImage
         with PILImage.open(path) as img:w,h=img.size
-        self.story.append(Image(str(path),width=width*mm,height=width*mm*h/w));self.p(caption,'small')
+        group=[]
+        if self.story and isinstance(self.story[-1],Paragraph) and self.story[-1].style is self.styles['heading']:
+            group.append(self.story.pop())
+        group.extend([Image(str(path),width=width*mm,height=width*mm*h/w),Paragraph(caption,self.styles['small'])])
+        self.story.append(KeepTogether(group))
     def flow(self,boxes):
         w=170*mm;h=40*mm;d=Drawing(w,h);n=len(boxes);box=(w-(n-1)*14)/n
         for i,lines in enumerate(boxes):
@@ -73,7 +79,7 @@ class Report:
         box(135,0,210,38,['Для аналітики за 7+ діб','додати weekly rollup'])
         for x1,y1,x2,y2 in [(240,120,95,95),(240,120,385,95),(95,60,240,38),(385,60,240,38)]:d.add(Line(x1,y1,x2,y2,strokeColor=TEAL))
         d.add(String(152,111,'Так',fontName='UA',fontSize=9,fillColor=NAVY));d.add(String(319,111,'Ні',fontName='UA',fontSize=9,fillColor=NAVY))
-        self.story.append(d);self.p('r - подій/с одного ключа; s - оцінка байтів рядка без компресії. Після вибору перевірити фактичні SSTables і fan-out за типовими запитами.','small')
+        self.story.append(KeepTogether([d,Paragraph('r - подій/с одного ключа; s - оцінка байтів рядка без компресії. Після вибору перевірити фактичні SSTables і fan-out за типовими запитами.',self.styles['small'])]))
     def finish(self):
         target=WORKSPACE/'output/pdf'/f'Lab{self.number}_Lysenko_3B.pdf';target.parent.mkdir(parents=True,exist_ok=True)
         def footer(canvas,doc):

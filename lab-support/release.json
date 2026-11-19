@@ -1,8 +1,8 @@
 {
   "archive": "Labs3-5_Lysenko_3B.zip",
   "files": 200,
-  "bytes": 2454489,
-  "sha256": "5ca432cf0e90befaaab9b893c411269375cf8b93a4689ee82fa8b944e78eb6db",
+  "bytes": 2448792,
+  "sha256": "9286a867f9a6f0fc78acb35c5c883a166abf9387852d17c155e006f3dd1f1a0b",
   "all_member_hashes_verified": true,
   "excluded": [
     "portable binaries",

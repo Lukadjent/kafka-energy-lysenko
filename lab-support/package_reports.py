@@ -30,8 +30,7 @@ def main():
     for n in range(1,6):
         name=f'Lab{n}_Lysenko_3B.pdf';data=(output/'pdf'/name).read_bytes();files[name]=data
         reports.append({'lab':n,'filename':name,'bytes':len(data),'sha256':digest(data)})
-    files['SHA256SUMS.txt']=('\n'.join(r['sha256']+'  '+r['filename'] for r in reports)+'\n').encode('ascii')
     target=output/'Reports_Lysenko_3B.zip';archive(target,files)
     write_json(SUPPORT/'report-release.json',{'reports':reports,'archive':target.name,'archive_sha256':digest(target.read_bytes()),'archive_bytes':target.stat().st_size})
-    print('REPORTS PACKAGE PASS: 5 PDFs, checksums; Lab1/Lab2 source packages refreshed')
+    print('REPORTS PACKAGE PASS: exactly 5 PDFs; Lab1/Lab2 source packages refreshed')
 if __name__=='__main__':main()

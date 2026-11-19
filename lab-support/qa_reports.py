@@ -11,6 +11,7 @@ def main(labs=(3,4,5)):
     for n in labs:
         pdf=WORKSPACE/'output/pdf'/f'Lab{n}_Lysenko_3B.pdf';reader=PdfReader(pdf);texts=[p.extract_text() for p in reader.pages]
         assert 'Лисенко Лука Сергійович' in texts[0] and 'ТР-61МП' in texts[0]
+        assert 'Головакін Микита Андрійович' in texts[0],f'Lab{n}: teacher missing from cover'
         image_counts=[len(page.images) for page in reader.pages]
         assert all(len(t)>180 or (len(t)>100 and image_counts[i]>0) for i,t in enumerate(texts)),(n,[(i+1,len(t)) for i,t in enumerate(texts)])
         bad=[]

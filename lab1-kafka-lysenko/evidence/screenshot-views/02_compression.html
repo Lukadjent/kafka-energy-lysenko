@@ -1,0 +1,18 @@
+<!doctype html><html lang="uk"><meta charset="utf-8"><title>Kafka - результати дослідження</title><style>html{background:#edf2f5}body{margin:0;padding:25px;font-family:Segoe UI,sans-serif;color:#172f40}header{font-size:23px;font-weight:600;margin-bottom:18px}article{background:white;padding:22px;border:1px solid #a9bac7;border-radius:8px}pre{font:18px/1.5 Consolas,monospace;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}footer{font-size:14px;color:#425d70;margin-top:15px}</style><header>Apache Kafka · Результати експерименту</header><article><pre>Лабораторна робота №1. Лисенко Лука, ТР-61МП, варіант 3Б
+ПЕРЕГЛЯД ЗБЕРЕЖЕНИХ РЕЗУЛЬТАТІВ ТЕСТУВАННЯ
+Джерело: evidence/runs/lecture-review/*.txt (MEASUREMENT_RESULT)
+Медіани для трьох повторів кожної конфігурації.
+
+2. КОДЕКИ: медіани трьох повторів
+Codec     Records/s     Ack avg ms   Batch savings %
+------------------------------------------------------
+none        94154.157        80.789           0.0000
+gzip        89464.884        19.390          89.7372
+snappy     146784.035         9.399          80.2966
+lz4        170670.890         8.851          80.6648
+zstd       161658.748         8.940          92.3211
+
+Batch = 256 KiB; linger = 50 ms; 20 000 записів / прогін.
+Batch savings = 100 * (1 - compression-rate-avg).
+Корпус: 1000 синтетичних JSON, що повторюються.
+</pre></article><footer>Збережений вивід та зведення вимірювань · ЛР1 · Варіант 3Б</footer></html>

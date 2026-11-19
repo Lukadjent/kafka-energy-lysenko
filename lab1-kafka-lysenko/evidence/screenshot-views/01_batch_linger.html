@@ -1,0 +1,22 @@
+<!doctype html><html lang="uk"><meta charset="utf-8"><title>Kafka - результати дослідження</title><style>html{background:#edf2f5}body{margin:0;padding:25px;font-family:Segoe UI,sans-serif;color:#172f40}header{font-size:23px;font-weight:600;margin-bottom:18px}article{background:white;padding:22px;border:1px solid #a9bac7;border-radius:8px}pre{font:18px/1.5 Consolas,monospace;margin:0;white-space:pre-wrap;overflow-wrap:anywhere}footer{font-size:14px;color:#425d70;margin-top:15px}</style><header>Apache Kafka · Результати експерименту</header><article><pre>Лабораторна робота №1. Лисенко Лука, ТР-61МП, варіант 3Б
+ПЕРЕГЛЯД ЗБЕРЕЖЕНИХ РЕЗУЛЬТАТІВ ТЕСТУВАННЯ
+Джерело: evidence/runs/lecture-review/*.txt (MEASUREMENT_RESULT)
+Медіани для трьох повторів кожної конфігурації.
+
+1. BATCH.SIZE / LINGER.MS: медіани трьох повторів
+Batch KiB  Linger ms   Records/s     Ack avg ms   E2E p95 ms
+----------------------------------------------------------
+       16          0   109784.259        89.331      158.262
+       16         10   131996.578        53.321      119.983
+       16         50    79634.611        51.490      131.519
+       64          0   192346.088        11.290       46.285
+       64         10   155038.471        44.507      118.114
+       64         50   214615.210         2.698       35.904
+      256          0   121091.323        53.524      155.404
+      256         10   102119.573        63.623      115.969
+      256         50    94819.139       142.029      274.341
+
+27 прогонів, по 50 000 вимірюваних повідомлень.
+Розігрів виключено з часу та кількості повідомлень.
+Ack: send -&gt; callback. E2E: send -&gt; перевірка consumer.
+</pre></article><footer>Збережений вивід та зведення вимірювань · ЛР1 · Варіант 3Б</footer></html>

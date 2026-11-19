@@ -33,6 +33,6 @@ def main(labs=(3,4,5)):
         entry={'lab':n,'pages':len(reader.pages),'bytes':pdf.stat().st_size,'sha256':hashlib.sha256(pdf.read_bytes()).hexdigest(),'bounds_passed':True,
             'page_characters':[len(t) for t in texts],'page_images':image_counts,'visual_review':'pending'}
         checks.append(entry);print(f'LAB{n} pages={entry["pages"]} chars={entry["page_characters"]}')
-    write_json(SUPPORT/'pdf-qa.json',checks)
+    write_json(WORKSPACE/'tmp/pdf-qa.json',checks)
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--labs',type=int,nargs='+',choices=[1,2,3,4,5],default=[3,4,5]);main(parser.parse_args().labs)

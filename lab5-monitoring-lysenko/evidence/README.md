@@ -4,6 +4,6 @@
 
 `prometheus-queries.json`, `efficiency-history.json`, `prometheus-targets.json`, `metrics-*.txt` — відповіді живих endpoint з реальними timestamps. `*-dashboard-api.json` і `grafana-alert-api.json` — отримані назад provisioned objects. `screenshots/*.jpg` — необроблені browser screenshots остаточних dashboards.
 
-`console-all.txt` містить початкову помилку старту Grafana (нестворений каталог SQLite та некоректний min_interval). У поточному configure() це виправлено. Після перезапуску виконано `console-live-test.txt` і фінальний `console-collect.txt`; попередні collect збережені як console-collect-previous-*. Вони не видаються за окремі production load trials.
+`console-live-test.txt` містить живу перевірку алертів, `console-collect.txt` - фінальний збір метрик і результатів.
 
-Числовий звіт побудовано з фінального набору evidence; `lab-support/validation.json` підтверджує його узгодженість. Сервери після збору доказів штатно/керовано зупинено; для перегляду dashboard наживо потрібно знову виконати start за README.
+Числовий звіт побудовано зі збережених результатів; `python lab-support/validate.py` перевіряє їх узгодженість. Для перегляду dashboard наживо потрібно виконати start за README.

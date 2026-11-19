@@ -1,3 +1,0 @@
-java EnergyBenchmark 005-strategy-time-r1.config.json
-MEASUREMENT_START h3b-lysenko-1117182332-005
-MEASUREMENT_DONE C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\evidence\runs\005-strategy-time-r1.json

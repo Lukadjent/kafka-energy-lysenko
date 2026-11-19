@@ -62,6 +62,5 @@ def main():
     check('L5 no pipeline errors',float(queries['energy_pipeline_errors_total']['data']['result'][0]['value'][1])==0)
     check('L5 real Grafana rule provisioned',len(read_json(l5/'grafana-alert-api.json'))>=1)
     for uid,count in [('hydro-lysenko',13),('streams-lysenko',5)]:check('L5 dashboard '+uid,len(read_json(l5/(uid+'-dashboard-api.json'))['dashboard']['panels'])==count)
-    write_json(SUPPORT/'validation.json',{'passed':len(checks),'checks':checks,'all_passed':True})
     print(f'ALL {len(checks)} CHECKS PASS')
 if __name__=='__main__':main()

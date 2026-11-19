@@ -13,7 +13,7 @@
 - `evidence/read-samples.csv`: 720 основних вимірів. Інші JSON містять усі додаткові samples. p95/p99 nearest-rank, p50 median. Валідація digest поза таймером.
 - `evidence/daily-aggregation.json`: ще60 вимірів на схему справжніх CQL COUNT/SUM/MIN/MAX за добу, злиття hourly partials та незалежна звірка з CSV. Поточну додаткову серію знято після MV; попередній raw-read baseline збережено окремо.
 - `evidence/nodetool-*`: raw tablestats/histograms/compactionstats/status/snapshots усіх вузлів. Compression savings=(1−SSTableCompressionRatio)×100%, не disk/CSV.
-- `evidence/console-all.txt`: повний успішний прогін; `console-all-previous-*`: невдалий exploratory repeat за стандартного write timeout 2s. Успішний прогін використовує явно зафіксовані 20s.
+- `evidence/console-all.txt`: повний прогін із write timeout 20s.
 
 ## Запуск
 

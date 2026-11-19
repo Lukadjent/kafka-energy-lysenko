@@ -1,5 +1,0 @@
-PROJECT=kafka-energy-lysenko
-STUDENT=Lysenko Luka GROUP=ТР-61МП
-$ python lab.py consumer-perf --bootstrap-server 127.0.0.1:9092 --topic benchmark-lysenko-20261117t173810 --messages 10000 --timeout 30000 --group perf-consumer-lysenko-20261117T173810
-start.time, end.time, data.consumed.in.MB, MB.sec, data.consumed.in.nMsg, nMsg.sec, rebalance.time.ms, fetch.time.ms, fetch.MB.sec, fetch.nMsg.sec
-2026-11-17 19:38:59:878, 2026-11-17 19:39:00:247, 9.7656, 26.4651, 10000, 27100.2710, 218, 151, 64.6730, 66225.1656

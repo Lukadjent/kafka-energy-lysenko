@@ -1,3 +1,0 @@
-java EnergyBenchmark 014-part-3-r0.config.json
-MEASUREMENT_START h3b-lysenko-1117182332-014
-MEASUREMENT_DONE C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\evidence\runs\014-part-3-r0.json

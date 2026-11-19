@@ -26,11 +26,9 @@ def main():
         manifest_path=WORKSPACE/folder/'evidence/manifest.sha256';manifest_path.write_text(manifest,encoding='utf-8')
         files[manifest_path.relative_to(WORKSPACE).as_posix()]=manifest_path.read_bytes()
         archive(output/f'Lab{n}_Lysenko_3B.zip',files)
-    files={};reports=[]
+    files={}
     for n in range(1,6):
         name=f'Lab{n}_Lysenko_3B.pdf';data=(output/'pdf'/name).read_bytes();files[name]=data
-        reports.append({'lab':n,'filename':name,'bytes':len(data),'sha256':digest(data)})
     target=output/'Reports_Lysenko_3B.zip';archive(target,files)
-    write_json(SUPPORT/'report-release.json',{'reports':reports,'archive':target.name,'archive_sha256':digest(target.read_bytes()),'archive_bytes':target.stat().st_size})
     print('REPORTS PACKAGE PASS: exactly 5 PDFs; Lab1/Lab2 source packages refreshed')
 if __name__=='__main__':main()

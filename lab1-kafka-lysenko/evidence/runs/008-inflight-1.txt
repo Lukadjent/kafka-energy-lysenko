@@ -1,3 +1,0 @@
-java EnergyBenchmark 008-inflight-1.config.json
-MEASUREMENT_START h3b-lysenko-1117182332-008
-MEASUREMENT_DONE C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\evidence\runs\008-inflight-1.json

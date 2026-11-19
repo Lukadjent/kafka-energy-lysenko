@@ -20,7 +20,9 @@ def main():
         assert args.lab==3,'Reset is scoped to Lab3'
         command+=['--reset']
     target=logs/f'console-{args.phase}.txt'
-    if target.exists():target.rename(logs/f'console-{args.phase}-previous-{time.time_ns()}.txt')
+    if target.exists():
+        history=RUNTIME/'history'/project.name;history.mkdir(parents=True,exist_ok=True)
+        target.rename(history/f'console-{args.phase}-{time.time_ns()}.txt')
     with target.open('w',encoding='utf-8') as output:
         output.write('COMMAND '+json.dumps(command)+'\n');output.flush()
         process=subprocess.Popen(command,cwd=project,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,

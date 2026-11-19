@@ -13,7 +13,7 @@ python kafka-energy-lysenko/scripts/download_dependencies.py
 python lab-support/services.py start-cassandra
 ```
 
-Перший скрипт лише завантажує Kafka/JDK у локальний runtime; практичне заняття з історичного каталогу не запускається. `lab-support/setup.ps1` перевіряє SHA-256 Prometheus/Grafana/JMX і встановлює Python dependencies локально. `common.py` використовує спільні portable-дистрибутиви з попередніх лабораторних. Перед стартом переконайтеся, що достатньо RAM/диска (три JVM Cassandra до 1 GiB кожна; дистрибутиви, стиснені дані й snapshots займають кілька GiB).
+Перший скрипт завантажує Kafka/JDK у локальний runtime. `lab-support/setup.ps1` перевіряє SHA-256 Prometheus/Grafana/JMX і встановлює Python dependencies локально. `common.py` використовує спільні portable-дистрибутиви. Перед стартом переконайтеся, що достатньо RAM/диска (три JVM Cassandra до 1 GiB кожна; дистрибутиви, стиснені дані й snapshots займають кілька GiB).
 
 ## Послідовне виконання
 

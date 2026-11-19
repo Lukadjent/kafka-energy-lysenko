@@ -1,8 +1,0 @@
-PROJECT=kafka-energy-lysenko
-STUDENT=Lysenko Luka GROUP=ТР-61МП
-$ python lab.py console-producer --bootstrap-server 127.0.0.1:9092 --topic power-station-data-lysenko --property parse.key=true --property key.separator=| --producer-property client.id=console-producer-lysenko --producer-property acks=all
-STDIN (sent to actual Kafka console producer):
-lysenko-1|Lysenko 20261117T173810: Київська ТЕС: 1200 МВт
-lysenko-1|Lysenko 20261117T173810: Дніпровська ГЕС: 800 МВт
-lysenko-1|Lysenko 20261117T173810: Сонячна ферма: 150 МВт
-

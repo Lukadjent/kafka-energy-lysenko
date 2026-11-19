@@ -1,3 +1,0 @@
-java EnergyBenchmark 036-strategy-region-r0.config.json
-MEASUREMENT_START h3b-lysenko-1117182332-036
-MEASUREMENT_DONE C:\Users\Luka\Documents\ChatGPT\Проектування систем з розподіленими базами данних\lab1-kafka-lysenko\evidence\runs\036-strategy-region-r0.json

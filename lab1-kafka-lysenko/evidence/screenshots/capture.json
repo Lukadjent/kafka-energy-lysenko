@@ -1,0 +1,30 @@
+[
+  {
+    "screenshot": "01_batch_linger.png",
+    "view": "evidence/screenshot-views/01_batch_linger.txt",
+    "source_sha256": "2b94f14c6b93cbe9b59cb6fcf6b680bf8ad67c1af1c4f957600adc2fabe1dffd",
+    "screenshot_sha256": "667c30180ca8fc6c84c7b0c9bdca722f909280572137141cfe502289bf48e01b",
+    "capture": "Chromium screenshot of a saved-results HTML view; no benchmark rerun"
+  },
+  {
+    "screenshot": "02_compression.png",
+    "view": "evidence/screenshot-views/02_compression.txt",
+    "source_sha256": "338ee71177b7a2a6b9556422e9e94d35705ec7cd36af06c46140938348ca7085",
+    "screenshot_sha256": "0e63e919211fdf3f7ac2005b93d093f118cfc50ca45e86675d288864a2a59a27",
+    "capture": "Chromium screenshot of a saved-results HTML view; no benchmark rerun"
+  },
+  {
+    "screenshot": "03_partitions.png",
+    "view": "evidence/screenshot-views/03_partitions.txt",
+    "source_sha256": "08e5811968c527c2cee0b15eb1cc3b0d669e67a61e0d01d2bccd2d4fdc9c5433",
+    "screenshot_sha256": "bbafb428b3b6e9b3a0312394368090f9c558073e71623e32d98887fdfa8e40d5",
+    "capture": "Chromium screenshot of a saved-results HTML view; no benchmark rerun"
+  },
+  {
+    "screenshot": "04_cli_and_analytics.png",
+    "view": "evidence/screenshot-views/04_cli_and_analytics.txt",
+    "source_sha256": "797830c5130af22e3256e6ae7f4048ffa6fa19b161c3671a7cd33d19e2e7c35d",
+    "screenshot_sha256": "4139b8455fb5a8536216fe735e671c46563f0806c6e54732a087bc6011404c42",
+    "capture": "Chromium screenshot of a saved-results HTML view; no benchmark rerun"
+  }
+]

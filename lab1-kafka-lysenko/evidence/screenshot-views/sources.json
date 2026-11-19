@@ -1,0 +1,463 @@
+{
+  "description": "Saved-stdout views for window screenshots; not live benchmark reruns",
+  "sources": [
+    {
+      "path": "evidence/runs/lecture-review/001-batch-16384-50-r0.txt",
+      "sha256": "cdfc11fb93c61527c10835101949ee311097fafa88760e12783f901d8c6576dc"
+    },
+    {
+      "path": "evidence/runs/lecture-review/002-batch-262144-10-r0.txt",
+      "sha256": "be6ce75031fb012c829d8e8c22f2ac046b4ed85aba7d06d645ead8f578843683"
+    },
+    {
+      "path": "evidence/runs/lecture-review/003-codec-gzip-r2.txt",
+      "sha256": "0c08d65566578c4241f9168f13d885b184b91e1ea2fc796b1149bed3e693d276"
+    },
+    {
+      "path": "evidence/runs/lecture-review/004-strategy-balanced-r2.txt",
+      "sha256": "0fbaccd5bd37c8266530ea5b141713f5bcda958651869731b85c368cd1e6162f"
+    },
+    {
+      "path": "evidence/runs/lecture-review/005-codec-zstd-r0.txt",
+      "sha256": "9d9033800255d998f90cafc7721bbeea0174b739d7558dfa278d52cc71e54508"
+    },
+    {
+      "path": "evidence/runs/lecture-review/006-batch-262144-50-r2.txt",
+      "sha256": "59fae84d410603c2b6d970a94db09b3a7765b1fa089141d9fb45f2dbce681622"
+    },
+    {
+      "path": "evidence/runs/lecture-review/007-buffer-33554432.txt",
+      "sha256": "e75ef4704720fa328e7994831d6616f203f23fecefbb2a789144bee677efa2ef"
+    },
+    {
+      "path": "evidence/runs/lecture-review/008-batch-16384-0-r2.txt",
+      "sha256": "73d6c16908c8c27f33f4530f32a8c03688e70c70a2f5dbb5d9bf108a8837d5b8"
+    },
+    {
+      "path": "evidence/runs/lecture-review/009-codec-snappy-r0.txt",
+      "sha256": "d7b74d2aacf37cece16b3b655eb6296f165232abcc4bac7503274ff3962019f4"
+    },
+    {
+      "path": "evidence/runs/lecture-review/010-part-2-r1.txt",
+      "sha256": "f5ef0a7abd36caff5b16941ed4ce4a7e008bbf0a55440c3e42591e7321b24e6c"
+    },
+    {
+      "path": "evidence/runs/lecture-review/011-recommended--1-r2.txt",
+      "sha256": "8657579d048ed851abb0f49d39daf9135b8da550f39bf8d500bfb8180cb0d7b7"
+    },
+    {
+      "path": "evidence/runs/lecture-review/012-part-6-r2.txt",
+      "sha256": "a44a030c8e2d4237741c10635f7f3ee66ed285bdddae4dd095614189f102bddc"
+    },
+    {
+      "path": "evidence/runs/lecture-review/013-buffer-8388608.txt",
+      "sha256": "28a9d53719cadd330e991e448d81c8ded0efeee024e18bd15bf6e1eac205bb3b"
+    },
+    {
+      "path": "evidence/runs/lecture-review/014-batch-262144-0-r1.txt",
+      "sha256": "13c6769f154fb807676b4de400bef67af1c713d53519bcadc2c618be17638ff6"
+    },
+    {
+      "path": "evidence/runs/lecture-review/015-codec-zstd-r2.txt",
+      "sha256": "eaf7821aef39b27bbda02041e03d99ad2a009b9fed5a1c28ccfc38df9c027422"
+    },
+    {
+      "path": "evidence/runs/lecture-review/016-batch-262144-50-r0.txt",
+      "sha256": "04fd2ae3db2404a4a3b5350fd5e18c96451d59de8ac28311080e23131d27671d"
+    },
+    {
+      "path": "evidence/runs/lecture-review/017-batch-16384-10-r2.txt",
+      "sha256": "7171bd2376416c1b81e7a70db360483c1db7a915cd7dbeb3e1f84c8f1a326f61"
+    },
+    {
+      "path": "evidence/runs/lecture-review/018-strategy-time-r0.txt",
+      "sha256": "cf5a21f1341f8301d465c8c96bbb2018b3c6006b5d18ccbbae749d0492366e49"
+    },
+    {
+      "path": "evidence/runs/lecture-review/019-analytics-1048576-300-r2.txt",
+      "sha256": "29186556560819dee87689db3f479cb9583d1b9e7161dd564aacc34cba8b1196"
+    },
+    {
+      "path": "evidence/runs/lecture-review/020-analytics-1048576-300-r1.txt",
+      "sha256": "0b28d6881e6034935706854076b533197d6cd9e254d4b24554c24f577e7608f5"
+    },
+    {
+      "path": "evidence/runs/lecture-review/021-part-6-r0.txt",
+      "sha256": "fe7bf37da7ced64ca0a668e384495cf76b272f9fc7c124fdcfae20c131136fe4"
+    },
+    {
+      "path": "evidence/runs/lecture-review/022-batch-16384-50-r1.txt",
+      "sha256": "746c91d459c1b4854bb90945bc5a8c6e6b3c0294fd139542c7bb83181c2a094a"
+    },
+    {
+      "path": "evidence/runs/lecture-review/023-retention-90d.txt",
+      "sha256": "f875a259d35e36f1ceed99fdbe2f63445ebcf254078cb8164f00e793ae3f1287"
+    },
+    {
+      "path": "evidence/runs/lecture-review/024-rate500-65536-0.txt",
+      "sha256": "ffcebfbf30da2ac3f0400d92547645a1fc0f730e0ee1d0f1d2d36f8dd6ce6d5e"
+    },
+    {
+      "path": "evidence/runs/lecture-review/025-codec-zstd-r1.txt",
+      "sha256": "45eb8a8ffca933d21119289a68690ec2e2a3f11d43f8f01217d11d8025bd07c8"
+    },
+    {
+      "path": "evidence/runs/lecture-review/026-batch-16384-0-r0.txt",
+      "sha256": "9759597f290b1f84bef484e5647f5d97bf0b2d249107b21161ae0ccc3d6c8ca2"
+    },
+    {
+      "path": "evidence/runs/lecture-review/027-strategy-device-r2.txt",
+      "sha256": "d8f1bb7b8f5591a9b197d8df3231645b595357391ef882debe1ee140953843cc"
+    },
+    {
+      "path": "evidence/runs/lecture-review/028-batch-65536-10-r2.txt",
+      "sha256": "22d62b0676ad2329b830f133866cffcd89eef708c8408212f4b39409e5b30d51"
+    },
+    {
+      "path": "evidence/runs/lecture-review/029-strategy-region-r2.txt",
+      "sha256": "0e55bfcebd25ffecdb0286583637450ab3cae2e7e1352eea8c852d916f6ee51c"
+    },
+    {
+      "path": "evidence/runs/lecture-review/030-batch-262144-0-r2.txt",
+      "sha256": "04b9214038eb041b458d79d9f6617439a55e548e265217143931cd364a485fd8"
+    },
+    {
+      "path": "evidence/runs/lecture-review/031-batch-65536-10-r1.txt",
+      "sha256": "65d5dc4ab1642d3012035412976ccd55fd8f10547406abe9cf7ef26ca7cfc0bb"
+    },
+    {
+      "path": "evidence/runs/lecture-review/032-batch-16384-10-r1.txt",
+      "sha256": "5ff6f166597d7d5c0dfcfff07024ddaf9c8de7c42807fcee3c4603eb05a59caa"
+    },
+    {
+      "path": "evidence/runs/lecture-review/033-part-12-r1.txt",
+      "sha256": "deb74c36a8e9c8a4f60e8a8bb8235dbd46e17430ac4ba95cd20dadd2ebacd41f"
+    },
+    {
+      "path": "evidence/runs/lecture-review/034-part-4-r2.txt",
+      "sha256": "581843d0dd4778cb43806deca9bb84fdf46b0bbf4458e810f115041bc0a6ca49"
+    },
+    {
+      "path": "evidence/runs/lecture-review/035-part-2-r0.txt",
+      "sha256": "6ccfa33d4273f6421aa9238d7a9d31c3da4cf06421b0117ebfa9335bc9129935"
+    },
+    {
+      "path": "evidence/runs/lecture-review/036-part-3-r1.txt",
+      "sha256": "55d868fb153b22652dc54a0e2e0a3210fd0e29bad8eebe6f6fd6027053284007"
+    },
+    {
+      "path": "evidence/runs/lecture-review/037-part-12-r0.txt",
+      "sha256": "04bae90d4bc0f42f59100ccacf1889dcdc195fa7d61fdb19ca482c4895cc6283"
+    },
+    {
+      "path": "evidence/runs/lecture-review/038-strategy-region-r0.txt",
+      "sha256": "12797bfd84e0f52097da5329ee0d9d167a059e753a369d6d822bd2c551f4850d"
+    },
+    {
+      "path": "evidence/runs/lecture-review/039-rate500-65536-10.txt",
+      "sha256": "cc685a80c975a5c9762d961cedd9542d504f7cb29c89a321215fc1b510a862e8"
+    },
+    {
+      "path": "evidence/runs/lecture-review/040-codec-none-r0.txt",
+      "sha256": "f3f852891fc3fec8cc8ff201d944e2de496355ceb69b55ed27f9afe928a5b231"
+    },
+    {
+      "path": "evidence/runs/lecture-review/041-part-8-r2.txt",
+      "sha256": "1536c15537d42fc5f6abafbb52879bcc96aaa598a7e0bc9b68e22fd5d34ee924"
+    },
+    {
+      "path": "evidence/runs/lecture-review/042-batch-262144-50-r1.txt",
+      "sha256": "7f94a1334d4a9c78ebfacd6e7bd2ee43166e3684d73c561a71793249380f160a"
+    },
+    {
+      "path": "evidence/runs/lecture-review/043-strategy-time-r1.txt",
+      "sha256": "bf0e3e80ee0282ec85dbe365e41e9794796934de957ee92295cd732640ee30b0"
+    },
+    {
+      "path": "evidence/runs/lecture-review/044-codec-none-r2.txt",
+      "sha256": "965d91ab9fe7367cc03675363f402927739bd6bcd18d303336f59599b73a1c75"
+    },
+    {
+      "path": "evidence/runs/lecture-review/045-part-3-r0.txt",
+      "sha256": "9e51b4eb19f57c50a473f1a674a784bb2c169b3601f360363c771ea683f914a6"
+    },
+    {
+      "path": "evidence/runs/lecture-review/046-strategy-region-r1.txt",
+      "sha256": "5ddde010481d49921a6625c491f2662c199eff6c9fbb78e204a9378e6b947154"
+    },
+    {
+      "path": "evidence/runs/lecture-review/047-inflight-5.txt",
+      "sha256": "b6d6ffb51d93f71edb5cf949a6f962de188ed8d91a10676e104983359e19ac5e"
+    },
+    {
+      "path": "evidence/runs/lecture-review/048-retention-7d.txt",
+      "sha256": "6a06670f0a2c1a4ab96b98adab449fdf770cade6c795ec1719f4d9144655509f"
+    },
+    {
+      "path": "evidence/runs/lecture-review/049-batch-262144-10-r1.txt",
+      "sha256": "bcca88d4c385e8f2a417bd9334d28c0d72d7ab4b27c43d4fcfdefd6a45a8c983"
+    },
+    {
+      "path": "evidence/runs/lecture-review/050-part-6-r1.txt",
+      "sha256": "c57a4e0afad98d35dc9d054f3cca43d7db586958e36694492f1623cc0de4ccdd"
+    },
+    {
+      "path": "evidence/runs/lecture-review/051-part-2-r2.txt",
+      "sha256": "2e02a39b72e62a5d6496ca4af1803036025c0674fb179647af488075de11c9da"
+    },
+    {
+      "path": "evidence/runs/lecture-review/052-batch-65536-10-r0.txt",
+      "sha256": "7d8e81347fb1725b37078c1eb2ae4d49ef4b2456fdc8d1cdb860243851be603e"
+    },
+    {
+      "path": "evidence/runs/lecture-review/053-analytics-524288-100-r0.txt",
+      "sha256": "1e61c7f83e151caa7db4d46e4187afb2c140b3538fac041fd0ba49972b05b0c6"
+    },
+    {
+      "path": "evidence/runs/lecture-review/054-batch-65536-0-r2.txt",
+      "sha256": "e3668fcd9dfc5760c280df4ad7e2ecf3e9b95176b8c0f95d3555f47c648db093"
+    },
+    {
+      "path": "evidence/runs/lecture-review/055-rate500-262144-10.txt",
+      "sha256": "6dc012285b2d2b801c5be269f547d34b0e5768f4f19e9ae93a8f197ed9d56c72"
+    },
+    {
+      "path": "evidence/runs/lecture-review/056-part-8-r1.txt",
+      "sha256": "1cff6a0d80ed3063a6642781c139a8dcddba5a741067cad2db9cc9b5255ecadc"
+    },
+    {
+      "path": "evidence/runs/lecture-review/057-strategy-device-r0.txt",
+      "sha256": "134453f6692e6d75c7cdf774b0c0df133556187c1c41a0a16a5974a78ea2a180"
+    },
+    {
+      "path": "evidence/runs/lecture-review/058-codec-snappy-r1.txt",
+      "sha256": "19b9a7c0adeaebe6c8a8cff2b754499372b6282eccb7dafb766b6bb1ad2b453b"
+    },
+    {
+      "path": "evidence/runs/lecture-review/059-linger-extra-5.txt",
+      "sha256": "b5320173d079e63abfea8c2c81eab17d82aed4edcf8684bb6d155a77e7fd9dde"
+    },
+    {
+      "path": "evidence/runs/lecture-review/060-batch-16384-50-r2.txt",
+      "sha256": "850afdb05a207a581052a9edbe9005f219a002a0dea3a4c3e57247c04e9e354a"
+    },
+    {
+      "path": "evidence/runs/lecture-review/061-codec-lz4-r2.txt",
+      "sha256": "ba762438e7e01a47524af93fa5894554ba2960bdcd0c657a65d08ff9abd31557"
+    },
+    {
+      "path": "evidence/runs/lecture-review/062-codec-gzip-r0.txt",
+      "sha256": "811518d51077e0c1ce63cb7c05dd0707bd311ebd9d73f7f3ff9d858fe18a5b03"
+    },
+    {
+      "path": "evidence/runs/lecture-review/063-inflight-10.txt",
+      "sha256": "a2e4c02f2c668c1d7b7403054dba5187288304f1b0c000039e696812ba7b6c20"
+    },
+    {
+      "path": "evidence/runs/lecture-review/064-strategy-balanced-r0.txt",
+      "sha256": "acfa41f4f4ff6a8aad68e563b9657b037e941440e126957d2fc79fa0c1b0dbc1"
+    },
+    {
+      "path": "evidence/runs/lecture-review/065-strategy-balanced-r1.txt",
+      "sha256": "a6b97917eb02747b35bbf3abbc5a9c24b15067fca34a89cb65955c62c7598ca7"
+    },
+    {
+      "path": "evidence/runs/lecture-review/066-codec-snappy-r2.txt",
+      "sha256": "a084ef9273cf4a8435955bb75655f4286b289da0d4e5c6c07799c6a3521a9594"
+    },
+    {
+      "path": "evidence/runs/lecture-review/067-batch-65536-50-r0.txt",
+      "sha256": "9883a1cafc4f21f5bc0d80064c1df1fcf3021aaa3111d0bf89d756e7ac2a3142"
+    },
+    {
+      "path": "evidence/runs/lecture-review/068-codec-gzip-r1.txt",
+      "sha256": "cc4236f1bb8eeca90c1fda656f782db1b1c4932842642eeaca79489be65c0b98"
+    },
+    {
+      "path": "evidence/runs/lecture-review/069-analytics-1048576-100-r0.txt",
+      "sha256": "bf3ff48f446d379c876bcc7df163080cc644393b9cd142ccc418bbb511d839a7"
+    },
+    {
+      "path": "evidence/runs/lecture-review/070-codec-lz4-r1.txt",
+      "sha256": "e3ea8691f2f4b8d3e4768e44e9c2bb2966bdb046e8c4769e2982eb4ffb1b76d1"
+    },
+    {
+      "path": "evidence/runs/lecture-review/071-part-4-r0.txt",
+      "sha256": "2a93de8c8f8d3f04628b9d38dab1eb1dda7b44f9866e63728e1bb00d4e8a3ccc"
+    },
+    {
+      "path": "evidence/runs/lecture-review/072-strategy-device-r1.txt",
+      "sha256": "3626b24e07c3c5b0c8a3338a392a709bd7d90525a62d65a7b90542e2054be5f9"
+    },
+    {
+      "path": "evidence/runs/lecture-review/073-part-3-r2.txt",
+      "sha256": "684ba5d7e0190e1436897ac6941ea83457d37b49f3829340f3dc6461c5e59d44"
+    },
+    {
+      "path": "evidence/runs/lecture-review/074-retention-30d.txt",
+      "sha256": "c0617eaaa07b4021031b66a3fc61aa86be41224f3225f866d6ec9a9104194141"
+    },
+    {
+      "path": "evidence/runs/lecture-review/075-codec-lz4-r0.txt",
+      "sha256": "461e71dd19e77b0fad645a4cfdbdef032bf7ef8d88ba2af12bcd0c666109ca7a"
+    },
+    {
+      "path": "evidence/runs/lecture-review/076-rate500-65536-50.txt",
+      "sha256": "78870649e57c58a30cea80b75a60f9092231b7d0c8356596e78eb49fd1a415ec"
+    },
+    {
+      "path": "evidence/runs/lecture-review/077-batch-65536-50-r2.txt",
+      "sha256": "ba9c3a470fd988b96d730028a00aa40e42523b413813fdb17464dca916e5631c"
+    },
+    {
+      "path": "evidence/runs/lecture-review/078-analytics-1048576-100-r2.txt",
+      "sha256": "07e2515f811bd7cb9ada331f04119d08b1536fc1bdd9b2751eb333d92532ac0d"
+    },
+    {
+      "path": "evidence/runs/lecture-review/079-part-8-r0.txt",
+      "sha256": "404ed1661e43cca38aa113496e8b9ce7ac725fbe60bd92a28ae2829bcd125898"
+    },
+    {
+      "path": "evidence/runs/lecture-review/080-recommended-500-r2.txt",
+      "sha256": "ecb250d2d8c5674536483af9a59d8f5eaf7fb7fab17e830dd64820f9a7c77b3a"
+    },
+    {
+      "path": "evidence/runs/lecture-review/081-batch-65536-0-r1.txt",
+      "sha256": "9081021dc8457604116e33e24fed6b38f4ad4ed713addb14adf39e8d8bd7f94f"
+    },
+    {
+      "path": "evidence/runs/lecture-review/082-linger-extra-100.txt",
+      "sha256": "51167e7abf0e9c357aca6366afc380b4cf1e2b739b09830d4b08f6079a361240"
+    },
+    {
+      "path": "evidence/runs/lecture-review/083-rate500-262144-50.txt",
+      "sha256": "f1efb8167f61eaab3f6700288bd5e49bea9f738d2139f28ef7403d56c620f211"
+    },
+    {
+      "path": "evidence/runs/lecture-review/084-batch-16384-0-r1.txt",
+      "sha256": "e453a5cb9498d242e9f33756b1c59dc8f65533f1bcf7d41c0b24da83245d5cc5"
+    },
+    {
+      "path": "evidence/runs/lecture-review/085-strategy-time-r2.txt",
+      "sha256": "7be9acffaf2879bda481a6ba7ab52def62e5a23703be0000e3a32b28e8fcfb18"
+    },
+    {
+      "path": "evidence/runs/lecture-review/086-buffer-67108864.txt",
+      "sha256": "e4c9f89aa78bd3f2f9187d1c1b29a6ef124a346b2d65ae498b7ef4c0883ec605"
+    },
+    {
+      "path": "evidence/runs/lecture-review/087-part-4-r1.txt",
+      "sha256": "d1037facc1097fe9938e0af21fa44415a54250cef40a58abe18cfb77724f0337"
+    },
+    {
+      "path": "evidence/runs/lecture-review/088-batch-16384-10-r0.txt",
+      "sha256": "3bdcc3fc1175fee2749ed0713f9a9625b04e5fd0009475ab3955fba5ee209cf1"
+    },
+    {
+      "path": "evidence/runs/lecture-review/089-recommended-500-r1.txt",
+      "sha256": "8b418dd3d047557fd769e0e6a92ab0f7de2ff28ec640787bba3d32bd4f581d50"
+    },
+    {
+      "path": "evidence/runs/lecture-review/090-rate500-16384-0.txt",
+      "sha256": "cb255430250fd6ee4e325fc5cc4d2c1e3fa016052704a3a1111a722270cba406"
+    },
+    {
+      "path": "evidence/runs/lecture-review/091-part-12-r2.txt",
+      "sha256": "bebf8bf68573fc37579e3b3c9410aad8aede0ed5f7403eb3d1f548d6fd7df928"
+    },
+    {
+      "path": "evidence/runs/lecture-review/092-batch-65536-0-r0.txt",
+      "sha256": "0bc76202e532518ab31d6824058a8bf2e050dd23402044ce2647c2397d416e43"
+    },
+    {
+      "path": "evidence/runs/lecture-review/093-batch-65536-50-r1.txt",
+      "sha256": "f8a6c7e9a51a1847ec524c7154b37b2e0f89726c43fd0e728e4bbe89d316fefa"
+    },
+    {
+      "path": "evidence/runs/lecture-review/094-recommended--1-r0.txt",
+      "sha256": "9d493b8a9bcff1d0dbe487dcb66df139131ec965f6206a32d63300a2db11018c"
+    },
+    {
+      "path": "evidence/runs/lecture-review/095-inflight-1.txt",
+      "sha256": "33893e79d73a801dc61360e543b9b7d88d5556e94df4aa2d81f6f3304b4a9a80"
+    },
+    {
+      "path": "evidence/runs/lecture-review/096-analytics-524288-100-r1.txt",
+      "sha256": "76edb19802f17749b288e54b0229eda7412b111798067ea5471b5541151965a7"
+    },
+    {
+      "path": "evidence/runs/lecture-review/097-rate500-16384-10.txt",
+      "sha256": "b3a3e2f1b5938273df31d8cfaeeb98f2be8eeab450010ef4c11ff9197c267e39"
+    },
+    {
+      "path": "evidence/runs/lecture-review/098-batch-262144-0-r0.txt",
+      "sha256": "b10152aade6ace89d3c52118c403429dc90d479be1b9818c0dc99e1b17da1e17"
+    },
+    {
+      "path": "evidence/runs/lecture-review/099-analytics-1048576-100-r1.txt",
+      "sha256": "fa757a67b52d9f85c4c4b3ad4364f6e338c72020919b660af0618ea3c7e74fb0"
+    },
+    {
+      "path": "evidence/runs/lecture-review/100-rate500-16384-50.txt",
+      "sha256": "0a1688fc2d438d998f9a1f9fb196edb2b4600cfa7da49e3e6e600cc3bd5e34a7"
+    },
+    {
+      "path": "evidence/runs/lecture-review/101-analytics-524288-100-r2.txt",
+      "sha256": "cd5a248725b31f5d16f40cfb306ebf8ed765ece966cc2fa8c8654e771971beb9"
+    },
+    {
+      "path": "evidence/runs/lecture-review/102-batch-262144-10-r2.txt",
+      "sha256": "e0faa6f1a06271128e525f02ab6f450c09b7f3a73164389582c71a0df687df63"
+    },
+    {
+      "path": "evidence/runs/lecture-review/103-recommended--1-r1.txt",
+      "sha256": "88e8c83aaed506655fd2df4d17a48fb2610f9e9386e264449c6cc6d418d92485"
+    },
+    {
+      "path": "evidence/runs/lecture-review/104-recommended-500-r0.txt",
+      "sha256": "814d927e11bf5b56efdf8c76226d6bfc71118abf559dbb5420dbae8355d39385"
+    },
+    {
+      "path": "evidence/runs/lecture-review/105-analytics-1048576-300-r0.txt",
+      "sha256": "7c0be018aefee38af8d28141a7f61f5e90dc3c85d24a8707aeb74fd9f6ae980b"
+    },
+    {
+      "path": "evidence/runs/lecture-review/106-codec-none-r1.txt",
+      "sha256": "bb377ef3a49250ee1d112cd6ac1040dbdc6b173853c53e09b1ab68d81a0856b5"
+    },
+    {
+      "path": "evidence/runs/lecture-review/107-rate500-262144-0.txt",
+      "sha256": "53bbb0df96d7109c035dfe21d42a6ae16229c74622d442f687a020f09cd060c8"
+    },
+    {
+      "path": "evidence/runs/lecture-review/108-natural-none.txt",
+      "sha256": "803c28a3d75b3c4a940d66039dd1b161a2b261abfd4662a1357f3363c5f30678"
+    },
+    {
+      "path": "evidence/runs/lecture-review/109-natural-zstd.txt",
+      "sha256": "ea10595207c9bbae5d6f8d223c84ef21e45b3aa01f801d63446b9ecf205d8538"
+    },
+    {
+      "path": "evidence/runs/lecture-review/110-archive-window-300.txt",
+      "sha256": "c2c94d41f4bf0853fc811cebe93c24cd15c56df96999197343bd84c727114579"
+    }
+  ],
+  "views": [
+    {
+      "view": "evidence/screenshot-views/01_batch_linger.txt",
+      "sha256": "2b94f14c6b93cbe9b59cb6fcf6b680bf8ad67c1af1c4f957600adc2fabe1dffd"
+    },
+    {
+      "view": "evidence/screenshot-views/02_compression.txt",
+      "sha256": "338ee71177b7a2a6b9556422e9e94d35705ec7cd36af06c46140938348ca7085"
+    },
+    {
+      "view": "evidence/screenshot-views/03_partitions.txt",
+      "sha256": "08e5811968c527c2cee0b15eb1cc3b0d669e67a61e0d01d2bccd2d4fdc9c5433"
+    },
+    {
+      "view": "evidence/screenshot-views/04_cli_and_analytics.txt",
+      "sha256": "797830c5130af22e3256e6ae7f4048ffa6fa19b161c3671a7cd33d19e2e7c35d"
+    }
+  ]
+}

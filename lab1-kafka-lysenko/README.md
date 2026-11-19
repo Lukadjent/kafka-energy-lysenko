@@ -49,6 +49,7 @@ cd lab1-kafka-lysenko
 ## Файли для перевірки
 
 - [Усі сирі результати](evidence/results.json), [CSV](evidence/results-flat.csv), [зведення](evidence/summary.json).
+- [Скріншоти результатів для додатка Б](evidence/screenshots): браузерний перегляд збереженого stdout та його зведень; [джерела і контрольні суми](evidence/screenshot-views/sources.json).
 - [Конфігурації та оригінальний числовий stdout повторної серії](evidence/runs/lecture-review).
 - [21 автоматична перевірка](evidence/validation.json).
 - [Load-сценарії](evidence/load-scenarios.json), [серіалізація та registry](evidence/serialization.json).

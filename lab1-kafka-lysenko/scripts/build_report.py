@@ -111,7 +111,7 @@ def main():
     archive = s["archive-window"][0]
     zstd = next(row for row in s["compression"] if row["compression"] == "zstd")
     p(f"Zstd скоротив розмір Kafka record batches на {num(zstd['savings_pct'])}% у масовому тесті, але лише на {num(natural['savings_pct'])}% при 0,5 запису/с. Пакет зі 150 записів, що відповідає п'яти хвилинам природного потоку, дав {num(archive['savings_pct'])}% економії. Отже, для архіву ГЕС суттєвим є накопичення мікропакета, а не тільки зміна compression.type.")
-    p(f"Серія містить {s['trial_count']} прогонів Kafka з перевіркою {s['total_measured_records']:,} JSON-повідомлень; додатково виконано два навантажувальні сценарії на 1 100 000 записів. Успішно пройдено {validation['passed']} перевірку доказів виконання.".replace(",", " "))
+    p(f"Серія містить {s['trial_count']} прогонів Kafka з перевіркою {s['total_measured_records']:,} JSON-повідомлень; додатково виконано два навантажувальні сценарії на 1 100 000 записів.".replace(",", " "))
 
     h("2 Тестове середовище та методика")
     java_line = environment["java_version"].splitlines()[0]
@@ -229,7 +229,7 @@ def main():
     page()
 
     h("Додаток А Команди та приклади даних")
-    p("Лаунчер lab.py запускає ті самі класи ProducerPerformance/ConsumerPerformance, що й штатні kafka-producer-perf-test та kafka-consumer-perf-test. Він використовує wildcard classpath, щоб обійти обмеження довжини .bat-команди у Windows. Нижче наведено виконані параметри.")
+    p("Команди ProducerPerformance та ConsumerPerformance виконуються через lab.py. Нижче наведено параметри навантажувальних тестів.")
     for row in load:
         code(f"python lab.py producer-perf --topic {row['topic']}\n  --num-records {row['records']} --record-size {row['record_bytes']} --throughput {row['target_rate']}\n  --producer-props bootstrap.servers=127.0.0.1:9092 compression.type=none")
     actual_json_topic = re.search(r"--topic (\S+)", (E / "official-json-performance.txt").read_text(encoding="utf-8")).group(1)
@@ -239,24 +239,22 @@ def main():
         sample_text = json.dumps(sample, ensure_ascii=False, indent=2)
         sample_text = re.sub(r'"location": \{\s*"lat": ([^,\n]+),\s*"lon": ([^\n]+)\s*\}', r'"location": {"lat": \1, "lon": \2}', sample_text)
         code(sample_text, keep=True)
+    page(True)
+
+    h("Додаток Б. Скріншоти результатів")
+    p("На рисунках Б.1-Б.4 показано браузерний перегляд збережених результатів експерименту. Для порівнянь наведено медіани трьох повторів, обчислені з оригінального stdout. Повні результати окремих прогонів збережено в каталозі evidence/runs/lecture-review, вивід штатного perf-test - у official-json-performance.txt.")
+    screenshots=[('01_batch_linger.png','Б.1. Залежність throughput та latency від batch.size і linger.ms.'),
+        ('02_compression.png','Б.2. Порівняння кодеків і виміряна економія record batches.'),
+        ('03_partitions.png','Б.3. Пропускна здатність та розподіл повідомлень за партиціями.'),
+        ('04_cli_and_analytics.png','Б.4. Вивід ProducerPerformance, серіалізація та аналітичні вікна.')]
+    from PIL import Image as PILImage
+    for index,(name,caption) in enumerate(screenshots):
+        if index:page(True);h('Додаток Б. Скріншоти результатів (продовження)')
+        path=E/'screenshots'/name
+        with PILImage.open(path) as im:height=170*mm*im.height/im.width
+        story.append(Image(str(path),width=170*mm,height=height));story.append(Spacer(1,7));p('Рисунок '+caption,'small')
+    p(f'Програмний код і журнали тестування: <link href="{REPO}" color="#175592">GitHub / lab1-kafka-lysenko</link>.')
     page()
-
-    h("Додаток Б Підтвердження результатів")
-    p("У повторній серії кожен key-aware performance test безпосередньо під час виконання надрукував MEASUREMENT_RESULT з усіма числами; процесний монітор додав RESOURCE_RESULT. Оригінальний stdout кожного прогону збережено в evidence/runs/lecture-review/*.txt. Автоматична перевірка порівнює його з кожним сирим JSON та ресурсами; медіани й формули відтворюються з results.json. Серіалізація та DWH мають окремі serialization-stdout.txt і warehouse-stdout.txt. Нижче наведено скорочені читабельні витяги; усі вихідні числа доступні у повних логах.")
-    raw = read("results.json")
-    selected = [max((row for row in raw if row["config"]["family"] == "batch"), key=lambda row: row["records_per_sec"]),
-                next(row for row in raw if row["config"]["family"] == "compression" and row["config"]["compression"] == "zstd"),
-                next(row for row in raw if row["config"]["family"] == "partition" and row["config"]["partitions"] == 4)]
-    for row in selected:
-        c = row["config"]
-        sub(c["label"])
-        code(f"topic={c['topic']}\nrecords={row['records']} received={row['received']} errors={row['errors']}\n"
-             f"records_per_sec={row['records_per_sec']:.3f} ack_avg_ms={row['ack_latency']['avg_ms']:.3f} e2e_p95_ms={row['e2e_latency']['p95_ms']:.3f}\n"
-             f"compression_rate_avg={row['compression_rate_avg']:.4f} partition_counts={row['partition_counts']}")
-    p("Одиничні приклади не підміняють медіани: усі повтори залишено в сирих файлах.")
-    code((E / "shutdown.txt").read_text(encoding="utf-8"))
-    p(f'Повні метрики та код: <link href="{REPO}" color="#175592">GitHub / lab1-kafka-lysenko</link>.')
-
     h("Джерела")
     sources = [
         "Надана методичка «ЛР 1 РБД.docx.pdf», 46 сторінок, варіант 3 та підваріант B.",

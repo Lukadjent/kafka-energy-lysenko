@@ -1,21 +1,140 @@
 [
   {
+    "lab": 1,
+    "pages": 17,
+    "bytes": 981999,
+    "sha256": "de2e32e6f396569cabc5fcc7acd7c7e75db1df73cb50f4882be34b39b927472a",
+    "bounds_passed": true,
+    "page_characters": [
+      593,
+      2220,
+      2334,
+      1249,
+      1492,
+      1437,
+      2468,
+      1321,
+      2129,
+      1890,
+      2541,
+      3051,
+      1340,
+      468,
+      164,
+      168,
+      679
+    ],
+    "page_images": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1
+    ],
+    "visual_review": "passed",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "appendix_b_pages": [
+      14,
+      15,
+      16,
+      17
+    ],
+    "appendix_b_screenshots": 4
+  },
+  {
+    "lab": 2,
+    "pages": 7,
+    "bytes": 354085,
+    "sha256": "07f16d5159d783eed5e1c62af9f518f51b9404af83daa2624c1b6f09950bddf6",
+    "bounds_passed": true,
+    "page_characters": [
+      566,
+      1682,
+      618,
+      990,
+      1329,
+      2699,
+      2507
+    ],
+    "page_images": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0,
+      0
+    ],
+    "visual_review": "passed",
+    "reviewed_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  {
     "lab": 3,
     "pages": 10,
-    "bytes": 216298,
-    "sha256": "afe56e4e728047c02360ec372e6abe795af6f679fdef9ba1e905bfbec54b118a",
+    "bytes": 215671,
+    "sha256": "88c2b3d2e75dd8c4751df40a2b1b0f21a23a2b8f44962a34039de4a3504b667c",
     "bounds_passed": true,
     "page_characters": [
       374,
-      1613,
+      1243,
       1705,
       1046,
       575,
-      1582,
+      1589,
       1277,
       1406,
       1364,
-      2265
+      2080
+    ],
+    "page_images": [
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
     ],
     "visual_review": "passed",
     "reviewed_pages": [
@@ -34,18 +153,28 @@
   {
     "lab": 4,
     "pages": 8,
-    "bytes": 267872,
-    "sha256": "aa0079b9c3bfc74ce3dda22cb7bb3241276a11a5c5c09f96cfa4a5dba689c16b",
+    "bytes": 266776,
+    "sha256": "fb4f795d5c47deccead9d565184dc2d4d8c00b7561e53f454dfdc32fffc1001b",
     "bounds_passed": true,
     "page_characters": [
       373,
-      1560,
+      1339,
       1682,
       1196,
       1666,
-      1361,
+      1279,
       1359,
-      1474
+      1284
+    ],
+    "page_images": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
     ],
     "visual_review": "passed",
     "reviewed_pages": [
@@ -62,19 +191,30 @@
   {
     "lab": 5,
     "pages": 9,
-    "bytes": 637109,
-    "sha256": "529216352f4e705bed22248a413ced94657ce957b11e7fc939b6dda38e663c1c",
+    "bytes": 636672,
+    "sha256": "ce1e55e07eb14a10213fbc85ab1f783451b7c9d75ae19aade1c1df97b2b4dda1",
     "bounds_passed": true,
     "page_characters": [
       380,
-      1338,
+      1209,
       954,
       1410,
-      756,
+      675,
       888,
       1364,
       931,
-      2182
+      1969
+    ],
+    "page_images": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0
     ],
     "visual_review": "passed",
     "reviewed_pages": [

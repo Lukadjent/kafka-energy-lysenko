@@ -1,0 +1,21 @@
+﻿Лабораторна робота №1. Лисенко Лука, ТР-61МП, варіант 3Б
+ПЕРЕГЛЯД ЗБЕРЕЖЕНИХ РЕЗУЛЬТАТІВ ТЕСТУВАННЯ
+
+4. ШТАТНИЙ PRODUCER-PERF (official-json-performance.txt)
+5000 records sent, 499.001996 records/sec (0.15 MB/sec), 6.83 ms avg latency, 338.00 ms max latency, 7 ms 50th, 12 ms 95th, 13 ms 99th, 17 ms 99.9th.
+
+СЕРІАЛІЗАЦІЯ (serialization-stdout.txt)
+SERIALIZATION json: 314.4 bytes, 6.06 us encode
+SERIALIZATION avro_registry: 135.3 bytes, 44.85 us encode
+SERIALIZATION protobuf: 146.3 bytes, 4.34 us encode
+
+АНАЛІТИЧНІ ВІКНА (warehouse-stdout.txt)
+WAREHOUSE PASS: 302400 records; all four window aggregations reconcile
+Window s    Input rows   Aggregate rows   Reduction %
+----------------------------------------------------
+      30        302400           302400        0.0000
+     300        302400            30240       90.0000
+     900        302400            10080       96.6667
+    3600        302400             2520       99.1667
+
+Повторна агрегація: усі 105 добових груп збігаються з raw.

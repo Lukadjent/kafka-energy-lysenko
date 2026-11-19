@@ -58,10 +58,10 @@ class Report:
                 end=x+box+12;cy=h/2;d.add(Line(x+box,cy,end,cy,strokeColor=TEAL));d.add(Polygon([end,cy,end-4,cy+3,end-4,cy-3],fillColor=TEAL,strokeColor=TEAL))
         self.story.append(d)
     def sources(self,items):
-        self.p('Джерела та відтворення','heading')
+        self.p('Джерела','heading')
         for title,url in items:self.p(f'{escape(title)}: <link href="{escape(url)}" color="#087f8c">{escape(url)}</link>','small')
         url='https://github.com/Lukadjent/kafka-energy-lysenko/tree/master/'+self.project
-        self.p(f'Власний код, повні числові результати та raw-журнали: <link href="{url}" color="#087f8c">GitHub / {self.project}</link>. Методичні матеріали викладача до репозиторію не включені.','small')
+        self.p(f'Програмний код і журнали тестування: <link href="{url}" color="#087f8c">GitHub / {self.project}</link>.','small')
     def bucket_tree(self):
         d=Drawing(170*mm,170)
         def box(x,y,w,h,lines):

@@ -1,0 +1,37 @@
+{
+  "reports": [
+    {
+      "lab": 1,
+      "filename": "Lab1_Lysenko_3B.pdf",
+      "bytes": 981999,
+      "sha256": "de2e32e6f396569cabc5fcc7acd7c7e75db1df73cb50f4882be34b39b927472a"
+    },
+    {
+      "lab": 2,
+      "filename": "Lab2_Lysenko_3B.pdf",
+      "bytes": 354085,
+      "sha256": "07f16d5159d783eed5e1c62af9f518f51b9404af83daa2624c1b6f09950bddf6"
+    },
+    {
+      "lab": 3,
+      "filename": "Lab3_Lysenko_3B.pdf",
+      "bytes": 215671,
+      "sha256": "88c2b3d2e75dd8c4751df40a2b1b0f21a23a2b8f44962a34039de4a3504b667c"
+    },
+    {
+      "lab": 4,
+      "filename": "Lab4_Lysenko_3B.pdf",
+      "bytes": 266776,
+      "sha256": "fb4f795d5c47deccead9d565184dc2d4d8c00b7561e53f454dfdc32fffc1001b"
+    },
+    {
+      "lab": 5,
+      "filename": "Lab5_Lysenko_3B.pdf",
+      "bytes": 636672,
+      "sha256": "ce1e55e07eb14a10213fbc85ab1f783451b7c9d75ae19aade1c1df97b2b4dda1"
+    }
+  ],
+  "archive": "Reports_Lysenko_3B.zip",
+  "archive_sha256": "3f9aafceb3e00e745e6fdb199a1faf255b8aa789140b08fca314cd8c4fc590c9",
+  "archive_bytes": 1951496
+}
